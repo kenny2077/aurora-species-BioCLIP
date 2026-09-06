@@ -1,0 +1,2790 @@
+{
+ "score": {
+  "model": "hf-hub:imageomics/bioclip-2",
+  "table_classes": 504,
+  "photos": 85,
+  "top1": "79/85 = 92.9%",
+  "top3": "84/85 = 98.8%",
+  "top5": "85/85 = 100.0%",
+  "fusion": null,
+  "ms_per_photo": 261.0,
+  "misses_top1": [
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\bald eagle\\449407593.jpg",
+    "true": "Haliaeetus leucocephalus",
+    "pred": {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.3817
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\black bear\\184578489.jpg",
+    "true": "Ursus americanus",
+    "pred": {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.5237
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\blue jay\\414419714.jpg",
+    "true": "Cyanocitta cristata",
+    "pred": {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.9558
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\529528111.jpg",
+    "true": "Sylvilagus floridanus",
+    "pred": {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.6527
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\red fox\\438495465.jpg",
+    "true": "Vulpes vulpes",
+    "pred": {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.3217
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\striped skunk\\304633285.jpg",
+    "true": "Mephitis mephitis",
+    "pred": {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.3372
+    }
+   }
+  ]
+ },
+ "rows": [
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american alligator\\287001781.jpg",
+   "true": "Alligator mississippiensis",
+   "top5": [
+    {
+     "name": "american alligator",
+     "sci": "Alligator mississippiensis",
+     "p": 0.9448
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0483
+    },
+    {
+     "name": "spiny softshell",
+     "sci": "Apalone spinifera",
+     "p": 0.0012
+    },
+    {
+     "name": "florida softshell turtle",
+     "sci": "Apalone ferox",
+     "p": 0.0009
+    },
+    {
+     "name": "west indian manatee",
+     "sci": "Trichechus manatus",
+     "p": 0.0008
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american alligator\\43721793.jpg",
+   "true": "Alligator mississippiensis",
+   "top5": [
+    {
+     "name": "american alligator",
+     "sci": "Alligator mississippiensis",
+     "p": 0.9281
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0545
+    },
+    {
+     "name": "diamondback watersnake",
+     "sci": "Nerodia rhombifer",
+     "p": 0.0025
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0024
+    },
+    {
+     "name": "spiny softshell",
+     "sci": "Apalone spinifera",
+     "p": 0.0022
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american beaver\\146045518.jpg",
+   "true": "Castor canadensis",
+   "top5": [
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.8367
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.1033
+    },
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.0344
+    },
+    {
+     "name": "muskrat",
+     "sci": "Ondatra zibethicus",
+     "p": 0.0144
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american beaver\\357069426.jpg",
+   "true": "Castor canadensis",
+   "top5": [
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.918
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.0446
+    },
+    {
+     "name": "muskrat",
+     "sci": "Ondatra zibethicus",
+     "p": 0.022
+    },
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.0099
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american bison\\320558876.jpg",
+   "true": "Bos bison",
+   "top5": [
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.5336
+    },
+    {
+     "name": "american bison",
+     "sci": "Bison bison",
+     "p": 0.4641
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0004
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0003
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american bison\\91354425.jpg",
+   "true": "Bos bison",
+   "top5": [
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.5926
+    },
+    {
+     "name": "american bison",
+     "sci": "Bison bison",
+     "p": 0.4067
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0003
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0002
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american bullfrog\\320356633.jpg",
+   "true": "Lithobates catesbeianus",
+   "top5": [
+    {
+     "name": "american bullfrog",
+     "sci": "Lithobates catesbeianus",
+     "p": 0.9683
+    },
+    {
+     "name": "green frog",
+     "sci": "Lithobates clamitans",
+     "p": 0.0234
+    },
+    {
+     "name": "southern leopard frog",
+     "sci": "Lithobates sphenocephalus",
+     "p": 0.0011
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.001
+    },
+    {
+     "name": "northern leopard frog",
+     "sci": "Lithobates pipiens",
+     "p": 0.0008
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american bullfrog\\536069124.jpg",
+   "true": "Lithobates catesbeianus",
+   "top5": [
+    {
+     "name": "american bullfrog",
+     "sci": "Lithobates catesbeianus",
+     "p": 0.9337
+    },
+    {
+     "name": "green frog",
+     "sci": "Lithobates clamitans",
+     "p": 0.0555
+    },
+    {
+     "name": "northern leopard frog",
+     "sci": "Lithobates pipiens",
+     "p": 0.0042
+    },
+    {
+     "name": "southern leopard frog",
+     "sci": "Lithobates sphenocephalus",
+     "p": 0.0029
+    },
+    {
+     "name": "green treefrog",
+     "sci": "Dryophytes cinereus",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american crow\\243862059.jpg",
+   "true": "Corvus brachyrhynchos",
+   "top5": [
+    {
+     "name": "american crow",
+     "sci": "Corvus brachyrhynchos",
+     "p": 0.9839
+    },
+    {
+     "name": "common raven",
+     "sci": "Corvus corax",
+     "p": 0.0131
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0008
+    },
+    {
+     "name": "canada jay",
+     "sci": "Perisoreus canadensis",
+     "p": 0.0006
+    },
+    {
+     "name": "common grackle",
+     "sci": "Quiscalus quiscula",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american crow\\53516042.jpg",
+   "true": "Corvus brachyrhynchos",
+   "top5": [
+    {
+     "name": "american crow",
+     "sci": "Corvus brachyrhynchos",
+     "p": 0.9656
+    },
+    {
+     "name": "common grackle",
+     "sci": "Quiscalus quiscula",
+     "p": 0.0111
+    },
+    {
+     "name": "common raven",
+     "sci": "Corvus corax",
+     "p": 0.005
+    },
+    {
+     "name": "boat-tailed grackle",
+     "sci": "Quiscalus major",
+     "p": 0.0041
+    },
+    {
+     "name": "ring-billed gull",
+     "sci": "Larus delawarensis",
+     "p": 0.0041
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american goldfinch\\106412084.jpg",
+   "true": "Spinus tristis",
+   "top5": [
+    {
+     "name": "american goldfinch",
+     "sci": "Spinus tristis",
+     "p": 0.9807
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0062
+    },
+    {
+     "name": "field sparrow",
+     "sci": "Spizella pusilla",
+     "p": 0.0029
+    },
+    {
+     "name": "lesser goldfinch",
+     "sci": "Spinus psaltria",
+     "p": 0.0021
+    },
+    {
+     "name": "common yellowthroat",
+     "sci": "Geothlypis trichas",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american goldfinch\\509417183.jpg",
+   "true": "Spinus tristis",
+   "top5": [
+    {
+     "name": "american goldfinch",
+     "sci": "Spinus tristis",
+     "p": 0.969
+    },
+    {
+     "name": "lesser goldfinch",
+     "sci": "Spinus psaltria",
+     "p": 0.0193
+    },
+    {
+     "name": "pine siskin",
+     "sci": "Spinus pinus",
+     "p": 0.0039
+    },
+    {
+     "name": "cedar waxwing",
+     "sci": "Bombycilla cedrorum",
+     "p": 0.0008
+    },
+    {
+     "name": "pine warbler",
+     "sci": "Setophaga pinus",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american robin\\375294029.jpg",
+   "true": "Turdus migratorius",
+   "top5": [
+    {
+     "name": "american robin",
+     "sci": "Turdus migratorius",
+     "p": 0.9944
+    },
+    {
+     "name": "spotted towhee",
+     "sci": "Pipilo maculatus",
+     "p": 0.0005
+    },
+    {
+     "name": "northern mockingbird",
+     "sci": "Mimus polyglottos",
+     "p": 0.0002
+    },
+    {
+     "name": "gray catbird",
+     "sci": "Dumetella carolinensis",
+     "p": 0.0002
+    },
+    {
+     "name": "eastern towhee",
+     "sci": "Pipilo erythrophthalmus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american robin\\534492452.jpg",
+   "true": "Turdus migratorius",
+   "top5": [
+    {
+     "name": "american robin",
+     "sci": "Turdus migratorius",
+     "p": 0.9554
+    },
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.0087
+    },
+    {
+     "name": "scarlet tanager",
+     "sci": "Piranga olivacea",
+     "p": 0.003
+    },
+    {
+     "name": "red-bellied woodpecker",
+     "sci": "Melanerpes carolinus",
+     "p": 0.0027
+    },
+    {
+     "name": "baltimore oriole",
+     "sci": "Icterus galbula",
+     "p": 0.0023
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american toad\\307262353.jpg",
+   "true": "Anaxyrus americanus",
+   "top5": [
+    {
+     "name": "american toad",
+     "sci": "Anaxyrus americanus",
+     "p": 0.5429
+    },
+    {
+     "name": "fowler's toad",
+     "sci": "Anaxyrus fowleri",
+     "p": 0.4105
+    },
+    {
+     "name": "southern toad",
+     "sci": "Anaxyrus terrestris",
+     "p": 0.0405
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.0033
+    },
+    {
+     "name": "woodhouse's toad",
+     "sci": "Anaxyrus woodhousii",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\american toad\\325801440.jpg",
+   "true": "Anaxyrus americanus",
+   "top5": [
+    {
+     "name": "american toad",
+     "sci": "Anaxyrus americanus",
+     "p": 0.9563
+    },
+    {
+     "name": "southern toad",
+     "sci": "Anaxyrus terrestris",
+     "p": 0.0293
+    },
+    {
+     "name": "fowler's toad",
+     "sci": "Anaxyrus fowleri",
+     "p": 0.0067
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.0052
+    },
+    {
+     "name": "woodhouse's toad",
+     "sci": "Anaxyrus woodhousii",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\bald eagle\\384490244.jpg",
+   "true": "Haliaeetus leucocephalus",
+   "top5": [
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.9988
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0001
+    },
+    {
+     "name": "steller sea lion",
+     "sci": "Eumetopias jubatus",
+     "p": 0.0001
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0001
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.0
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\bald eagle\\449407593.jpg",
+   "true": "Haliaeetus leucocephalus",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.3817
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.1683
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.164
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.1189
+    },
+    {
+     "name": "mississippi kite",
+     "sci": "Ictinia mississippiensis",
+     "p": 0.0245
+    }
+   ],
+   "hit": 1
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\black bear\\184578489.jpg",
+   "true": "Ursus americanus",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.5237
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.3784
+    },
+    {
+     "name": "american marten",
+     "sci": "Martes americana",
+     "p": 0.0629
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0073
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0068
+    }
+   ],
+   "hit": 1
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\black bear\\392878479.jpg",
+   "true": "Ursus americanus",
+   "top5": [
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.9739
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0214
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0009
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0007
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\blue jay\\360431054.jpg",
+   "true": "Cyanocitta cristata",
+   "top5": [
+    {
+     "name": "blue jay",
+     "sci": "Cyanocitta cristata",
+     "p": 0.9967
+    },
+    {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.0005
+    },
+    {
+     "name": "steller's jay",
+     "sci": "Cyanocitta stelleri",
+     "p": 0.0003
+    },
+    {
+     "name": "eastern bluebird",
+     "sci": "Sialia sialis",
+     "p": 0.0002
+    },
+    {
+     "name": "tufted titmouse",
+     "sci": "Baeolophus bicolor",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\blue jay\\414419714.jpg",
+   "true": "Cyanocitta cristata",
+   "top5": [
+    {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.9558
+    },
+    {
+     "name": "blue jay",
+     "sci": "Cyanocitta cristata",
+     "p": 0.035
+    },
+    {
+     "name": "steller's jay",
+     "sci": "Cyanocitta stelleri",
+     "p": 0.0055
+    },
+    {
+     "name": "western bluebird",
+     "sci": "Sialia mexicana",
+     "p": 0.0008
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0004
+    }
+   ],
+   "hit": 1
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\bobcat\\173346592.jpg",
+   "true": "Lynx rufus",
+   "top5": [
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.9822
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0106
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0009
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0004
+    },
+    {
+     "name": "california ground squirrel",
+     "sci": "Otospermophilus beecheyi",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\bobcat\\433611472.jpg",
+   "true": "Lynx rufus",
+   "top5": [
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.9146
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0473
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0173
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0068
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0036
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\canada goose\\123908815.jpg",
+   "true": "Branta canadensis",
+   "top5": [
+    {
+     "name": "canada goose",
+     "sci": "Branta canadensis",
+     "p": 0.9937
+    },
+    {
+     "name": "snow goose",
+     "sci": "Anser caerulescens",
+     "p": 0.0009
+    },
+    {
+     "name": "greater white-fronted goose",
+     "sci": "Anser albifrons",
+     "p": 0.0005
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0004
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\canada goose\\546325643.jpg",
+   "true": "Branta canadensis",
+   "top5": [
+    {
+     "name": "canada goose",
+     "sci": "Branta canadensis",
+     "p": 0.9095
+    },
+    {
+     "name": "snow goose",
+     "sci": "Anser caerulescens",
+     "p": 0.0681
+    },
+    {
+     "name": "trumpeter swan",
+     "sci": "Cygnus buccinator",
+     "p": 0.016
+    },
+    {
+     "name": "northern pintail",
+     "sci": "Anas acuta",
+     "p": 0.0013
+    },
+    {
+     "name": "mute swan",
+     "sci": "Cygnus olor",
+     "p": 0.001
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\common box turtle\\138239510.jpg",
+   "true": "Terrapene carolina",
+   "top5": [
+    {
+     "name": "common box turtle",
+     "sci": "Terrapene carolina",
+     "p": 0.8399
+    },
+    {
+     "name": "three-toed box turtle",
+     "sci": "Terrapene triunguis",
+     "p": 0.1537
+    },
+    {
+     "name": "gopher tortoise",
+     "sci": "Gopherus polyphemus",
+     "p": 0.0012
+    },
+    {
+     "name": "blanding's turtle",
+     "sci": "Emydoidea blandingii",
+     "p": 0.001
+    },
+    {
+     "name": "eastern musk turtle",
+     "sci": "Sternotherus odoratus",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\common box turtle\\96798464.jpg",
+   "true": "Terrapene carolina",
+   "top5": [
+    {
+     "name": "common box turtle",
+     "sci": "Terrapene carolina",
+     "p": 0.8743
+    },
+    {
+     "name": "three-toed box turtle",
+     "sci": "Terrapene triunguis",
+     "p": 0.1168
+    },
+    {
+     "name": "eastern musk turtle",
+     "sci": "Sternotherus odoratus",
+     "p": 0.0027
+    },
+    {
+     "name": "blanding's turtle",
+     "sci": "Emydoidea blandingii",
+     "p": 0.0005
+    },
+    {
+     "name": "gopher tortoise",
+     "sci": "Gopherus polyphemus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\coyote\\102464193.jpg",
+   "true": "Canis latrans",
+   "top5": [
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.8246
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0578
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.04
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0161
+    },
+    {
+     "name": "botta's pocket gopher",
+     "sci": "Megascapheus bottae",
+     "p": 0.0141
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\coyote\\603527016.jpg",
+   "true": "Canis latrans",
+   "top5": [
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.941
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.0422
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0041
+    },
+    {
+     "name": "gray fox",
+     "sci": "Urocyon cinereoargenteus",
+     "p": 0.0023
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0018
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\downy woodpecker\\613963750.jpg",
+   "true": "Dryobates pubescens",
+   "top5": [
+    {
+     "name": "downy woodpecker",
+     "sci": "Dryobates pubescens",
+     "p": 0.934
+    },
+    {
+     "name": "hairy woodpecker",
+     "sci": "Leuconotopicus villosus",
+     "p": 0.0624
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0007
+    },
+    {
+     "name": "nuttall's woodpecker",
+     "sci": "Dryobates nuttallii",
+     "p": 0.0004
+    },
+    {
+     "name": "yellow-bellied sapsucker",
+     "sci": "Sphyrapicus varius",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\downy woodpecker\\624993424.jpg",
+   "true": "Dryobates pubescens",
+   "top5": [
+    {
+     "name": "downy woodpecker",
+     "sci": "Dryobates pubescens",
+     "p": 0.6556
+    },
+    {
+     "name": "hairy woodpecker",
+     "sci": "Leuconotopicus villosus",
+     "p": 0.3365
+    },
+    {
+     "name": "nuttall's woodpecker",
+     "sci": "Dryobates nuttallii",
+     "p": 0.001
+    },
+    {
+     "name": "white-breasted nuthatch",
+     "sci": "Sitta carolinensis",
+     "p": 0.0006
+    },
+    {
+     "name": "black-and-white warbler",
+     "sci": "Mniotilta varia",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern chipmunk\\579218740.jpg",
+   "true": "Tamias striatus",
+   "top5": [
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.9962
+    },
+    {
+     "name": "least chipmunk",
+     "sci": "Neotamias minimus",
+     "p": 0.0016
+    },
+    {
+     "name": "thirteen-lined ground squirrel",
+     "sci": "Ictidomys tridecemlineatus",
+     "p": 0.0003
+    },
+    {
+     "name": "white-throated sparrow",
+     "sci": "Zonotrichia albicollis",
+     "p": 0.0003
+    },
+    {
+     "name": "townsend's chipmunk",
+     "sci": "Neotamias townsendii",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern chipmunk\\94158134.jpg",
+   "true": "Tamias striatus",
+   "top5": [
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.4476
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.1779
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.1759
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0214
+    },
+    {
+     "name": "ovenbird",
+     "sci": "Seiurus aurocapilla",
+     "p": 0.0204
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern copperhead\\306181136.jpg",
+   "true": "Agkistrodon contortrix",
+   "top5": [
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.8237
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.1609
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0113
+    },
+    {
+     "name": "massasauga",
+     "sci": "Sistrurus catenatus",
+     "p": 0.0013
+    },
+    {
+     "name": "common wormsnake",
+     "sci": "Carphophis amoenus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern copperhead\\722104981.jpg",
+   "true": "Agkistrodon contortrix",
+   "top5": [
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.9954
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0012
+    },
+    {
+     "name": "eastern milksnake",
+     "sci": "Lampropeltis triangulum",
+     "p": 0.0006
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0005
+    },
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\529528111.jpg",
+   "true": "Sylvilagus floridanus",
+   "top5": [
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.6527
+    },
+    {
+     "name": "eastern cottontail",
+     "sci": "Sylvilagus floridanus",
+     "p": 0.2474
+    },
+    {
+     "name": "marsh rabbit",
+     "sci": "Sylvilagus palustris",
+     "p": 0.0486
+    },
+    {
+     "name": "black-legged tick",
+     "sci": "Ixodes scapularis",
+     "p": 0.0252
+    },
+    {
+     "name": "european rabbit",
+     "sci": "Oryctolagus cuniculus",
+     "p": 0.0066
+    }
+   ],
+   "hit": 1
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\91229197.jpg",
+   "true": "Sylvilagus floridanus",
+   "top5": [
+    {
+     "name": "eastern cottontail",
+     "sci": "Sylvilagus floridanus",
+     "p": 0.7249
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0986
+    },
+    {
+     "name": "european rabbit",
+     "sci": "Oryctolagus cuniculus",
+     "p": 0.0704
+    },
+    {
+     "name": "marsh rabbit",
+     "sci": "Sylvilagus palustris",
+     "p": 0.0459
+    },
+    {
+     "name": "white-tailed jackrabbit",
+     "sci": "Lepus townsendii",
+     "p": 0.0232
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern gray squirrel\\176023576.jpg",
+   "true": "Sciurus carolinensis",
+   "top5": [
+    {
+     "name": "eastern gray squirrel",
+     "sci": "Sciurus carolinensis",
+     "p": 0.9682
+    },
+    {
+     "name": "arizona gray squirrel",
+     "sci": "Sciurus arizonensis",
+     "p": 0.0118
+    },
+    {
+     "name": "western gray squirrel",
+     "sci": "Sciurus griseus",
+     "p": 0.0077
+    },
+    {
+     "name": "abert's squirrel",
+     "sci": "Sciurus aberti",
+     "p": 0.0027
+    },
+    {
+     "name": "fremont's squirrel",
+     "sci": "Tamiasciurus fremonti",
+     "p": 0.0018
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern gray squirrel\\659345221.jpg",
+   "true": "Sciurus carolinensis",
+   "top5": [
+    {
+     "name": "eastern gray squirrel",
+     "sci": "Sciurus carolinensis",
+     "p": 0.9833
+    },
+    {
+     "name": "american red squirrel",
+     "sci": "Tamiasciurus hudsonicus",
+     "p": 0.0028
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0024
+    },
+    {
+     "name": "tufted titmouse",
+     "sci": "Baeolophus bicolor",
+     "p": 0.0013
+    },
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern newt\\380705224.jpg",
+   "true": "Notophthalmus viridescens",
+   "top5": [
+    {
+     "name": "eastern newt",
+     "sci": "Notophthalmus viridescens",
+     "p": 0.9896
+    },
+    {
+     "name": "rough-skinned newt",
+     "sci": "Taricha granulosa",
+     "p": 0.0086
+    },
+    {
+     "name": "blue-spotted salamander",
+     "sci": "Ambystoma laterale",
+     "p": 0.0004
+    },
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.0002
+    },
+    {
+     "name": "red salamander",
+     "sci": "Pseudotriton ruber",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\eastern newt\\678295520.jpg",
+   "true": "Notophthalmus viridescens",
+   "top5": [
+    {
+     "name": "eastern newt",
+     "sci": "Notophthalmus viridescens",
+     "p": 0.9071
+    },
+    {
+     "name": "rough-skinned newt",
+     "sci": "Taricha granulosa",
+     "p": 0.0903
+    },
+    {
+     "name": "california newt",
+     "sci": "Taricha torosa",
+     "p": 0.0012
+    },
+    {
+     "name": "red salamander",
+     "sci": "Pseudotriton ruber",
+     "p": 0.0003
+    },
+    {
+     "name": "blue-spotted salamander",
+     "sci": "Ambystoma laterale",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\gray wolf\\23278623.jpg",
+   "true": "Canis lupus",
+   "top5": [
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.6742
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.1993
+    },
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.0457
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0147
+    },
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.0124
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\gray wolf\\348465923.jpg",
+   "true": "Canis lupus",
+   "top5": [
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.996
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0015
+    },
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.0012
+    },
+    {
+     "name": "thinhorn sheep",
+     "sci": "Ovis dalli",
+     "p": 0.0007
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\great blue heron\\134213334.jpg",
+   "true": "Ardea herodias",
+   "top5": [
+    {
+     "name": "great blue heron",
+     "sci": "Ardea herodias",
+     "p": 0.4747
+    },
+    {
+     "name": "botta's pocket gopher",
+     "sci": "Megascapheus bottae",
+     "p": 0.2038
+    },
+    {
+     "name": "california ground squirrel",
+     "sci": "Otospermophilus beecheyi",
+     "p": 0.0458
+    },
+    {
+     "name": "western gray squirrel",
+     "sci": "Sciurus griseus",
+     "p": 0.0273
+    },
+    {
+     "name": "eastern fox squirrel",
+     "sci": "Sciurus niger",
+     "p": 0.0248
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\great blue heron\\671997918.jpg",
+   "true": "Ardea herodias",
+   "top5": [
+    {
+     "name": "great blue heron",
+     "sci": "Ardea herodias",
+     "p": 0.9897
+    },
+    {
+     "name": "tricolored heron",
+     "sci": "Egretta tricolor",
+     "p": 0.0017
+    },
+    {
+     "name": "western cattle-egret",
+     "sci": "Ardea ibis",
+     "p": 0.0012
+    },
+    {
+     "name": "brown pelican",
+     "sci": "Pelecanus occidentalis",
+     "p": 0.0008
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\great horned owl\\456435232.jpg",
+   "true": "Bubo virginianus",
+   "top5": [
+    {
+     "name": "great horned owl",
+     "sci": "Bubo virginianus",
+     "p": 0.9975
+    },
+    {
+     "name": "eastern screech-owl",
+     "sci": "Megascops asio",
+     "p": 0.0006
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0005
+    },
+    {
+     "name": "burrowing owl",
+     "sci": "Athene cunicularia",
+     "p": 0.0002
+    },
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\great horned owl\\718349621.jpg",
+   "true": "Bubo virginianus",
+   "top5": [
+    {
+     "name": "great horned owl",
+     "sci": "Bubo virginianus",
+     "p": 0.9935
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0022
+    },
+    {
+     "name": "burrowing owl",
+     "sci": "Athene cunicularia",
+     "p": 0.0007
+    },
+    {
+     "name": "eastern screech-owl",
+     "sci": "Megascops asio",
+     "p": 0.0006
+    },
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\grizzly bear\\283137646.jpg",
+   "true": "Ursus arctos",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.8436
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.1483
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0027
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0021
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\grizzly bear\\94110788.jpg",
+   "true": "Ursus arctos",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.4331
+    },
+    {
+     "name": "steller sea lion",
+     "sci": "Eumetopias jubatus",
+     "p": 0.2369
+    },
+    {
+     "name": "sea otter",
+     "sci": "Enhydra lutris",
+     "p": 0.0893
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0622
+    },
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.0349
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\mallard\\519465071.jpg",
+   "true": "Anas platyrhynchos",
+   "top5": [
+    {
+     "name": "mallard",
+     "sci": "Anas platyrhynchos",
+     "p": 0.9723
+    },
+    {
+     "name": "gadwall",
+     "sci": "Mareca strepera",
+     "p": 0.0103
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0077
+    },
+    {
+     "name": "american wigeon",
+     "sci": "Mareca americana",
+     "p": 0.0037
+    },
+    {
+     "name": "wood duck",
+     "sci": "Aix sponsa",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\mallard\\671099129.jpg",
+   "true": "Anas platyrhynchos",
+   "top5": [
+    {
+     "name": "mallard",
+     "sci": "Anas platyrhynchos",
+     "p": 0.9817
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0052
+    },
+    {
+     "name": "wood duck",
+     "sci": "Aix sponsa",
+     "p": 0.0015
+    },
+    {
+     "name": "american wigeon",
+     "sci": "Mareca americana",
+     "p": 0.0012
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\moose\\130296407.jpg",
+   "true": "Alces alces",
+   "top5": [
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.5111
+    },
+    {
+     "name": "thinhorn sheep",
+     "sci": "Ovis dalli",
+     "p": 0.3234
+    },
+    {
+     "name": "wild boar",
+     "sci": "Sus scrofa",
+     "p": 0.087
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0571
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0041
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\moose\\368695438.jpg",
+   "true": "Alces alces",
+   "top5": [
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.9919
+    },
+    {
+     "name": "caribou",
+     "sci": "Rangifer tarandus",
+     "p": 0.0021
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.002
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0013
+    },
+    {
+     "name": "mountain goat",
+     "sci": "Oreamnos americanus",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\mule deer\\450403763.jpg",
+   "true": "Odocoileus hemionus",
+   "top5": [
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.9872
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0021
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0017
+    },
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.0012
+    },
+    {
+     "name": "black-tailed jackrabbit",
+     "sci": "Lepus californicus",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\mule deer\\616385073.jpg",
+   "true": "Odocoileus hemionus",
+   "top5": [
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.9783
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0072
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0051
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0032
+    },
+    {
+     "name": "caribou",
+     "sci": "Rangifer tarandus",
+     "p": 0.0021
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\north american river otter\\135647346.jpg",
+   "true": "Lontra canadensis",
+   "top5": [
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.9987
+    },
+    {
+     "name": "sea otter",
+     "sci": "Enhydra lutris",
+     "p": 0.0003
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.0001
+    },
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.0001
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\north american river otter\\170264896.jpg",
+   "true": "Lontra canadensis",
+   "top5": [
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.8209
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0512
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0265
+    },
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.0264
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0111
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\northern cardinal\\183928111.jpg",
+   "true": "Cardinalis cardinalis",
+   "top5": [
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.9885
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0008
+    },
+    {
+     "name": "field sparrow",
+     "sci": "Spizella pusilla",
+     "p": 0.0008
+    },
+    {
+     "name": "ruby-crowned kinglet",
+     "sci": "Corthylio calendula",
+     "p": 0.0007
+    },
+    {
+     "name": "cedar waxwing",
+     "sci": "Bombycilla cedrorum",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\northern cardinal\\676877382.jpg",
+   "true": "Cardinalis cardinalis",
+   "top5": [
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.9885
+    },
+    {
+     "name": "scarlet tanager",
+     "sci": "Piranga olivacea",
+     "p": 0.0035
+    },
+    {
+     "name": "summer tanager",
+     "sci": "Piranga rubra",
+     "p": 0.0033
+    },
+    {
+     "name": "rose-breasted grosbeak",
+     "sci": "Pheucticus ludovicianus",
+     "p": 0.0007
+    },
+    {
+     "name": "eastern red bat",
+     "sci": "Lasiurus borealis",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\pronghorn\\268596217.jpg",
+   "true": "Antilocapra americana",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.9972
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0005
+    },
+    {
+     "name": "bighorn sheep",
+     "sci": "Ovis canadensis",
+     "p": 0.0003
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0003
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\pronghorn\\393488307.jpg",
+   "true": "Antilocapra americana",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.9965
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.001
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0005
+    },
+    {
+     "name": "white-tailed jackrabbit",
+     "sci": "Lepus townsendii",
+     "p": 0.0005
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\raccoon\\240042638.jpg",
+   "true": "Procyon lotor",
+   "top5": [
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.9774
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0063
+    },
+    {
+     "name": "white-nosed coati",
+     "sci": "Nasua narica",
+     "p": 0.0019
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.001
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0009
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\raccoon\\38408348.jpg",
+   "true": "Procyon lotor",
+   "top5": [
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.986
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0039
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0017
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0016
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\red fox\\289085807.jpg",
+   "true": "Vulpes vulpes",
+   "top5": [
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.8318
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0964
+    },
+    {
+     "name": "gray fox",
+     "sci": "Urocyon cinereoargenteus",
+     "p": 0.0196
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.0172
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0117
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\red fox\\438495465.jpg",
+   "true": "Vulpes vulpes",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.3217
+    },
+    {
+     "name": "donkey",
+     "sci": "Equus asinus",
+     "p": 0.2399
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.2172
+    },
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.0584
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0415
+    }
+   ],
+   "hit": 3
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\red-tailed hawk\\62555113.jpg",
+   "true": "Buteo jamaicensis",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.4952
+    },
+    {
+     "name": "broad-winged hawk",
+     "sci": "Buteo platypterus",
+     "p": 0.3259
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.0927
+    },
+    {
+     "name": "swainson's hawk",
+     "sci": "Buteo swainsoni",
+     "p": 0.0646
+    },
+    {
+     "name": "cooper's hawk",
+     "sci": "Astur cooperii",
+     "p": 0.0117
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\red-tailed hawk\\722847360.jpg",
+   "true": "Buteo jamaicensis",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.9666
+    },
+    {
+     "name": "swainson's hawk",
+     "sci": "Buteo swainsoni",
+     "p": 0.0119
+    },
+    {
+     "name": "broad-winged hawk",
+     "sci": "Buteo platypterus",
+     "p": 0.0061
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.0025
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\spring peeper\\377193761.jpg",
+   "true": "Pseudacris crucifer",
+   "top5": [
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.9759
+    },
+    {
+     "name": "gray treefrog",
+     "sci": "Dryophytes versicolor",
+     "p": 0.0132
+    },
+    {
+     "name": "boreal chorus frog",
+     "sci": "Pseudacris maculata",
+     "p": 0.0061
+    },
+    {
+     "name": "pacific chorus frog",
+     "sci": "Pseudacris regilla",
+     "p": 0.0015
+    },
+    {
+     "name": "cope's gray tree frog",
+     "sci": "Dryophytes chrysoscelis",
+     "p": 0.0014
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\spring peeper\\71398333.jpg",
+   "true": "Pseudacris crucifer",
+   "top5": [
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.9921
+    },
+    {
+     "name": "boreal chorus frog",
+     "sci": "Pseudacris maculata",
+     "p": 0.0058
+    },
+    {
+     "name": "gray treefrog",
+     "sci": "Dryophytes versicolor",
+     "p": 0.0005
+    },
+    {
+     "name": "wood frog",
+     "sci": "Lithobates sylvaticus",
+     "p": 0.0003
+    },
+    {
+     "name": "northern cricket frog",
+     "sci": "Acris crepitans",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\striped skunk\\304633285.jpg",
+   "true": "Mephitis mephitis",
+   "top5": [
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.3372
+    },
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.1804
+    },
+    {
+     "name": "long-tailed weasel",
+     "sci": "Neogale frenata",
+     "p": 0.095
+    },
+    {
+     "name": "uinta ground squirrel",
+     "sci": "Urocitellus armatus",
+     "p": 0.0556
+    },
+    {
+     "name": "abert's squirrel",
+     "sci": "Sciurus aberti",
+     "p": 0.051
+    }
+   ],
+   "hit": 1
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\striped skunk\\354681011.jpg",
+   "true": "Mephitis mephitis",
+   "top5": [
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.9941
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0017
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0009
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0007
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\timber rattlesnake\\528378696.jpg",
+   "true": "Crotalus horridus",
+   "top5": [
+    {
+     "name": "timber rattlesnake",
+     "sci": "Crotalus horridus",
+     "p": 0.987
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0065
+    },
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.0033
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0011
+    },
+    {
+     "name": "pygmy rattlesnake",
+     "sci": "Sistrurus miliarius",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\timber rattlesnake\\553370311.jpg",
+   "true": "Crotalus horridus",
+   "top5": [
+    {
+     "name": "timber rattlesnake",
+     "sci": "Crotalus horridus",
+     "p": 0.9842
+    },
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.0047
+    },
+    {
+     "name": "pygmy rattlesnake",
+     "sci": "Sistrurus miliarius",
+     "p": 0.0037
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0017
+    },
+    {
+     "name": "massasauga",
+     "sci": "Sistrurus catenatus",
+     "p": 0.0013
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\turkey vulture\\5105997.jpg",
+   "true": "Cathartes aura",
+   "top5": [
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.997
+    },
+    {
+     "name": "black vulture",
+     "sci": "Coragyps atratus",
+     "p": 0.0006
+    },
+    {
+     "name": "eastern red bat",
+     "sci": "Lasiurus borealis",
+     "p": 0.0004
+    },
+    {
+     "name": "silver-haired bat",
+     "sci": "Lasionycteris noctivagans",
+     "p": 0.0003
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\turkey vulture\\682153900.jpg",
+   "true": "Cathartes aura",
+   "top5": [
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.98
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0078
+    },
+    {
+     "name": "black vulture",
+     "sci": "Coragyps atratus",
+     "p": 0.0016
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.0011
+    },
+    {
+     "name": "black oystercatcher",
+     "sci": "Haematopus bachmani",
+     "p": 0.0009
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\virginia opossum\\173131417.jpg",
+   "true": "Didelphis virginiana",
+   "top5": [
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.9679
+    },
+    {
+     "name": "eastern mole",
+     "sci": "Scalopus aquaticus",
+     "p": 0.0057
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.004
+    },
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.0023
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.002
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\virginia opossum\\310995394.jpg",
+   "true": "Didelphis virginiana",
+   "top5": [
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.8878
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0559
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.015
+    },
+    {
+     "name": "tri-coloured bat",
+     "sci": "Perimyotis subflavus",
+     "p": 0.0052
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0047
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\wapiti\\45645557.jpg",
+   "true": "Cervus canadensis",
+   "top5": [
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.9098
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0129
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0094
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0092
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0077
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\wapiti\\620108581.jpg",
+   "true": "Cervus canadensis",
+   "top5": [
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.9538
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0082
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.007
+    },
+    {
+     "name": "mountain goat",
+     "sci": "Oreamnos americanus",
+     "p": 0.0035
+    },
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.0027
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\western diamond-backed rattlesnake\\311263596.jpg",
+   "true": "Crotalus atrox",
+   "top5": [
+    {
+     "name": "western diamond-backed rattlesnake",
+     "sci": "Crotalus atrox",
+     "p": 0.6883
+    },
+    {
+     "name": "eastern diamond-backed rattlesnake",
+     "sci": "Crotalus adamanteus",
+     "p": 0.2852
+    },
+    {
+     "name": "prairie rattlesnake",
+     "sci": "Crotalus viridis",
+     "p": 0.0139
+    },
+    {
+     "name": "western rattlesnake",
+     "sci": "Crotalus oreganus",
+     "p": 0.0075
+    },
+    {
+     "name": "mohave rattlesnake",
+     "sci": "Crotalus scutulatus",
+     "p": 0.0024
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\western diamond-backed rattlesnake\\46986880.jpg",
+   "true": "Crotalus atrox",
+   "top5": [
+    {
+     "name": "western diamond-backed rattlesnake",
+     "sci": "Crotalus atrox",
+     "p": 0.7447
+    },
+    {
+     "name": "eastern diamond-backed rattlesnake",
+     "sci": "Crotalus adamanteus",
+     "p": 0.2382
+    },
+    {
+     "name": "prairie rattlesnake",
+     "sci": "Crotalus viridis",
+     "p": 0.0091
+    },
+    {
+     "name": "mohave rattlesnake",
+     "sci": "Crotalus scutulatus",
+     "p": 0.0035
+    },
+    {
+     "name": "western rattlesnake",
+     "sci": "Crotalus oreganus",
+     "p": 0.0025
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\white-tailed deer\\248110169.jpg",
+   "true": "Odocoileus virginianus",
+   "top5": [
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.9621
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0102
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0033
+    },
+    {
+     "name": "eastern towhee",
+     "sci": "Pipilo erythrophthalmus",
+     "p": 0.0016
+    },
+    {
+     "name": "sandhill crane",
+     "sci": "Antigone canadensis",
+     "p": 0.0015
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\white-tailed deer\\58166047.jpg",
+   "true": "Odocoileus virginianus",
+   "top5": [
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.8627
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0817
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0121
+    },
+    {
+     "name": "sandhill crane",
+     "sci": "Antigone canadensis",
+     "p": 0.007
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0044
+    }
+   ],
+   "hit": 0
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\PrivateLens\\prevalence\\exam-iphone13\\photos\\wild turkey\\19232661.jpg",
+   "true": "Meleagris gallopavo",
+   "top5": [
+    {
+     "name": "wild turkey",
+     "sci": "Meleagris gallopavo",
+     "p": 0.9537
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0159
+    },
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.0089
+    },
+    {
+     "name": "collared peccary",
+     "sci": "Pecari tajacu",
+     "p": 0.0041
+    },
+    {
+     "name": "ruffed grouse",
+     "sci": "Bonasa umbellus",
+     "p": 0.0037
+    }
+   ],
+   "hit": 0
+  }
+ ]
+}

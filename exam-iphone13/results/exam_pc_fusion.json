@@ -1,0 +1,3045 @@
+{
+ "score": {
+  "model": "hf-hub:imageomics/bioclip-2",
+  "table_classes": 504,
+  "photos": 85,
+  "top1": "79/85 = 92.9%",
+  "top3": "84/85 = 98.8%",
+  "top5": "85/85 = 100.0%",
+  "fusion": "63/85 = 74.1%",
+  "ms_per_photo": 190.4,
+  "misses_top1": [
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\bald eagle\\449407593.jpg",
+    "true": "Haliaeetus leucocephalus",
+    "pred": {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.3817
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\black bear\\184578489.jpg",
+    "true": "Ursus americanus",
+    "pred": {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.5237
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\blue jay\\414419714.jpg",
+    "true": "Cyanocitta cristata",
+    "pred": {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.9558
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\529528111.jpg",
+    "true": "Sylvilagus floridanus",
+    "pred": {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.6527
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\red fox\\438495465.jpg",
+    "true": "Vulpes vulpes",
+    "pred": {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.3217
+    }
+   },
+   {
+    "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\striped skunk\\304633285.jpg",
+    "true": "Mephitis mephitis",
+    "pred": {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.3372
+    }
+   }
+  ]
+ },
+ "rows": [
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american alligator\\287001781.jpg",
+   "true": "Alligator mississippiensis",
+   "top5": [
+    {
+     "name": "american alligator",
+     "sci": "Alligator mississippiensis",
+     "p": 0.9448
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0483
+    },
+    {
+     "name": "spiny softshell",
+     "sci": "Apalone spinifera",
+     "p": 0.0012
+    },
+    {
+     "name": "florida softshell turtle",
+     "sci": "Apalone ferox",
+     "p": 0.0009
+    },
+    {
+     "name": "west indian manatee",
+     "sci": "Trichechus manatus",
+     "p": 0.0008
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Alligator mississippiensis",
+   "fusion_ok": true,
+   "fusion_answer": "american alligator\n\nThe animal in the photo is an American alligator, which has a robust, scaly body with a distinctive, ridged back and a powerful, muscular neck. If this animal is near your camp, it's important to maintain a safe distance and avoid provoking it, as alligators can be aggressive if they feel threatened or cornered."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american alligator\\43721793.jpg",
+   "true": "Alligator mississippiensis",
+   "top5": [
+    {
+     "name": "american alligator",
+     "sci": "Alligator mississippiensis",
+     "p": 0.9281
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0545
+    },
+    {
+     "name": "diamondback watersnake",
+     "sci": "Nerodia rhombifer",
+     "p": 0.0025
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0024
+    },
+    {
+     "name": "spiny softshell",
+     "sci": "Apalone spinifera",
+     "p": 0.0022
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Crocodylus acutus",
+   "fusion_ok": false,
+   "fusion_answer": "american crocodile\n\nThe animal in the photo is an American crocodile, which has a long, powerful body with a rough, scaly skin and a distinctive, elongated snout. If this animal is near your camp, it is important to keep a safe distance and avoid approaching it, as it can be aggressive and may attack if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american beaver\\146045518.jpg",
+   "true": "Castor canadensis",
+   "top5": [
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.8367
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.1033
+    },
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.0344
+    },
+    {
+     "name": "muskrat",
+     "sci": "Ondatra zibethicus",
+     "p": 0.0144
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Castor canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "american beaver\n\nThe animal is an american beaver, which is known for its large, flat, and dark-colored front paws, and its distinctive black and white fur. If this animal is near your camp, it is best to keep a safe distance and avoid disturbing it, as it may be sensitive to human activity."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american beaver\\357069426.jpg",
+   "true": "Castor canadensis",
+   "top5": [
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.918
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.0446
+    },
+    {
+     "name": "muskrat",
+     "sci": "Ondatra zibethicus",
+     "p": 0.022
+    },
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.0099
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Castor canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "american beaver\n\nThe animal in the photo is an american beaver, identifiable by its dark, wet fur and the distinctive shape of its head and back, which are partially visible above the water. If this animal is near your camp, it's best to keep a safe distance and avoid disturbing it, as beavers are known to be territorial and may be aggressive if they feel threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american bison\\320558876.jpg",
+   "true": "Bos bison",
+   "top5": [
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.5336
+    },
+    {
+     "name": "american bison",
+     "sci": "Bison bison",
+     "p": 0.4641
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0004
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0003
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Bos bison",
+   "fusion_ok": true,
+   "fusion_answer": "american bison\n\nThe animal in the photo is an American bison, characterized by its large size, shaggy brown fur, and a prominent hump on its back. If this animal is near your camp, it's best to keep a safe distance and avoid approaching it, as it may be a wild animal and could be dangerous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american bison\\91354425.jpg",
+   "true": "Bos bison",
+   "top5": [
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.5926
+    },
+    {
+     "name": "american bison",
+     "sci": "Bison bison",
+     "p": 0.4067
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0003
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0002
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Bos bison",
+   "fusion_ok": true,
+   "fusion_answer": "american bison\n\nThe animal in the photo is an American bison, characterized by its large, shaggy black fur, prominent curved horns, and a thick neck ruff. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be aggressive and could pose a threat."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american bullfrog\\320356633.jpg",
+   "true": "Lithobates catesbeianus",
+   "top5": [
+    {
+     "name": "american bullfrog",
+     "sci": "Lithobates catesbeianus",
+     "p": 0.9683
+    },
+    {
+     "name": "green frog",
+     "sci": "Lithobates clamitans",
+     "p": 0.0234
+    },
+    {
+     "name": "southern leopard frog",
+     "sci": "Lithobates sphenocephalus",
+     "p": 0.0011
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.001
+    },
+    {
+     "name": "northern leopard frog",
+     "sci": "Lithobates pipiens",
+     "p": 0.0008
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lithobates catesbeianus",
+   "fusion_ok": true,
+   "fusion_answer": "american bullfrog\n\nThis animal is a green frog, which has a greenish-brown coloration and a prominent, dark, bulging eye. If this animal is near your camp, it's best to keep a safe distance and avoid disturbing it, as it may be a predator of insects and other small creatures."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american bullfrog\\536069124.jpg",
+   "true": "Lithobates catesbeianus",
+   "top5": [
+    {
+     "name": "american bullfrog",
+     "sci": "Lithobates catesbeianus",
+     "p": 0.9337
+    },
+    {
+     "name": "green frog",
+     "sci": "Lithobates clamitans",
+     "p": 0.0555
+    },
+    {
+     "name": "northern leopard frog",
+     "sci": "Lithobates pipiens",
+     "p": 0.0042
+    },
+    {
+     "name": "southern leopard frog",
+     "sci": "Lithobates sphenocephalus",
+     "p": 0.0029
+    },
+    {
+     "name": "green treefrog",
+     "sci": "Dryophytes cinereus",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lithobates catesbeianus",
+   "fusion_ok": true,
+   "fusion_answer": "american bullfrog\n\nThis animal is a green frog, which is a large, green amphibian with a robust body and prominent eyes. If this animal is near your camp, it is important to keep a safe distance and avoid handling it, as it may be a potential carrier of diseases."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american crow\\243862059.jpg",
+   "true": "Corvus brachyrhynchos",
+   "top5": [
+    {
+     "name": "american crow",
+     "sci": "Corvus brachyrhynchos",
+     "p": 0.9839
+    },
+    {
+     "name": "common raven",
+     "sci": "Corvus corax",
+     "p": 0.0131
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0008
+    },
+    {
+     "name": "canada jay",
+     "sci": "Perisoreus canadensis",
+     "p": 0.0006
+    },
+    {
+     "name": "common grackle",
+     "sci": "Quiscalus quiscula",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Corvus corax",
+   "fusion_ok": false,
+   "fusion_answer": "common raven\n\nThe animal in the photo is a common raven, characterized by its grayish-brown plumage, a large, dark, hooked beak, and a distinctive white tail. If this animal is near your camp, it's best to keep a safe distance and avoid feeding it, as it may be attracted to food sources and could become aggressive if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american crow\\53516042.jpg",
+   "true": "Corvus brachyrhynchos",
+   "top5": [
+    {
+     "name": "american crow",
+     "sci": "Corvus brachyrhynchos",
+     "p": 0.9656
+    },
+    {
+     "name": "common grackle",
+     "sci": "Quiscalus quiscula",
+     "p": 0.0111
+    },
+    {
+     "name": "common raven",
+     "sci": "Corvus corax",
+     "p": 0.005
+    },
+    {
+     "name": "boat-tailed grackle",
+     "sci": "Quiscalus major",
+     "p": 0.0041
+    },
+    {
+     "name": "ring-billed gull",
+     "sci": "Larus delawarensis",
+     "p": 0.0041
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Corvus corax",
+   "fusion_ok": false,
+   "fusion_answer": "common raven\n\nThe animal in the photo is a common raven, which is easily identified by its large size, black plumage, and a distinctive white patch on the back of its neck. If this animal is near your camp, it is best to keep a safe distance and avoid feeding it, as it may be attracted to food sources and could become aggressive if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american goldfinch\\106412084.jpg",
+   "true": "Spinus tristis",
+   "top5": [
+    {
+     "name": "american goldfinch",
+     "sci": "Spinus tristis",
+     "p": 0.9807
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0062
+    },
+    {
+     "name": "field sparrow",
+     "sci": "Spizella pusilla",
+     "p": 0.0029
+    },
+    {
+     "name": "lesser goldfinch",
+     "sci": "Spinus psaltria",
+     "p": 0.0021
+    },
+    {
+     "name": "common yellowthroat",
+     "sci": "Geothlypis trichas",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Spinus tristis",
+   "fusion_ok": true,
+   "fusion_answer": "american goldfinch\n\nThe American goldfinch has a bright yellow head, a black cap, and a white underbelly with a black back. If this animal is near your camp, keep an eye out for it and avoid disturbing it, as it may be a potential food source for other birds."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american goldfinch\\509417183.jpg",
+   "true": "Spinus tristis",
+   "top5": [
+    {
+     "name": "american goldfinch",
+     "sci": "Spinus tristis",
+     "p": 0.969
+    },
+    {
+     "name": "lesser goldfinch",
+     "sci": "Spinus psaltria",
+     "p": 0.0193
+    },
+    {
+     "name": "pine siskin",
+     "sci": "Spinus pinus",
+     "p": 0.0039
+    },
+    {
+     "name": "cedar waxwing",
+     "sci": "Bombycilla cedrorum",
+     "p": 0.0008
+    },
+    {
+     "name": "pine warbler",
+     "sci": "Setophaga pinus",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Spinus tristis",
+   "fusion_ok": true,
+   "fusion_answer": "american goldfinch\n\nThe American goldfinch is a small, bright yellow bird with a black cap and a white face, often seen in open areas and gardens. If this animal is near your camp, keep an eye out for its bright yellow color and black cap, and be cautious as it may be a potential food source for other birds."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american robin\\375294029.jpg",
+   "true": "Turdus migratorius",
+   "top5": [
+    {
+     "name": "american robin",
+     "sci": "Turdus migratorius",
+     "p": 0.9944
+    },
+    {
+     "name": "spotted towhee",
+     "sci": "Pipilo maculatus",
+     "p": 0.0005
+    },
+    {
+     "name": "northern mockingbird",
+     "sci": "Mimus polyglottos",
+     "p": 0.0002
+    },
+    {
+     "name": "gray catbird",
+     "sci": "Dumetella carolinensis",
+     "p": 0.0002
+    },
+    {
+     "name": "eastern towhee",
+     "sci": "Pipilo erythrophthalmus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Turdus migratorius",
+   "fusion_ok": true,
+   "fusion_answer": "american robin\n\nThe animal is a gray catbird, which has a grayish-brown back and a lighter underside, and it is often seen in open fields and near water. If this animal is near your camp, keep an eye out for it and avoid disturbing it, as it may be a nuisance."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american robin\\534492452.jpg",
+   "true": "Turdus migratorius",
+   "top5": [
+    {
+     "name": "american robin",
+     "sci": "Turdus migratorius",
+     "p": 0.9554
+    },
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.0087
+    },
+    {
+     "name": "scarlet tanager",
+     "sci": "Piranga olivacea",
+     "p": 0.003
+    },
+    {
+     "name": "red-bellied woodpecker",
+     "sci": "Melanerpes carolinus",
+     "p": 0.0027
+    },
+    {
+     "name": "baltimore oriole",
+     "sci": "Icterus galbula",
+     "p": 0.0023
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Turdus migratorius",
+   "fusion_ok": true,
+   "fusion_answer": "american robin\n\nThe American robin is a small, brownish bird with a distinctive white belly and a red breast. If this animal is near your camp, it's best to keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american toad\\307262353.jpg",
+   "true": "Anaxyrus americanus",
+   "top5": [
+    {
+     "name": "american toad",
+     "sci": "Anaxyrus americanus",
+     "p": 0.5429
+    },
+    {
+     "name": "fowler's toad",
+     "sci": "Anaxyrus fowleri",
+     "p": 0.4105
+    },
+    {
+     "name": "southern toad",
+     "sci": "Anaxyrus terrestris",
+     "p": 0.0405
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.0033
+    },
+    {
+     "name": "woodhouse's toad",
+     "sci": "Anaxyrus woodhousii",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Anaxyrus fowleri",
+   "fusion_ok": false,
+   "fusion_answer": "fowler's toad\n\nThis animal has a brownish color with dark spots and a warty texture on its skin. If this animal is near your camp, it is best to keep a safe distance and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\american toad\\325801440.jpg",
+   "true": "Anaxyrus americanus",
+   "top5": [
+    {
+     "name": "american toad",
+     "sci": "Anaxyrus americanus",
+     "p": 0.9563
+    },
+    {
+     "name": "southern toad",
+     "sci": "Anaxyrus terrestris",
+     "p": 0.0293
+    },
+    {
+     "name": "fowler's toad",
+     "sci": "Anaxyrus fowleri",
+     "p": 0.0067
+    },
+    {
+     "name": "western toad",
+     "sci": "Anaxyrus boreas",
+     "p": 0.0052
+    },
+    {
+     "name": "woodhouse's toad",
+     "sci": "Anaxyrus woodhousii",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Anaxyrus americanus",
+   "fusion_ok": true,
+   "fusion_answer": "american toad\n\nThis animal has a rough, bumpy skin with a mottled pattern of dark and light brown, and it has a large, prominent toe. If this animal is near your camp, keep a safe distance and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\bald eagle\\384490244.jpg",
+   "true": "Haliaeetus leucocephalus",
+   "top5": [
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.9988
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0001
+    },
+    {
+     "name": "steller sea lion",
+     "sci": "Eumetopias jubatus",
+     "p": 0.0001
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0001
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.0
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Haliaeetus leucocephalus",
+   "fusion_ok": true,
+   "fusion_answer": "bald eagle\nThe bald eagle has a white head and neck, dark brown body, and a yellow beak. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\bald eagle\\449407593.jpg",
+   "true": "Haliaeetus leucocephalus",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.3817
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.1683
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.164
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.1189
+    },
+    {
+     "name": "mississippi kite",
+     "sci": "Ictinia mississippiensis",
+     "p": 0.0245
+    }
+   ],
+   "hit": 1,
+   "fusion_pick": "Haliaeetus leucocephalus",
+   "fusion_ok": true,
+   "fusion_answer": "bald eagle\n\nThe bald eagle has a white head and neck, a yellow beak, and a dark brown body. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\black bear\\184578489.jpg",
+   "true": "Ursus americanus",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.5237
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.3784
+    },
+    {
+     "name": "american marten",
+     "sci": "Martes americana",
+     "p": 0.0629
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0073
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0068
+    }
+   ],
+   "hit": 1,
+   "fusion_pick": "Ursus arctos",
+   "fusion_ok": false,
+   "fusion_answer": "brown bear\n\nThe animal is a young brown bear, characterized by its fluffy brown fur, small size, and large ears. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\black bear\\392878479.jpg",
+   "true": "Ursus americanus",
+   "top5": [
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.9739
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0214
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0009
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0007
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Ursus americanus",
+   "fusion_ok": true,
+   "fusion_answer": "american black bear\n\nThe animal in the photo is an American black bear, which is characterized by its dark fur, large size, and distinctive facial features. If this animal is near your camp, it is important to maintain a safe distance and avoid approaching it, as it may be a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\blue jay\\360431054.jpg",
+   "true": "Cyanocitta cristata",
+   "top5": [
+    {
+     "name": "blue jay",
+     "sci": "Cyanocitta cristata",
+     "p": 0.9967
+    },
+    {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.0005
+    },
+    {
+     "name": "steller's jay",
+     "sci": "Cyanocitta stelleri",
+     "p": 0.0003
+    },
+    {
+     "name": "eastern bluebird",
+     "sci": "Sialia sialis",
+     "p": 0.0002
+    },
+    {
+     "name": "tufted titmouse",
+     "sci": "Baeolophus bicolor",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cyanocitta cristata",
+   "fusion_ok": true,
+   "fusion_answer": "blue jay\n\nThe blue jay has a distinctive blue crest, black face, and white underparts with a gray back. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\blue jay\\414419714.jpg",
+   "true": "Cyanocitta cristata",
+   "top5": [
+    {
+     "name": "california scrub-jay",
+     "sci": "Aphelocoma californica",
+     "p": 0.9558
+    },
+    {
+     "name": "blue jay",
+     "sci": "Cyanocitta cristata",
+     "p": 0.035
+    },
+    {
+     "name": "steller's jay",
+     "sci": "Cyanocitta stelleri",
+     "p": 0.0055
+    },
+    {
+     "name": "western bluebird",
+     "sci": "Sialia mexicana",
+     "p": 0.0008
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0004
+    }
+   ],
+   "hit": 1,
+   "fusion_pick": "Cyanocitta cristata",
+   "fusion_ok": true,
+   "fusion_answer": "blue jay\n\nThe blue jay has a blue back, white underparts, and a black cap. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\bobcat\\173346592.jpg",
+   "true": "Lynx rufus",
+   "top5": [
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.9822
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0106
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0009
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0004
+    },
+    {
+     "name": "california ground squirrel",
+     "sci": "Otospermophilus beecheyi",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lynx rufus",
+   "fusion_ok": true,
+   "fusion_answer": "bobcat\n\nThe bobcat has a distinctive spotted coat, a short tail, and a prominent tuft of fur on its head. If this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\bobcat\\433611472.jpg",
+   "true": "Lynx rufus",
+   "top5": [
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.9146
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0473
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0173
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0068
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0036
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lynx rufus",
+   "fusion_ok": true,
+   "fusion_answer": "bobcat\n\nThe bobcat has a slender build, a short tail, and a distinctive coat with a mix of brown and black fur. If this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\canada goose\\123908815.jpg",
+   "true": "Branta canadensis",
+   "top5": [
+    {
+     "name": "canada goose",
+     "sci": "Branta canadensis",
+     "p": 0.9937
+    },
+    {
+     "name": "snow goose",
+     "sci": "Anser caerulescens",
+     "p": 0.0009
+    },
+    {
+     "name": "greater white-fronted goose",
+     "sci": "Anser albifrons",
+     "p": 0.0005
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0004
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Branta canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "canada goose\nThe canada goose has a large, brown body, a black head and neck, and a long, black beak. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be a threat to your safety."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\canada goose\\546325643.jpg",
+   "true": "Branta canadensis",
+   "top5": [
+    {
+     "name": "canada goose",
+     "sci": "Branta canadensis",
+     "p": 0.9095
+    },
+    {
+     "name": "snow goose",
+     "sci": "Anser caerulescens",
+     "p": 0.0681
+    },
+    {
+     "name": "trumpeter swan",
+     "sci": "Cygnus buccinator",
+     "p": 0.016
+    },
+    {
+     "name": "northern pintail",
+     "sci": "Anas acuta",
+     "p": 0.0013
+    },
+    {
+     "name": "mute swan",
+     "sci": "Cygnus olor",
+     "p": 0.001
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Branta canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "Canada goose\n\nThe Canada goose has a black head and neck, a white body, and a brown back. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\common box turtle\\138239510.jpg",
+   "true": "Terrapene carolina",
+   "top5": [
+    {
+     "name": "common box turtle",
+     "sci": "Terrapene carolina",
+     "p": 0.8399
+    },
+    {
+     "name": "three-toed box turtle",
+     "sci": "Terrapene triunguis",
+     "p": 0.1537
+    },
+    {
+     "name": "gopher tortoise",
+     "sci": "Gopherus polyphemus",
+     "p": 0.0012
+    },
+    {
+     "name": "blanding's turtle",
+     "sci": "Emydoidea blandingii",
+     "p": 0.001
+    },
+    {
+     "name": "eastern musk turtle",
+     "sci": "Sternotherus odoratus",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Terrapene triunguis",
+   "fusion_ok": false,
+   "fusion_answer": "three-toed box turtle\n\nThis animal has a distinctive patterned shell with black and yellow markings, and its head and limbs are yellow with black spots. If this animal is near your camp, keep a safe distance and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\common box turtle\\96798464.jpg",
+   "true": "Terrapene carolina",
+   "top5": [
+    {
+     "name": "common box turtle",
+     "sci": "Terrapene carolina",
+     "p": 0.8743
+    },
+    {
+     "name": "three-toed box turtle",
+     "sci": "Terrapene triunguis",
+     "p": 0.1168
+    },
+    {
+     "name": "eastern musk turtle",
+     "sci": "Sternotherus odoratus",
+     "p": 0.0027
+    },
+    {
+     "name": "blanding's turtle",
+     "sci": "Emydoidea blandingii",
+     "p": 0.0005
+    },
+    {
+     "name": "gopher tortoise",
+     "sci": "Gopherus polyphemus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Terrapene carolina",
+   "fusion_ok": true,
+   "fusion_answer": "common box turtle\n\nThis animal has a distinctive pattern of orange and black markings on its shell, which is often referred to as a \"maple leaf\" pattern. If this animal is near your camp, it is best to keep a safe distance and avoid disturbing it, as it may be a shy or territorial species."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\coyote\\102464193.jpg",
+   "true": "Canis latrans",
+   "top5": [
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.8246
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0578
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.04
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0161
+    },
+    {
+     "name": "botta's pocket gopher",
+     "sci": "Megascapheus bottae",
+     "p": 0.0141
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Canis latrans",
+   "fusion_ok": true,
+   "fusion_answer": "coyote\n\nThe coyote has a grayish-brown fur coat, pointed ears, and a long, slender snout. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\coyote\\603527016.jpg",
+   "true": "Canis latrans",
+   "top5": [
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.941
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.0422
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0041
+    },
+    {
+     "name": "gray fox",
+     "sci": "Urocyon cinereoargenteus",
+     "p": 0.0023
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0018
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Canis latrans",
+   "fusion_ok": true,
+   "fusion_answer": "coyote\n\nThe coyote has a grayish-brown fur coat, a bushy tail, and a distinctive facial expression. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\downy woodpecker\\613963750.jpg",
+   "true": "Dryobates pubescens",
+   "top5": [
+    {
+     "name": "downy woodpecker",
+     "sci": "Dryobates pubescens",
+     "p": 0.934
+    },
+    {
+     "name": "hairy woodpecker",
+     "sci": "Leuconotopicus villosus",
+     "p": 0.0624
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0007
+    },
+    {
+     "name": "nuttall's woodpecker",
+     "sci": "Dryobates nuttallii",
+     "p": 0.0004
+    },
+    {
+     "name": "yellow-bellied sapsucker",
+     "sci": "Sphyrapicus varius",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Dryobates pubescens",
+   "fusion_ok": true,
+   "fusion_answer": "downy woodpecker\n\nThe downy woodpecker has a black cap, white face, and a red patch on the back of its head. If this animal is near your camp, keep an eye out for it and be cautious, as it may be a potential threat to your campsite."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\downy woodpecker\\624993424.jpg",
+   "true": "Dryobates pubescens",
+   "top5": [
+    {
+     "name": "downy woodpecker",
+     "sci": "Dryobates pubescens",
+     "p": 0.6556
+    },
+    {
+     "name": "hairy woodpecker",
+     "sci": "Leuconotopicus villosus",
+     "p": 0.3365
+    },
+    {
+     "name": "nuttall's woodpecker",
+     "sci": "Dryobates nuttallii",
+     "p": 0.001
+    },
+    {
+     "name": "white-breasted nuthatch",
+     "sci": "Sitta carolinensis",
+     "p": 0.0006
+    },
+    {
+     "name": "black-and-white warbler",
+     "sci": "Mniotilta varia",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Dryobates pubescens",
+   "fusion_ok": true,
+   "fusion_answer": "downy woodpecker\nThe downy woodpecker has a black and white patterned back and a white underside with a black stripe above the eye. If this animal is near your camp, keep an eye out for it and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern chipmunk\\579218740.jpg",
+   "true": "Tamias striatus",
+   "top5": [
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.9962
+    },
+    {
+     "name": "least chipmunk",
+     "sci": "Neotamias minimus",
+     "p": 0.0016
+    },
+    {
+     "name": "thirteen-lined ground squirrel",
+     "sci": "Ictidomys tridecemlineatus",
+     "p": 0.0003
+    },
+    {
+     "name": "white-throated sparrow",
+     "sci": "Zonotrichia albicollis",
+     "p": 0.0003
+    },
+    {
+     "name": "townsend's chipmunk",
+     "sci": "Neotamias townsendii",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Tamias striatus",
+   "fusion_ok": true,
+   "fusion_answer": "eastern chipmunk\n\nThe animal in the photo is an eastern chipmunk, which is characterized by its brown fur with distinct black and white stripes on its back, a white underbelly, and a small, rounded head. If this animal is near your camp, you should keep a safe distance and avoid feeding it, as it may be attracted to food sources and could become a nuisance."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern chipmunk\\94158134.jpg",
+   "true": "Tamias striatus",
+   "top5": [
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.4476
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.1779
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.1759
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0214
+    },
+    {
+     "name": "ovenbird",
+     "sci": "Seiurus aurocapilla",
+     "p": 0.0204
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Felis catus",
+   "fusion_ok": false,
+   "fusion_answer": "domestic cat\n\nThe animal in the photo is a domestic cat, which is identifiable by its distinct facial features and the bright green eyes visible in the dim lighting. If this animal is near your camp, it is best to keep a safe distance and avoid approaching it, as it may be a wild animal and could be a threat to your safety."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern copperhead\\306181136.jpg",
+   "true": "Agkistrodon contortrix",
+   "top5": [
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.8237
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.1609
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0113
+    },
+    {
+     "name": "massasauga",
+     "sci": "Sistrurus catenatus",
+     "p": 0.0013
+    },
+    {
+     "name": "common wormsnake",
+     "sci": "Carphophis amoenus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Agkistrodon contortrix",
+   "fusion_ok": true,
+   "fusion_answer": "eastern copperhead\n\nThis animal has a brown, patterned body with a distinct head shape and a prominent, slightly raised snout. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be venomous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern copperhead\\722104981.jpg",
+   "true": "Agkistrodon contortrix",
+   "top5": [
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.9954
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0012
+    },
+    {
+     "name": "eastern milksnake",
+     "sci": "Lampropeltis triangulum",
+     "p": 0.0006
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0005
+    },
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Agkistrodon contortrix",
+   "fusion_ok": true,
+   "fusion_answer": "eastern copperhead\n\nThis animal has a brown, patterned body with a distinct diamond-shaped pattern along its length, and a slightly raised, rounded head. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be venomous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\529528111.jpg",
+   "true": "Sylvilagus floridanus",
+   "top5": [
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.6527
+    },
+    {
+     "name": "eastern cottontail",
+     "sci": "Sylvilagus floridanus",
+     "p": 0.2474
+    },
+    {
+     "name": "marsh rabbit",
+     "sci": "Sylvilagus palustris",
+     "p": 0.0486
+    },
+    {
+     "name": "black-legged tick",
+     "sci": "Ixodes scapularis",
+     "p": 0.0252
+    },
+    {
+     "name": "european rabbit",
+     "sci": "Oryctolagus cuniculus",
+     "p": 0.0066
+    }
+   ],
+   "hit": 1,
+   "fusion_pick": "Sylvilagus aquaticus",
+   "fusion_ok": false,
+   "fusion_answer": "swamp rabbit\n\nThe swamp rabbit has large, rounded ears and a distinctive brown fur coat with a lighter underside. If this animal is near your camp, keep a safe distance and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern cottontail rabbit\\91229197.jpg",
+   "true": "Sylvilagus floridanus",
+   "top5": [
+    {
+     "name": "eastern cottontail",
+     "sci": "Sylvilagus floridanus",
+     "p": 0.7249
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0986
+    },
+    {
+     "name": "european rabbit",
+     "sci": "Oryctolagus cuniculus",
+     "p": 0.0704
+    },
+    {
+     "name": "marsh rabbit",
+     "sci": "Sylvilagus palustris",
+     "p": 0.0459
+    },
+    {
+     "name": "white-tailed jackrabbit",
+     "sci": "Lepus townsendii",
+     "p": 0.0232
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Sylvilagus floridanus",
+   "fusion_ok": true,
+   "fusion_answer": "eastern cottontail\n\nThe animal in the photo is an eastern cottontail, a small, brown, furry rabbit with large, upright ears and a long, bushy tail. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a predator or a potential threat to your campsite."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern gray squirrel\\176023576.jpg",
+   "true": "Sciurus carolinensis",
+   "top5": [
+    {
+     "name": "eastern gray squirrel",
+     "sci": "Sciurus carolinensis",
+     "p": 0.9682
+    },
+    {
+     "name": "arizona gray squirrel",
+     "sci": "Sciurus arizonensis",
+     "p": 0.0118
+    },
+    {
+     "name": "western gray squirrel",
+     "sci": "Sciurus griseus",
+     "p": 0.0077
+    },
+    {
+     "name": "abert's squirrel",
+     "sci": "Sciurus aberti",
+     "p": 0.0027
+    },
+    {
+     "name": "fremont's squirrel",
+     "sci": "Tamiasciurus fremonti",
+     "p": 0.0018
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Sciurus carolinensis",
+   "fusion_ok": true,
+   "fusion_answer": "eastern gray squirrel\n\nThis animal has a grayish-brown fur on its back and sides, a white underbelly, and a bushy tail that is a mix of brown and gray. If this animal is near your camp, it's best to keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern gray squirrel\\659345221.jpg",
+   "true": "Sciurus carolinensis",
+   "top5": [
+    {
+     "name": "eastern gray squirrel",
+     "sci": "Sciurus carolinensis",
+     "p": 0.9833
+    },
+    {
+     "name": "american red squirrel",
+     "sci": "Tamiasciurus hudsonicus",
+     "p": 0.0028
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0024
+    },
+    {
+     "name": "tufted titmouse",
+     "sci": "Baeolophus bicolor",
+     "p": 0.0013
+    },
+    {
+     "name": "eastern chipmunk",
+     "sci": "Tamias striatus",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Sciurus carolinensis",
+   "fusion_ok": true,
+   "fusion_answer": "eastern gray squirrel\nThis animal has a grayish-brown fur, a bushy tail, and a prominent white underbelly. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern newt\\380705224.jpg",
+   "true": "Notophthalmus viridescens",
+   "top5": [
+    {
+     "name": "eastern newt",
+     "sci": "Notophthalmus viridescens",
+     "p": 0.9896
+    },
+    {
+     "name": "rough-skinned newt",
+     "sci": "Taricha granulosa",
+     "p": 0.0086
+    },
+    {
+     "name": "blue-spotted salamander",
+     "sci": "Ambystoma laterale",
+     "p": 0.0004
+    },
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.0002
+    },
+    {
+     "name": "red salamander",
+     "sci": "Pseudotriton ruber",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Pseudotriton ruber",
+   "fusion_ok": false,
+   "fusion_answer": "red salamander\n\nThe red salamander is a bright orange amphibian with a slender body and long, thin tail, often seen in moist, leafy environments. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be sensitive to human activity."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\eastern newt\\678295520.jpg",
+   "true": "Notophthalmus viridescens",
+   "top5": [
+    {
+     "name": "eastern newt",
+     "sci": "Notophthalmus viridescens",
+     "p": 0.9071
+    },
+    {
+     "name": "rough-skinned newt",
+     "sci": "Taricha granulosa",
+     "p": 0.0903
+    },
+    {
+     "name": "california newt",
+     "sci": "Taricha torosa",
+     "p": 0.0012
+    },
+    {
+     "name": "red salamander",
+     "sci": "Pseudotriton ruber",
+     "p": 0.0003
+    },
+    {
+     "name": "blue-spotted salamander",
+     "sci": "Ambystoma laterale",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Pseudotriton ruber",
+   "fusion_ok": false,
+   "fusion_answer": "red salamander\n\nThe red salamander is a bright orange amphibian with a slender body and long, thin tail, often seen in moist, leafy environments. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be sensitive to human activity."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\gray wolf\\23278623.jpg",
+   "true": "Canis lupus",
+   "top5": [
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.6742
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.1993
+    },
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.0457
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0147
+    },
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.0124
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Canis lupus",
+   "fusion_ok": true,
+   "fusion_answer": "gray wolf\n\nThe gray wolf is a large, powerful predator with a distinctive grayish-brown fur coat, a long, muscular body, and a sharp, pointed snout. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be territorial and could be aggressive if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\gray wolf\\348465923.jpg",
+   "true": "Canis lupus",
+   "top5": [
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.996
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0015
+    },
+    {
+     "name": "coyote",
+     "sci": "Canis latrans",
+     "p": 0.0012
+    },
+    {
+     "name": "thinhorn sheep",
+     "sci": "Ovis dalli",
+     "p": 0.0007
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Canis lupus",
+   "fusion_ok": true,
+   "fusion_answer": "gray wolf\n\nThe gray wolf has a thick, grayish coat, a strong build, and a distinctive facial structure with a prominent snout and large, forward-facing eyes. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a wild animal and could be dangerous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\great blue heron\\134213334.jpg",
+   "true": "Ardea herodias",
+   "top5": [
+    {
+     "name": "great blue heron",
+     "sci": "Ardea herodias",
+     "p": 0.4747
+    },
+    {
+     "name": "botta's pocket gopher",
+     "sci": "Megascapheus bottae",
+     "p": 0.2038
+    },
+    {
+     "name": "california ground squirrel",
+     "sci": "Otospermophilus beecheyi",
+     "p": 0.0458
+    },
+    {
+     "name": "western gray squirrel",
+     "sci": "Sciurus griseus",
+     "p": 0.0273
+    },
+    {
+     "name": "eastern fox squirrel",
+     "sci": "Sciurus niger",
+     "p": 0.0248
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Ardea herodias",
+   "fusion_ok": true,
+   "fusion_answer": "great blue heron\n\nThe great blue heron has a long, pointed beak and a grayish-blue plumage with a white crown. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be a predator."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\great blue heron\\671997918.jpg",
+   "true": "Ardea herodias",
+   "top5": [
+    {
+     "name": "great blue heron",
+     "sci": "Ardea herodias",
+     "p": 0.9897
+    },
+    {
+     "name": "tricolored heron",
+     "sci": "Egretta tricolor",
+     "p": 0.0017
+    },
+    {
+     "name": "western cattle-egret",
+     "sci": "Ardea ibis",
+     "p": 0.0012
+    },
+    {
+     "name": "brown pelican",
+     "sci": "Pelecanus occidentalis",
+     "p": 0.0008
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Ardea herodias",
+   "fusion_ok": true,
+   "fusion_answer": "great blue heron\n\nThe great blue heron has a long, pointed yellow beak and a distinctive crest of black feathers on its head. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\great horned owl\\456435232.jpg",
+   "true": "Bubo virginianus",
+   "top5": [
+    {
+     "name": "great horned owl",
+     "sci": "Bubo virginianus",
+     "p": 0.9975
+    },
+    {
+     "name": "eastern screech-owl",
+     "sci": "Megascops asio",
+     "p": 0.0006
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0005
+    },
+    {
+     "name": "burrowing owl",
+     "sci": "Athene cunicularia",
+     "p": 0.0002
+    },
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Bubo virginianus",
+   "fusion_ok": true,
+   "fusion_answer": "great horned owl\n\nThe great horned owl has large, prominent ear tufts and a broad, rounded head with a distinctive facial disc. If this animal is near your camp, keep a safe distance and avoid loud noises to prevent startling it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\great horned owl\\718349621.jpg",
+   "true": "Bubo virginianus",
+   "top5": [
+    {
+     "name": "great horned owl",
+     "sci": "Bubo virginianus",
+     "p": 0.9935
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0022
+    },
+    {
+     "name": "burrowing owl",
+     "sci": "Athene cunicularia",
+     "p": 0.0007
+    },
+    {
+     "name": "eastern screech-owl",
+     "sci": "Megascops asio",
+     "p": 0.0006
+    },
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.0004
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Bubo virginianus",
+   "fusion_ok": true,
+   "fusion_answer": "great horned owl\n\nThe great horned owl is a large, nocturnal bird with a distinctive tufted crown and a broad, rounded head. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it is a protected species in many areas."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\grizzly bear\\283137646.jpg",
+   "true": "Ursus arctos",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.8436
+    },
+    {
+     "name": "american black bear",
+     "sci": "Ursus americanus",
+     "p": 0.1483
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0027
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0021
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Ursus arctos",
+   "fusion_ok": true,
+   "fusion_answer": "brown bear\n\nThe animal in the photo is a brown bear, which is characterized by its thick, brown fur and large, powerful build. If this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\grizzly bear\\94110788.jpg",
+   "true": "Ursus arctos",
+   "top5": [
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.4331
+    },
+    {
+     "name": "steller sea lion",
+     "sci": "Eumetopias jubatus",
+     "p": 0.2369
+    },
+    {
+     "name": "sea otter",
+     "sci": "Enhydra lutris",
+     "p": 0.0893
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0622
+    },
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.0349
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Ursus arctos",
+   "fusion_ok": true,
+   "fusion_answer": "brown bear\n\nThe brown bear is a large, powerful mammal with a thick, shaggy coat and a strong build, often seen in the wild in the northern regions of the world. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be aggressive and could pose a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\mallard\\519465071.jpg",
+   "true": "Anas platyrhynchos",
+   "top5": [
+    {
+     "name": "mallard",
+     "sci": "Anas platyrhynchos",
+     "p": 0.9723
+    },
+    {
+     "name": "gadwall",
+     "sci": "Mareca strepera",
+     "p": 0.0103
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0077
+    },
+    {
+     "name": "american wigeon",
+     "sci": "Mareca americana",
+     "p": 0.0037
+    },
+    {
+     "name": "wood duck",
+     "sci": "Aix sponsa",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Anas platyrhynchos",
+   "fusion_ok": true,
+   "fusion_answer": "mallard\n\nThe mallard is a common duck species with a brown and white plumage, a distinctive dark head, and a yellow beak. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be a breeding pair and could be vulnerable to predators."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\mallard\\671099129.jpg",
+   "true": "Anas platyrhynchos",
+   "top5": [
+    {
+     "name": "mallard",
+     "sci": "Anas platyrhynchos",
+     "p": 0.9817
+    },
+    {
+     "name": "american black duck",
+     "sci": "Anas rubripes",
+     "p": 0.0052
+    },
+    {
+     "name": "wood duck",
+     "sci": "Aix sponsa",
+     "p": 0.0015
+    },
+    {
+     "name": "american wigeon",
+     "sci": "Mareca americana",
+     "p": 0.0012
+    },
+    {
+     "name": "redhead",
+     "sci": "Aythya americana",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Anas platyrhynchos",
+   "fusion_ok": true,
+   "fusion_answer": "mallard\n\nThe mallard has a green head, a white neck, and a brown body with a dark back. If this animal is near your camp, keep a safe distance and avoid disturbing it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\moose\\130296407.jpg",
+   "true": "Alces alces",
+   "top5": [
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.5111
+    },
+    {
+     "name": "thinhorn sheep",
+     "sci": "Ovis dalli",
+     "p": 0.3234
+    },
+    {
+     "name": "wild boar",
+     "sci": "Sus scrofa",
+     "p": 0.087
+    },
+    {
+     "name": "brown bear",
+     "sci": "Ursus arctos",
+     "p": 0.0571
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0041
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cervus canadensis",
+   "fusion_ok": false,
+   "fusion_answer": "wapiti\n\nThis animal has a large, curved antler and a robust body, which are characteristic features of a wapiti. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\moose\\368695438.jpg",
+   "true": "Alces alces",
+   "top5": [
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.9919
+    },
+    {
+     "name": "caribou",
+     "sci": "Rangifer tarandus",
+     "p": 0.0021
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.002
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0013
+    },
+    {
+     "name": "mountain goat",
+     "sci": "Oreamnos americanus",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Alces alces",
+   "fusion_ok": true,
+   "fusion_answer": "moose\nThe moose has large antlers and a thick, brown coat, which helps it blend into the snowy forest environment.\nIf this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\mule deer\\450403763.jpg",
+   "true": "Odocoileus hemionus",
+   "top5": [
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.9872
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0021
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0017
+    },
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.0012
+    },
+    {
+     "name": "black-tailed jackrabbit",
+     "sci": "Lepus californicus",
+     "p": 0.0011
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Odocoileus hemionus",
+   "fusion_ok": true,
+   "fusion_answer": "mule deer\n\nKey field marks: The animal has large, prominent antlers and a grayish-brown coat with a white neck patch.\n\nIf this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\mule deer\\616385073.jpg",
+   "true": "Odocoileus hemionus",
+   "top5": [
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.9783
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0072
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.0051
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0032
+    },
+    {
+     "name": "caribou",
+     "sci": "Rangifer tarandus",
+     "p": 0.0021
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cervus canadensis",
+   "fusion_ok": false,
+   "fusion_answer": "wapiti\n\nThe wapiti has large antlers and a white patch on its back. If this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\north american river otter\\135647346.jpg",
+   "true": "Lontra canadensis",
+   "top5": [
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.9987
+    },
+    {
+     "name": "sea otter",
+     "sci": "Enhydra lutris",
+     "p": 0.0003
+    },
+    {
+     "name": "coypu",
+     "sci": "Myocastor coypus",
+     "p": 0.0001
+    },
+    {
+     "name": "american beaver",
+     "sci": "Castor canadensis",
+     "p": 0.0001
+    },
+    {
+     "name": "fisher",
+     "sci": "Pekania pennanti",
+     "p": 0.0001
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lontra canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "north american river otter\n\nThe animal in the photo is a north american river otter, which has dark fur, a sleek body, and a distinctive black nose. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it is a protected species in many areas."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\north american river otter\\170264896.jpg",
+   "true": "Lontra canadensis",
+   "top5": [
+    {
+     "name": "north american river otter",
+     "sci": "Lontra canadensis",
+     "p": 0.8209
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0512
+    },
+    {
+     "name": "polar bear",
+     "sci": "Ursus maritimus",
+     "p": 0.0265
+    },
+    {
+     "name": "bobcat",
+     "sci": "Lynx rufus",
+     "p": 0.0264
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.0111
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Lontra canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "north american river otter\n\nThe animal in the photo is a north american river otter, which is known for its sleek, streamlined body and distinctive black and white fur. If this animal is near your camp, it's best to keep a safe distance and avoid disturbing it, as it is a protected species in many areas."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\northern cardinal\\183928111.jpg",
+   "true": "Cardinalis cardinalis",
+   "top5": [
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.9885
+    },
+    {
+     "name": "american tree sparrow",
+     "sci": "Spizelloides arborea",
+     "p": 0.0008
+    },
+    {
+     "name": "field sparrow",
+     "sci": "Spizella pusilla",
+     "p": 0.0008
+    },
+    {
+     "name": "ruby-crowned kinglet",
+     "sci": "Corthylio calendula",
+     "p": 0.0007
+    },
+    {
+     "name": "cedar waxwing",
+     "sci": "Bombycilla cedrorum",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cardinalis cardinalis",
+   "fusion_ok": true,
+   "fusion_answer": "northern cardinal\n\nThe northern cardinal has a bright red beak and a distinctive crest on its head. If this animal is near your camp, keep an eye out for it and be sure to keep a safe distance to avoid any potential disturbances."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\northern cardinal\\676877382.jpg",
+   "true": "Cardinalis cardinalis",
+   "top5": [
+    {
+     "name": "northern cardinal",
+     "sci": "Cardinalis cardinalis",
+     "p": 0.9885
+    },
+    {
+     "name": "scarlet tanager",
+     "sci": "Piranga olivacea",
+     "p": 0.0035
+    },
+    {
+     "name": "summer tanager",
+     "sci": "Piranga rubra",
+     "p": 0.0033
+    },
+    {
+     "name": "rose-breasted grosbeak",
+     "sci": "Pheucticus ludovicianus",
+     "p": 0.0007
+    },
+    {
+     "name": "eastern red bat",
+     "sci": "Lasiurus borealis",
+     "p": 0.0005
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cardinalis cardinalis",
+   "fusion_ok": true,
+   "fusion_answer": "northern cardinal\n\nThe northern cardinal has a bright red body, a black cap, and a prominent orange beak. If this animal is near your camp, keep an eye out for it and avoid disturbing it, as it may be a nuisance."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\pronghorn\\268596217.jpg",
+   "true": "Antilocapra americana",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.9972
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0005
+    },
+    {
+     "name": "bighorn sheep",
+     "sci": "Ovis canadensis",
+     "p": 0.0003
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0003
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Antilocapra americana",
+   "fusion_ok": true,
+   "fusion_answer": "pronghorn\n\nThe animal in the photo is a pronghorn, which is known for its long, slender legs and distinctive curved horns. If this animal is near your camp, keep a safe distance and avoid approaching it, as it can be a fast-moving predator."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\pronghorn\\393488307.jpg",
+   "true": "Antilocapra americana",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.9965
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.001
+    },
+    {
+     "name": "black-tailed prairie dog",
+     "sci": "Cynomys ludovicianus",
+     "p": 0.0005
+    },
+    {
+     "name": "white-tailed jackrabbit",
+     "sci": "Lepus townsendii",
+     "p": 0.0005
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Antilocapra americana",
+   "fusion_ok": true,
+   "fusion_answer": "pronghorn\n\nThe pronghorn has a distinctive brown and white coat, with a white underbelly and a prominent white stripe along its back. If this animal is near your camp, keep a safe distance and avoid approaching it, as it can be a fast-moving predator."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\raccoon\\240042638.jpg",
+   "true": "Procyon lotor",
+   "top5": [
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.9774
+    },
+    {
+     "name": "american crocodile",
+     "sci": "Crocodylus acutus",
+     "p": 0.0063
+    },
+    {
+     "name": "white-nosed coati",
+     "sci": "Nasua narica",
+     "p": 0.0019
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.001
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0009
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Procyon lotor",
+   "fusion_ok": true,
+   "fusion_answer": "common raccoon\n\nThe animal in the photo is a common raccoon, which is identifiable by its distinctive black mask around the eyes, a bushy tail, and a grayish-brown fur coat. If this animal is near your camp, it's best to keep a safe distance and avoid feeding it, as it may be attracted to food sources and could become aggressive if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\raccoon\\38408348.jpg",
+   "true": "Procyon lotor",
+   "top5": [
+    {
+     "name": "common raccoon",
+     "sci": "Procyon lotor",
+     "p": 0.986
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0039
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0017
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0016
+    },
+    {
+     "name": "swamp rabbit",
+     "sci": "Sylvilagus aquaticus",
+     "p": 0.0012
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Mustela richardsonii",
+   "fusion_ok": false,
+   "fusion_answer": "american ermine\n\nThe animal in the photo is an American ermine, a small, grayish-furred mammal with a white face and a striped tail. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a member of the raccoon family and could be a threat to humans."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\red fox\\289085807.jpg",
+   "true": "Vulpes vulpes",
+   "top5": [
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.8318
+    },
+    {
+     "name": "island fox",
+     "sci": "Urocyon littoralis",
+     "p": 0.0964
+    },
+    {
+     "name": "gray fox",
+     "sci": "Urocyon cinereoargenteus",
+     "p": 0.0196
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.0172
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0117
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Urocyon cinereoargenteus",
+   "fusion_ok": false,
+   "fusion_answer": "gray fox\nThe animal has a grayish coat with a white-tipped tail and large, pointed ears. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\red fox\\438495465.jpg",
+   "true": "Vulpes vulpes",
+   "top5": [
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.3217
+    },
+    {
+     "name": "donkey",
+     "sci": "Equus asinus",
+     "p": 0.2399
+    },
+    {
+     "name": "gray wolf",
+     "sci": "Canis lupus",
+     "p": 0.2172
+    },
+    {
+     "name": "red fox",
+     "sci": "Vulpes vulpes",
+     "p": 0.0584
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0415
+    }
+   ],
+   "hit": 3,
+   "fusion_pick": "Antilocapra americana",
+   "fusion_ok": false,
+   "fusion_answer": "pronghorn\n\nThe pronghorn is a large, fast-running antelope with a slender build, long legs, and a distinctive white patch on its face. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a predator and could be dangerous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\red-tailed hawk\\62555113.jpg",
+   "true": "Buteo jamaicensis",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.4952
+    },
+    {
+     "name": "broad-winged hawk",
+     "sci": "Buteo platypterus",
+     "p": 0.3259
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.0927
+    },
+    {
+     "name": "swainson's hawk",
+     "sci": "Buteo swainsoni",
+     "p": 0.0646
+    },
+    {
+     "name": "cooper's hawk",
+     "sci": "Astur cooperii",
+     "p": 0.0117
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Buteo jamaicensis",
+   "fusion_ok": true,
+   "fusion_answer": "red-tailed hawk\n\nThis bird has a dark brown body, a prominent red tail, and a sharp, hooked beak. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\red-tailed hawk\\722847360.jpg",
+   "true": "Buteo jamaicensis",
+   "top5": [
+    {
+     "name": "red-tailed hawk",
+     "sci": "Buteo jamaicensis",
+     "p": 0.9666
+    },
+    {
+     "name": "swainson's hawk",
+     "sci": "Buteo swainsoni",
+     "p": 0.0119
+    },
+    {
+     "name": "broad-winged hawk",
+     "sci": "Buteo platypterus",
+     "p": 0.0061
+    },
+    {
+     "name": "red-shouldered hawk",
+     "sci": "Buteo lineatus",
+     "p": 0.0025
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.0017
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Buteo jamaicensis",
+   "fusion_ok": true,
+   "fusion_answer": "red-tailed hawk\n\nThe red-tailed hawk has a dark brown body, a white underside, and a distinctive red tail. If this animal is near your camp, keep a safe distance and avoid feeding it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\spring peeper\\377193761.jpg",
+   "true": "Pseudacris crucifer",
+   "top5": [
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.9759
+    },
+    {
+     "name": "gray treefrog",
+     "sci": "Dryophytes versicolor",
+     "p": 0.0132
+    },
+    {
+     "name": "boreal chorus frog",
+     "sci": "Pseudacris maculata",
+     "p": 0.0061
+    },
+    {
+     "name": "pacific chorus frog",
+     "sci": "Pseudacris regilla",
+     "p": 0.0015
+    },
+    {
+     "name": "cope's gray tree frog",
+     "sci": "Dryophytes chrysoscelis",
+     "p": 0.0014
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Dryophytes versicolor",
+   "fusion_ok": false,
+   "fusion_answer": "The animal in the photo is the gray treefrog.\n\nKey field marks: The gray treefrog is a small, brownish frog with a smooth, moist skin and a slightly raised, rounded body. It has a distinctive, large, translucent vocal sac that it uses to produce a loud, high-pitched call.\n\nIf this animal is near your camp, avoid disturbing it and keep a safe distance to prevent it from being stressed or frightened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\spring peeper\\71398333.jpg",
+   "true": "Pseudacris crucifer",
+   "top5": [
+    {
+     "name": "spring peeper",
+     "sci": "Pseudacris crucifer",
+     "p": 0.9921
+    },
+    {
+     "name": "boreal chorus frog",
+     "sci": "Pseudacris maculata",
+     "p": 0.0058
+    },
+    {
+     "name": "gray treefrog",
+     "sci": "Dryophytes versicolor",
+     "p": 0.0005
+    },
+    {
+     "name": "wood frog",
+     "sci": "Lithobates sylvaticus",
+     "p": 0.0003
+    },
+    {
+     "name": "northern cricket frog",
+     "sci": "Acris crepitans",
+     "p": 0.0003
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Pseudacris crucifer",
+   "fusion_ok": true,
+   "fusion_answer": "spring peeper\n\nThis animal is a spring peeper, a small, brownish frog with a smooth, moist skin and a slightly raised, warty texture. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be sensitive to human activity and could be a potential source of disease."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\striped skunk\\304633285.jpg",
+   "true": "Mephitis mephitis",
+   "top5": [
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.3372
+    },
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.1804
+    },
+    {
+     "name": "long-tailed weasel",
+     "sci": "Neogale frenata",
+     "p": 0.095
+    },
+    {
+     "name": "uinta ground squirrel",
+     "sci": "Urocitellus armatus",
+     "p": 0.0556
+    },
+    {
+     "name": "abert's squirrel",
+     "sci": "Sciurus aberti",
+     "p": 0.051
+    }
+   ],
+   "hit": 1,
+   "fusion_pick": "Urocitellus armatus",
+   "fusion_ok": false,
+   "fusion_answer": "uinta ground squirrel\n\nThis animal has a small, rounded skull with a prominent nasal passage and a distinct, slightly curved snout. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be sensitive to human presence."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\striped skunk\\354681011.jpg",
+   "true": "Mephitis mephitis",
+   "top5": [
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.9941
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.0017
+    },
+    {
+     "name": "american badger",
+     "sci": "Taxidea taxus",
+     "p": 0.0009
+    },
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.0007
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.0006
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Mephitis mephitis",
+   "fusion_ok": true,
+   "fusion_answer": "striped skunk\n\nThe striped skunk is a small, nocturnal mammal with a distinctive black-and-white striped coat, a short tail, and a prominent white stripe on its back. If this animal is near your camp, it's best to keep a safe distance and avoid approaching it, as it may be attracted to food sources or shelter."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\timber rattlesnake\\528378696.jpg",
+   "true": "Crotalus horridus",
+   "top5": [
+    {
+     "name": "timber rattlesnake",
+     "sci": "Crotalus horridus",
+     "p": 0.987
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0065
+    },
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.0033
+    },
+    {
+     "name": "northern cottonmouth",
+     "sci": "Agkistrodon piscivorus",
+     "p": 0.0011
+    },
+    {
+     "name": "pygmy rattlesnake",
+     "sci": "Sistrurus miliarius",
+     "p": 0.0007
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Crotalus horridus",
+   "fusion_ok": true,
+   "fusion_answer": "timber rattlesnake\n\nThe animal in the photo is a timber rattlesnake, which has a distinctive pattern of dark, irregular bands on a lighter background, and a rattle at the end of its tail. If this animal is near your camp, keep a safe distance and avoid provoking it, as it can be dangerous."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\timber rattlesnake\\553370311.jpg",
+   "true": "Crotalus horridus",
+   "top5": [
+    {
+     "name": "timber rattlesnake",
+     "sci": "Crotalus horridus",
+     "p": 0.9842
+    },
+    {
+     "name": "eastern copperhead",
+     "sci": "Agkistrodon contortrix",
+     "p": 0.0047
+    },
+    {
+     "name": "pygmy rattlesnake",
+     "sci": "Sistrurus miliarius",
+     "p": 0.0037
+    },
+    {
+     "name": "broad-banded cottonmouth",
+     "sci": "Agkistrodon laticinctus",
+     "p": 0.0017
+    },
+    {
+     "name": "massasauga",
+     "sci": "Sistrurus catenatus",
+     "p": 0.0013
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Sistrurus miliarius",
+   "fusion_ok": false,
+   "fusion_answer": "pygmy rattlesnake\n\nThe pygmy rattlesnake has a small, slender body with a pattern of dark blotches and a pale underside. If this animal is near your camp, keep a safe distance and avoid provoking it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\turkey vulture\\5105997.jpg",
+   "true": "Cathartes aura",
+   "top5": [
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.997
+    },
+    {
+     "name": "black vulture",
+     "sci": "Coragyps atratus",
+     "p": 0.0006
+    },
+    {
+     "name": "eastern red bat",
+     "sci": "Lasiurus borealis",
+     "p": 0.0004
+    },
+    {
+     "name": "silver-haired bat",
+     "sci": "Lasionycteris noctivagans",
+     "p": 0.0003
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Coragyps atratus",
+   "fusion_ok": false,
+   "fusion_answer": "black vulture\n\nThe black vulture has a dark, robust body, a large, powerful wingspan, and a distinctive red head. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\turkey vulture\\682153900.jpg",
+   "true": "Cathartes aura",
+   "top5": [
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.98
+    },
+    {
+     "name": "bald eagle",
+     "sci": "Haliaeetus leucocephalus",
+     "p": 0.0078
+    },
+    {
+     "name": "black vulture",
+     "sci": "Coragyps atratus",
+     "p": 0.0016
+    },
+    {
+     "name": "osprey",
+     "sci": "Pandion haliaetus",
+     "p": 0.0011
+    },
+    {
+     "name": "black oystercatcher",
+     "sci": "Haematopus bachmani",
+     "p": 0.0009
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Coragyps atratus",
+   "fusion_ok": false,
+   "fusion_answer": "black vulture\n\nThe black vulture has a dark brown body, a large wingspan, and a distinctive hooked beak. If this animal is near your camp, keep a safe distance and avoid feeding it, as it may be attracted to food sources."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\virginia opossum\\173131417.jpg",
+   "true": "Didelphis virginiana",
+   "top5": [
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.9679
+    },
+    {
+     "name": "eastern mole",
+     "sci": "Scalopus aquaticus",
+     "p": 0.0057
+    },
+    {
+     "name": "domestic cat",
+     "sci": "Felis catus",
+     "p": 0.004
+    },
+    {
+     "name": "striped skunk",
+     "sci": "Mephitis mephitis",
+     "p": 0.0023
+    },
+    {
+     "name": "north american porcupine",
+     "sci": "Erethizon dorsatum",
+     "p": 0.002
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Felis catus",
+   "fusion_ok": false,
+   "fusion_answer": "domestic cat\n\nThe domestic cat has a black and white coat with a white chest and a black face, and it is looking at the camera. If this animal is near your camp, keep a close eye on it and avoid feeding it, as it may be a domestic cat and could be a nuisance."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\virginia opossum\\310995394.jpg",
+   "true": "Didelphis virginiana",
+   "top5": [
+    {
+     "name": "virginia opossum",
+     "sci": "Didelphis virginiana",
+     "p": 0.8878
+    },
+    {
+     "name": "ringtail",
+     "sci": "Bassariscus astutus",
+     "p": 0.0559
+    },
+    {
+     "name": "american ermine",
+     "sci": "Mustela richardsonii",
+     "p": 0.015
+    },
+    {
+     "name": "tri-coloured bat",
+     "sci": "Perimyotis subflavus",
+     "p": 0.0052
+    },
+    {
+     "name": "southern flying squirrel",
+     "sci": "Glaucomys volans",
+     "p": 0.0047
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Bassariscus astutus",
+   "fusion_ok": false,
+   "fusion_answer": "ringtail\n\nThe ringtail is a small, nocturnal mammal with a distinctive black and white striped tail, which is used for balance and communication. If this animal is near your camp, keep a safe distance and avoid disturbing it, as it may be sensitive to human presence."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\wapiti\\45645557.jpg",
+   "true": "Cervus canadensis",
+   "top5": [
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.9098
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0129
+    },
+    {
+     "name": "pronghorn",
+     "sci": "Antilocapra americana",
+     "p": 0.0094
+    },
+    {
+     "name": "black-billed magpie",
+     "sci": "Pica hudsonia",
+     "p": 0.0092
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0077
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cervus canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "wapiti\n\nThe wapiti are large, brown mammals with long, thick fur and large, rounded ears. If this animal is near your camp, keep a safe distance and avoid feeding them."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\wapiti\\620108581.jpg",
+   "true": "Cervus canadensis",
+   "top5": [
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.9538
+    },
+    {
+     "name": "domestic horse",
+     "sci": "Equus caballus",
+     "p": 0.0082
+    },
+    {
+     "name": "mountain lion",
+     "sci": "Puma concolor",
+     "p": 0.007
+    },
+    {
+     "name": "mountain goat",
+     "sci": "Oreamnos americanus",
+     "p": 0.0035
+    },
+    {
+     "name": "american bison",
+     "sci": "Bos bison",
+     "p": 0.0027
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Cervus canadensis",
+   "fusion_ok": true,
+   "fusion_answer": "wapiti\n\nThis animal is a wapiti, also known as the elk, which is a large, four-legged mammal with a long, curved horn on its head. If this animal is near your camp, keep a safe distance and avoid approaching it, as it can be dangerous and may be aggressive if it feels threatened."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\western diamond-backed rattlesnake\\311263596.jpg",
+   "true": "Crotalus atrox",
+   "top5": [
+    {
+     "name": "western diamond-backed rattlesnake",
+     "sci": "Crotalus atrox",
+     "p": 0.6883
+    },
+    {
+     "name": "eastern diamond-backed rattlesnake",
+     "sci": "Crotalus adamanteus",
+     "p": 0.2852
+    },
+    {
+     "name": "prairie rattlesnake",
+     "sci": "Crotalus viridis",
+     "p": 0.0139
+    },
+    {
+     "name": "western rattlesnake",
+     "sci": "Crotalus oreganus",
+     "p": 0.0075
+    },
+    {
+     "name": "mohave rattlesnake",
+     "sci": "Crotalus scutulatus",
+     "p": 0.0024
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Crotalus atrox",
+   "fusion_ok": true,
+   "fusion_answer": "western diamond-backed rattlesnake\n\nKey field marks: The snake has a distinctive diamond-shaped pattern on its back, which is a key identification feature. It is a non-venomous snake that is commonly found in the western United States.\n\nIf this animal is near your camp, keep a safe distance and avoid approaching it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\western diamond-backed rattlesnake\\46986880.jpg",
+   "true": "Crotalus atrox",
+   "top5": [
+    {
+     "name": "western diamond-backed rattlesnake",
+     "sci": "Crotalus atrox",
+     "p": 0.7447
+    },
+    {
+     "name": "eastern diamond-backed rattlesnake",
+     "sci": "Crotalus adamanteus",
+     "p": 0.2382
+    },
+    {
+     "name": "prairie rattlesnake",
+     "sci": "Crotalus viridis",
+     "p": 0.0091
+    },
+    {
+     "name": "mohave rattlesnake",
+     "sci": "Crotalus scutulatus",
+     "p": 0.0035
+    },
+    {
+     "name": "western rattlesnake",
+     "sci": "Crotalus oreganus",
+     "p": 0.0025
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Crotalus atrox",
+   "fusion_ok": true,
+   "fusion_answer": "western diamond-backed rattlesnake\n\nThe animal has a distinctive diamond-shaped pattern on its body and a black-and-white striped tail. If this animal is near your camp, keep a safe distance and avoid provoking it."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\white-tailed deer\\248110169.jpg",
+   "true": "Odocoileus virginianus",
+   "top5": [
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.9621
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0102
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0033
+    },
+    {
+     "name": "eastern towhee",
+     "sci": "Pipilo erythrophthalmus",
+     "p": 0.0016
+    },
+    {
+     "name": "sandhill crane",
+     "sci": "Antigone canadensis",
+     "p": 0.0015
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Odocoileus virginianus",
+   "fusion_ok": true,
+   "fusion_answer": "white-tailed deer\n\nThe animal in the photo is a white-tailed deer, characterized by its white fur with dark spots and a distinctive white-tailed pattern. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a threat to your safety."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\white-tailed deer\\58166047.jpg",
+   "true": "Odocoileus virginianus",
+   "top5": [
+    {
+     "name": "white-tailed deer",
+     "sci": "Odocoileus virginianus",
+     "p": 0.8627
+    },
+    {
+     "name": "mule deer",
+     "sci": "Odocoileus hemionus",
+     "p": 0.0817
+    },
+    {
+     "name": "moose",
+     "sci": "Alces alces",
+     "p": 0.0121
+    },
+    {
+     "name": "sandhill crane",
+     "sci": "Antigone canadensis",
+     "p": 0.007
+    },
+    {
+     "name": "wapiti",
+     "sci": "Cervus canadensis",
+     "p": 0.0044
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Odocoileus virginianus",
+   "fusion_ok": true,
+   "fusion_answer": "white-tailed deer\n\nThe animal is a white-tailed deer, identifiable by its brown fur, prominent white-tailed pattern, and the visible ear and eye. If this animal is near your camp, keep a safe distance and avoid approaching it, as it may be a threat to your safety."
+  },
+  {
+   "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\prevalence\\exam-iphone13\\photos\\wild turkey\\19232661.jpg",
+   "true": "Meleagris gallopavo",
+   "top5": [
+    {
+     "name": "wild turkey",
+     "sci": "Meleagris gallopavo",
+     "p": 0.9537
+    },
+    {
+     "name": "barred owl",
+     "sci": "Strix varia",
+     "p": 0.0159
+    },
+    {
+     "name": "turkey vulture",
+     "sci": "Cathartes aura",
+     "p": 0.0089
+    },
+    {
+     "name": "collared peccary",
+     "sci": "Pecari tajacu",
+     "p": 0.0041
+    },
+    {
+     "name": "ruffed grouse",
+     "sci": "Bonasa umbellus",
+     "p": 0.0037
+    }
+   ],
+   "hit": 0,
+   "fusion_pick": "Meleagris gallopavo",
+   "fusion_ok": true,
+   "fusion_answer": "wild turkey\n\nThe wild turkey has a large, dark brown body with a prominent, feathered tail and a large, feathered head. If this animal is near your camp, keep a safe distance and avoid disturbing it."
+  }
+ ]
+}

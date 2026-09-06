@@ -1,0 +1,3617 @@
+{
+ "format": "aurora-species-table-v1",
+ "model": "hf-hub:imageomics/bioclip-2",
+ "dtype": "float16",
+ "dim": 768,
+ "count": 504,
+ "templates": [
+  "a photo of a {name} ({sci}).",
+  "a photo of a {name}, a wild animal.",
+  "wildlife camera-trap photo of a {name} ({sci})."
+ ],
+ "embeddings_sha256": "685dffd104c63107f20c6644a2ca0ea2d1d25ab9caeed3dd92f39720d4d0ad0a",
+ "row_order_matches": "species_table.json species[] order",
+ "note": "row i of the .bin is the L2-normalized mean text embedding of species[i]",
+ "species": [
+  {
+   "sci": "Anaxyrus americanus",
+   "name": "american toad",
+   "count": 209330,
+   "group": "Amphibia",
+   "rank": 1
+  },
+  {
+   "sci": "Lithobates clamitans",
+   "name": "green frog",
+   "count": 153927,
+   "group": "Amphibia",
+   "rank": 2
+  },
+  {
+   "sci": "Lithobates catesbeianus",
+   "name": "american bullfrog",
+   "count": 133359,
+   "group": "Amphibia",
+   "rank": 3
+  },
+  {
+   "sci": "Plethodon cinereus",
+   "name": "eastern red-backed salamander",
+   "count": 97933,
+   "group": "Amphibia",
+   "rank": 4
+  },
+  {
+   "sci": "Pseudacris regilla",
+   "name": "pacific chorus frog",
+   "count": 82950,
+   "group": "Amphibia",
+   "rank": 5
+  },
+  {
+   "sci": "Notophthalmus viridescens",
+   "name": "eastern newt",
+   "count": 82397,
+   "group": "Amphibia",
+   "rank": 6
+  },
+  {
+   "sci": "Lithobates sylvaticus",
+   "name": "wood frog",
+   "count": 67524,
+   "group": "Amphibia",
+   "rank": 7
+  },
+  {
+   "sci": "Lithobates pipiens",
+   "name": "northern leopard frog",
+   "count": 66396,
+   "group": "Amphibia",
+   "rank": 8
+  },
+  {
+   "sci": "Pseudacris crucifer",
+   "name": "spring peeper",
+   "count": 64037,
+   "group": "Amphibia",
+   "rank": 9
+  },
+  {
+   "sci": "Dryophytes cinereus",
+   "name": "green treefrog",
+   "count": 59593,
+   "group": "Amphibia",
+   "rank": 10
+  },
+  {
+   "sci": "Dryophytes versicolor",
+   "name": "gray treefrog",
+   "count": 48506,
+   "group": "Amphibia",
+   "rank": 11
+  },
+  {
+   "sci": "Incilius nebulifer",
+   "name": "gulf coast toad",
+   "count": 44664,
+   "group": "Amphibia",
+   "rank": 12
+  },
+  {
+   "sci": "Anaxyrus fowleri",
+   "name": "fowler's toad",
+   "count": 44326,
+   "group": "Amphibia",
+   "rank": 13
+  },
+  {
+   "sci": "Anaxyrus boreas",
+   "name": "western toad",
+   "count": 43110,
+   "group": "Amphibia",
+   "rank": 14
+  },
+  {
+   "sci": "Ambystoma maculatum",
+   "name": "spotted salamander",
+   "count": 40329,
+   "group": "Amphibia",
+   "rank": 15
+  },
+  {
+   "sci": "Lithobates palustris",
+   "name": "pickerel frog",
+   "count": 37001,
+   "group": "Amphibia",
+   "rank": 16
+  },
+  {
+   "sci": "Acris blanchardi",
+   "name": "blanchard's cricket frog",
+   "count": 35891,
+   "group": "Amphibia",
+   "rank": 17
+  },
+  {
+   "sci": "Taricha torosa",
+   "name": "california newt",
+   "count": 35399,
+   "group": "Amphibia",
+   "rank": 18
+  },
+  {
+   "sci": "Lithobates sphenocephalus",
+   "name": "southern leopard frog",
+   "count": 32917,
+   "group": "Amphibia",
+   "rank": 19
+  },
+  {
+   "sci": "Anaxyrus terrestris",
+   "name": "southern toad",
+   "count": 32328,
+   "group": "Amphibia",
+   "rank": 20
+  },
+  {
+   "sci": "Batrachoseps attenuatus",
+   "name": "california slender salamander",
+   "count": 28849,
+   "group": "Amphibia",
+   "rank": 21
+  },
+  {
+   "sci": "Dryophytes chrysoscelis",
+   "name": "cope's gray tree frog",
+   "count": 27983,
+   "group": "Amphibia",
+   "rank": 22
+  },
+  {
+   "sci": "Osteopilus septentrionalis",
+   "name": "cuban tree frog",
+   "count": 26396,
+   "group": "Amphibia",
+   "rank": 23
+  },
+  {
+   "sci": "Ensatina eschscholtzii",
+   "name": "ensatina",
+   "count": 25147,
+   "group": "Amphibia",
+   "rank": 24
+  },
+  {
+   "sci": "Dryophytes squirellus",
+   "name": "squirrel tree frog",
+   "count": 24312,
+   "group": "Amphibia",
+   "rank": 25
+  },
+  {
+   "sci": "Taricha granulosa",
+   "name": "rough-skinned newt",
+   "count": 22796,
+   "group": "Amphibia",
+   "rank": 26
+  },
+  {
+   "sci": "Anaxyrus woodhousii",
+   "name": "woodhouse's toad",
+   "count": 20373,
+   "group": "Amphibia",
+   "rank": 27
+  },
+  {
+   "sci": "Eurycea bislineata",
+   "name": "northern two-lined salamander",
+   "count": 17828,
+   "group": "Amphibia",
+   "rank": 28
+  },
+  {
+   "sci": "Plethodon glutinosus",
+   "name": "northern slimy salamander",
+   "count": 15137,
+   "group": "Amphibia",
+   "rank": 29
+  },
+  {
+   "sci": "Acris crepitans",
+   "name": "northern cricket frog",
+   "count": 14262,
+   "group": "Amphibia",
+   "rank": 30
+  },
+  {
+   "sci": "Eurycea cirrigera",
+   "name": "southern two-lined salamander",
+   "count": 13215,
+   "group": "Amphibia",
+   "rank": 31
+  },
+  {
+   "sci": "Ambystoma laterale",
+   "name": "blue-spotted salamander",
+   "count": 12875,
+   "group": "Amphibia",
+   "rank": 32
+  },
+  {
+   "sci": "Pseudacris maculata",
+   "name": "boreal chorus frog",
+   "count": 11903,
+   "group": "Amphibia",
+   "rank": 33
+  },
+  {
+   "sci": "Ambystoma opacum",
+   "name": "marbled salamander",
+   "count": 11480,
+   "group": "Amphibia",
+   "rank": 34
+  },
+  {
+   "sci": "Gastrophryne carolinensis",
+   "name": "eastern narrow-mouthed toad",
+   "count": 11174,
+   "group": "Amphibia",
+   "rank": 35
+  },
+  {
+   "sci": "Rana aurora",
+   "name": "northern red-legged frog",
+   "count": 10812,
+   "group": "Amphibia",
+   "rank": 36
+  },
+  {
+   "sci": "Aneides lugubris",
+   "name": "arboreal salamander",
+   "count": 10344,
+   "group": "Amphibia",
+   "rank": 37
+  },
+  {
+   "sci": "Desmognathus fuscus",
+   "name": "northern dusky salamander",
+   "count": 9349,
+   "group": "Amphibia",
+   "rank": 38
+  },
+  {
+   "sci": "Anaxyrus punctatus",
+   "name": "red-spotted toad",
+   "count": 9042,
+   "group": "Amphibia",
+   "rank": 39
+  },
+  {
+   "sci": "Pseudotriton ruber",
+   "name": "red salamander",
+   "count": 8802,
+   "group": "Amphibia",
+   "rank": 40
+  },
+  {
+   "sci": "Anas platyrhynchos",
+   "name": "mallard",
+   "count": 520611,
+   "group": "Aves",
+   "rank": 1
+  },
+  {
+   "sci": "Turdus migratorius",
+   "name": "american robin",
+   "count": 422217,
+   "group": "Aves",
+   "rank": 2
+  },
+  {
+   "sci": "Ardea herodias",
+   "name": "great blue heron",
+   "count": 415769,
+   "group": "Aves",
+   "rank": 3
+  },
+  {
+   "sci": "Branta canadensis",
+   "name": "canada goose",
+   "count": 399324,
+   "group": "Aves",
+   "rank": 4
+  },
+  {
+   "sci": "Cardinalis cardinalis",
+   "name": "northern cardinal",
+   "count": 354217,
+   "group": "Aves",
+   "rank": 5
+  },
+  {
+   "sci": "Buteo jamaicensis",
+   "name": "red-tailed hawk",
+   "count": 313088,
+   "group": "Aves",
+   "rank": 6
+  },
+  {
+   "sci": "Agelaius phoeniceus",
+   "name": "red-winged blackbird",
+   "count": 277892,
+   "group": "Aves",
+   "rank": 7
+  },
+  {
+   "sci": "Zenaida macroura",
+   "name": "mourning dove",
+   "count": 272483,
+   "group": "Aves",
+   "rank": 8
+  },
+  {
+   "sci": "Haemorhous mexicanus",
+   "name": "house finch",
+   "count": 269092,
+   "group": "Aves",
+   "rank": 9
+  },
+  {
+   "sci": "Passer domesticus",
+   "name": "house sparrow",
+   "count": 250608,
+   "group": "Aves",
+   "rank": 10
+  },
+  {
+   "sci": "Melospiza melodia",
+   "name": "song sparrow",
+   "count": 242985,
+   "group": "Aves",
+   "rank": 11
+  },
+  {
+   "sci": "Junco hyemalis",
+   "name": "dark-eyed junco",
+   "count": 234224,
+   "group": "Aves",
+   "rank": 12
+  },
+  {
+   "sci": "Ardea alba",
+   "name": "great egret",
+   "count": 229018,
+   "group": "Aves",
+   "rank": 13
+  },
+  {
+   "sci": "Haliaeetus leucocephalus",
+   "name": "bald eagle",
+   "count": 216553,
+   "group": "Aves",
+   "rank": 14
+  },
+  {
+   "sci": "Mimus polyglottos",
+   "name": "northern mockingbird",
+   "count": 211496,
+   "group": "Aves",
+   "rank": 15
+  },
+  {
+   "sci": "Cathartes aura",
+   "name": "turkey vulture",
+   "count": 200962,
+   "group": "Aves",
+   "rank": 16
+  },
+  {
+   "sci": "Setophaga coronata",
+   "name": "yellow-rumped warbler",
+   "count": 199851,
+   "group": "Aves",
+   "rank": 17
+  },
+  {
+   "sci": "Nannopterum auritum",
+   "name": "double-crested cormorant",
+   "count": 188330,
+   "group": "Aves",
+   "rank": 18
+  },
+  {
+   "sci": "Dryobates pubescens",
+   "name": "downy woodpecker",
+   "count": 187657,
+   "group": "Aves",
+   "rank": 19
+  },
+  {
+   "sci": "Meleagris gallopavo",
+   "name": "wild turkey",
+   "count": 179993,
+   "group": "Aves",
+   "rank": 20
+  },
+  {
+   "sci": "Cyanocitta cristata",
+   "name": "blue jay",
+   "count": 179284,
+   "group": "Aves",
+   "rank": 21
+  },
+  {
+   "sci": "Spinus tristis",
+   "name": "american goldfinch",
+   "count": 178147,
+   "group": "Aves",
+   "rank": 22
+  },
+  {
+   "sci": "Corvus brachyrhynchos",
+   "name": "american crow",
+   "count": 164708,
+   "group": "Aves",
+   "rank": 23
+  },
+  {
+   "sci": "Buteo lineatus",
+   "name": "red-shouldered hawk",
+   "count": 163100,
+   "group": "Aves",
+   "rank": 24
+  },
+  {
+   "sci": "Sturnus vulgaris",
+   "name": "european starling",
+   "count": 159964,
+   "group": "Aves",
+   "rank": 25
+  },
+  {
+   "sci": "Pandion haliaetus",
+   "name": "osprey",
+   "count": 158383,
+   "group": "Aves",
+   "rank": 26
+  },
+  {
+   "sci": "Colaptes auratus",
+   "name": "northern flicker",
+   "count": 150186,
+   "group": "Aves",
+   "rank": 27
+  },
+  {
+   "sci": "Larus delawarensis",
+   "name": "ring-billed gull",
+   "count": 147933,
+   "group": "Aves",
+   "rank": 28
+  },
+  {
+   "sci": "Columba livia",
+   "name": "rock pigeon",
+   "count": 146969,
+   "group": "Aves",
+   "rank": 29
+  },
+  {
+   "sci": "Poecile atricapillus",
+   "name": "black-capped chickadee",
+   "count": 146127,
+   "group": "Aves",
+   "rank": 30
+  },
+  {
+   "sci": "Zonotrichia leucophrys",
+   "name": "white-crowned sparrow",
+   "count": 144563,
+   "group": "Aves",
+   "rank": 31
+  },
+  {
+   "sci": "Sialia sialis",
+   "name": "eastern bluebird",
+   "count": 143733,
+   "group": "Aves",
+   "rank": 32
+  },
+  {
+   "sci": "Astur cooperii",
+   "name": "cooper's hawk",
+   "count": 139238,
+   "group": "Aves",
+   "rank": 33
+  },
+  {
+   "sci": "Melanerpes carolinus",
+   "name": "red-bellied woodpecker",
+   "count": 133506,
+   "group": "Aves",
+   "rank": 34
+  },
+  {
+   "sci": "Fulica americana",
+   "name": "american coot",
+   "count": 130680,
+   "group": "Aves",
+   "rank": 35
+  },
+  {
+   "sci": "Charadrius vociferus",
+   "name": "killdeer",
+   "count": 130483,
+   "group": "Aves",
+   "rank": 36
+  },
+  {
+   "sci": "Egretta thula",
+   "name": "snowy egret",
+   "count": 125229,
+   "group": "Aves",
+   "rank": 37
+  },
+  {
+   "sci": "Zonotrichia albicollis",
+   "name": "white-throated sparrow",
+   "count": 114685,
+   "group": "Aves",
+   "rank": 38
+  },
+  {
+   "sci": "Aix sponsa",
+   "name": "wood duck",
+   "count": 113505,
+   "group": "Aves",
+   "rank": 39
+  },
+  {
+   "sci": "Calypte anna",
+   "name": "anna's hummingbird",
+   "count": 112045,
+   "group": "Aves",
+   "rank": 40
+  },
+  {
+   "sci": "Sayornis phoebe",
+   "name": "eastern phoebe",
+   "count": 111067,
+   "group": "Aves",
+   "rank": 41
+  },
+  {
+   "sci": "Bombycilla cedrorum",
+   "name": "cedar waxwing",
+   "count": 108882,
+   "group": "Aves",
+   "rank": 42
+  },
+  {
+   "sci": "Spizella passerina",
+   "name": "chipping sparrow",
+   "count": 107672,
+   "group": "Aves",
+   "rank": 43
+  },
+  {
+   "sci": "Sitta carolinensis",
+   "name": "white-breasted nuthatch",
+   "count": 105975,
+   "group": "Aves",
+   "rank": 44
+  },
+  {
+   "sci": "Butorides virescens",
+   "name": "green heron",
+   "count": 104248,
+   "group": "Aves",
+   "rank": 45
+  },
+  {
+   "sci": "Quiscalus quiscula",
+   "name": "common grackle",
+   "count": 100751,
+   "group": "Aves",
+   "rank": 46
+  },
+  {
+   "sci": "Nycticorax nycticorax",
+   "name": "black-crowned night heron",
+   "count": 100609,
+   "group": "Aves",
+   "rank": 47
+  },
+  {
+   "sci": "Pelecanus occidentalis",
+   "name": "brown pelican",
+   "count": 97634,
+   "group": "Aves",
+   "rank": 48
+  },
+  {
+   "sci": "Thryothorus ludovicianus",
+   "name": "carolina wren",
+   "count": 96579,
+   "group": "Aves",
+   "rank": 49
+  },
+  {
+   "sci": "Dumetella carolinensis",
+   "name": "gray catbird",
+   "count": 95970,
+   "group": "Aves",
+   "rank": 50
+  },
+  {
+   "sci": "Corvus corax",
+   "name": "common raven",
+   "count": 94938,
+   "group": "Aves",
+   "rank": 51
+  },
+  {
+   "sci": "Molothrus ater",
+   "name": "brown-headed cowbird",
+   "count": 93496,
+   "group": "Aves",
+   "rank": 52
+  },
+  {
+   "sci": "Bucephala albeola",
+   "name": "bufflehead",
+   "count": 91843,
+   "group": "Aves",
+   "rank": 53
+  },
+  {
+   "sci": "Falco sparverius",
+   "name": "american kestrel",
+   "count": 89010,
+   "group": "Aves",
+   "rank": 54
+  },
+  {
+   "sci": "Hirundo rustica",
+   "name": "barn swallow",
+   "count": 88228,
+   "group": "Aves",
+   "rank": 55
+  },
+  {
+   "sci": "Baeolophus bicolor",
+   "name": "tufted titmouse",
+   "count": 84734,
+   "group": "Aves",
+   "rank": 56
+  },
+  {
+   "sci": "Quiscalus mexicanus",
+   "name": "great-tailed grackle",
+   "count": 84569,
+   "group": "Aves",
+   "rank": 57
+  },
+  {
+   "sci": "Dryocopus pileatus",
+   "name": "pileated woodpecker",
+   "count": 84128,
+   "group": "Aves",
+   "rank": 58
+  },
+  {
+   "sci": "Spinus psaltria",
+   "name": "lesser goldfinch",
+   "count": 83767,
+   "group": "Aves",
+   "rank": 59
+  },
+  {
+   "sci": "Corthylio calendula",
+   "name": "ruby-crowned kinglet",
+   "count": 81715,
+   "group": "Aves",
+   "rank": 60
+  },
+  {
+   "sci": "Podilymbus podiceps",
+   "name": "pied-billed grebe",
+   "count": 81562,
+   "group": "Aves",
+   "rank": 61
+  },
+  {
+   "sci": "Eudocimus albus",
+   "name": "white ibis",
+   "count": 81331,
+   "group": "Aves",
+   "rank": 62
+  },
+  {
+   "sci": "Tachycineta bicolor",
+   "name": "tree swallow",
+   "count": 81127,
+   "group": "Aves",
+   "rank": 63
+  },
+  {
+   "sci": "Archilochus colubris",
+   "name": "ruby-throated hummingbird",
+   "count": 80232,
+   "group": "Aves",
+   "rank": 64
+  },
+  {
+   "sci": "Larus smithsonianus",
+   "name": "american herring gull",
+   "count": 80025,
+   "group": "Aves",
+   "rank": 65
+  },
+  {
+   "sci": "Bubo virginianus",
+   "name": "great horned owl",
+   "count": 79950,
+   "group": "Aves",
+   "rank": 66
+  },
+  {
+   "sci": "Sayornis nigricans",
+   "name": "black phoebe",
+   "count": 79493,
+   "group": "Aves",
+   "rank": 67
+  },
+  {
+   "sci": "Antigone canadensis",
+   "name": "sandhill crane",
+   "count": 78526,
+   "group": "Aves",
+   "rank": 68
+  },
+  {
+   "sci": "Mergus merganser",
+   "name": "common merganser",
+   "count": 78392,
+   "group": "Aves",
+   "rank": 69
+  },
+  {
+   "sci": "Lophodytes cucullatus",
+   "name": "hooded merganser",
+   "count": 77510,
+   "group": "Aves",
+   "rank": 70
+  },
+  {
+   "sci": "Spatula clypeata",
+   "name": "northern shoveler",
+   "count": 76999,
+   "group": "Aves",
+   "rank": 71
+  },
+  {
+   "sci": "Megaceryle alcyon",
+   "name": "belted kingfisher",
+   "count": 76032,
+   "group": "Aves",
+   "rank": 72
+  },
+  {
+   "sci": "Strix varia",
+   "name": "barred owl",
+   "count": 75848,
+   "group": "Aves",
+   "rank": 73
+  },
+  {
+   "sci": "Mareca americana",
+   "name": "american wigeon",
+   "count": 74908,
+   "group": "Aves",
+   "rank": 74
+  },
+  {
+   "sci": "Leucophaeus atricilla",
+   "name": "laughing gull",
+   "count": 74645,
+   "group": "Aves",
+   "rank": 75
+  },
+  {
+   "sci": "Passerculus sandwichensis",
+   "name": "savannah sparrow",
+   "count": 74213,
+   "group": "Aves",
+   "rank": 76
+  },
+  {
+   "sci": "Aphelocoma californica",
+   "name": "california scrub-jay",
+   "count": 73718,
+   "group": "Aves",
+   "rank": 77
+  },
+  {
+   "sci": "Pelecanus erythrorhynchos",
+   "name": "american white pelican",
+   "count": 73541,
+   "group": "Aves",
+   "rank": 78
+  },
+  {
+   "sci": "Pipilo maculatus",
+   "name": "spotted towhee",
+   "count": 71656,
+   "group": "Aves",
+   "rank": 79
+  },
+  {
+   "sci": "Geothlypis trichas",
+   "name": "common yellowthroat",
+   "count": 68963,
+   "group": "Aves",
+   "rank": 80
+  },
+  {
+   "sci": "Setophaga aestiva",
+   "name": "northern yellow warbler",
+   "count": 68892,
+   "group": "Aves",
+   "rank": 81
+  },
+  {
+   "sci": "Larus occidentalis",
+   "name": "western gull",
+   "count": 68673,
+   "group": "Aves",
+   "rank": 82
+  },
+  {
+   "sci": "Aythya collaris",
+   "name": "ring-necked duck",
+   "count": 68373,
+   "group": "Aves",
+   "rank": 83
+  },
+  {
+   "sci": "Coragyps atratus",
+   "name": "black vulture",
+   "count": 67448,
+   "group": "Aves",
+   "rank": 84
+  },
+  {
+   "sci": "Leuconotopicus villosus",
+   "name": "hairy woodpecker",
+   "count": 67306,
+   "group": "Aves",
+   "rank": 85
+  },
+  {
+   "sci": "Tringa semipalmata",
+   "name": "willet",
+   "count": 66920,
+   "group": "Aves",
+   "rank": 86
+  },
+  {
+   "sci": "Tyrannus tyrannus",
+   "name": "eastern kingbird",
+   "count": 66508,
+   "group": "Aves",
+   "rank": 87
+  },
+  {
+   "sci": "Sialia mexicana",
+   "name": "western bluebird",
+   "count": 66084,
+   "group": "Aves",
+   "rank": 88
+  },
+  {
+   "sci": "Mareca strepera",
+   "name": "gadwall",
+   "count": 64335,
+   "group": "Aves",
+   "rank": 89
+  },
+  {
+   "sci": "Poecile carolinensis",
+   "name": "carolina chickadee",
+   "count": 63715,
+   "group": "Aves",
+   "rank": 90
+  },
+  {
+   "sci": "Nyctanassa violacea",
+   "name": "yellow-crowned night heron",
+   "count": 61214,
+   "group": "Aves",
+   "rank": 91
+  },
+  {
+   "sci": "Gavia immer",
+   "name": "common loon",
+   "count": 60550,
+   "group": "Aves",
+   "rank": 92
+  },
+  {
+   "sci": "Icterus galbula",
+   "name": "baltimore oriole",
+   "count": 59558,
+   "group": "Aves",
+   "rank": 93
+  },
+  {
+   "sci": "Actitis macularius",
+   "name": "spotted sandpiper",
+   "count": 59272,
+   "group": "Aves",
+   "rank": 94
+  },
+  {
+   "sci": "Egretta caerulea",
+   "name": "little blue heron",
+   "count": 58627,
+   "group": "Aves",
+   "rank": 95
+  },
+  {
+   "sci": "Bucephala clangula",
+   "name": "common goldeneye",
+   "count": 58492,
+   "group": "Aves",
+   "rank": 96
+  },
+  {
+   "sci": "Catharus guttatus",
+   "name": "hermit thrush",
+   "count": 57056,
+   "group": "Aves",
+   "rank": 97
+  },
+  {
+   "sci": "Cyanocitta stelleri",
+   "name": "steller's jay",
+   "count": 56601,
+   "group": "Aves",
+   "rank": 98
+  },
+  {
+   "sci": "Melozone crissalis",
+   "name": "california towhee",
+   "count": 56498,
+   "group": "Aves",
+   "rank": 99
+  },
+  {
+   "sci": "Tringa melanoleuca",
+   "name": "greater yellowlegs",
+   "count": 56466,
+   "group": "Aves",
+   "rank": 100
+  },
+  {
+   "sci": "Anas crecca",
+   "name": "green-winged teal",
+   "count": 55317,
+   "group": "Aves",
+   "rank": 101
+  },
+  {
+   "sci": "Circus hudsonius",
+   "name": "northern harrier",
+   "count": 54383,
+   "group": "Aves",
+   "rank": 102
+  },
+  {
+   "sci": "Melanerpes formicivorus",
+   "name": "acorn woodpecker",
+   "count": 54063,
+   "group": "Aves",
+   "rank": 103
+  },
+  {
+   "sci": "Calidris alba",
+   "name": "sanderling",
+   "count": 53996,
+   "group": "Aves",
+   "rank": 104
+  },
+  {
+   "sci": "Anhinga anhinga",
+   "name": "anhinga",
+   "count": 53343,
+   "group": "Aves",
+   "rank": 105
+  },
+  {
+   "sci": "Sphyrapicus varius",
+   "name": "yellow-bellied sapsucker",
+   "count": 53257,
+   "group": "Aves",
+   "rank": 106
+  },
+  {
+   "sci": "Calidris minutilla",
+   "name": "least sandpiper",
+   "count": 53060,
+   "group": "Aves",
+   "rank": 107
+  },
+  {
+   "sci": "Cairina moschata",
+   "name": "muscovy duck",
+   "count": 52123,
+   "group": "Aves",
+   "rank": 108
+  },
+  {
+   "sci": "Spatula discors",
+   "name": "blue-winged teal",
+   "count": 51630,
+   "group": "Aves",
+   "rank": 109
+  },
+  {
+   "sci": "Oxyura jamaicensis",
+   "name": "ruddy duck",
+   "count": 51480,
+   "group": "Aves",
+   "rank": 110
+  },
+  {
+   "sci": "Himantopus mexicanus",
+   "name": "black-necked stilt",
+   "count": 51434,
+   "group": "Aves",
+   "rank": 111
+  },
+  {
+   "sci": "Streptopelia decaocto",
+   "name": "eurasian collared-dove",
+   "count": 50330,
+   "group": "Aves",
+   "rank": 112
+  },
+  {
+   "sci": "Setophaga palmarum",
+   "name": "palm warbler",
+   "count": 50077,
+   "group": "Aves",
+   "rank": 113
+  },
+  {
+   "sci": "Gallinula galeata",
+   "name": "common gallinule",
+   "count": 49809,
+   "group": "Aves",
+   "rank": 114
+  },
+  {
+   "sci": "Sitta canadensis",
+   "name": "red-breasted nuthatch",
+   "count": 49628,
+   "group": "Aves",
+   "rank": 115
+  },
+  {
+   "sci": "Passerina cyanea",
+   "name": "indigo bunting",
+   "count": 49432,
+   "group": "Aves",
+   "rank": 116
+  },
+  {
+   "sci": "Zenaida asiatica",
+   "name": "white-winged dove",
+   "count": 48202,
+   "group": "Aves",
+   "rank": 117
+  },
+  {
+   "sci": "Cygnus buccinator",
+   "name": "trumpeter swan",
+   "count": 47410,
+   "group": "Aves",
+   "rank": 118
+  },
+  {
+   "sci": "Toxostoma rufum",
+   "name": "brown thrasher",
+   "count": 47192,
+   "group": "Aves",
+   "rank": 119
+  },
+  {
+   "sci": "Pheucticus ludovicianus",
+   "name": "rose-breasted grosbeak",
+   "count": 47077,
+   "group": "Aves",
+   "rank": 120
+  },
+  {
+   "sci": "Troglodytes aedon",
+   "name": "northern house wren",
+   "count": 45932,
+   "group": "Aves",
+   "rank": 121
+  },
+  {
+   "sci": "Euphagus cyanocephalus",
+   "name": "brewer's blackbird",
+   "count": 44515,
+   "group": "Aves",
+   "rank": 122
+  },
+  {
+   "sci": "Egretta tricolor",
+   "name": "tricolored heron",
+   "count": 44505,
+   "group": "Aves",
+   "rank": 123
+  },
+  {
+   "sci": "Setophaga ruticilla",
+   "name": "american redstart",
+   "count": 43933,
+   "group": "Aves",
+   "rank": 124
+  },
+  {
+   "sci": "Aythya affinis",
+   "name": "lesser scaup",
+   "count": 43758,
+   "group": "Aves",
+   "rank": 125
+  },
+  {
+   "sci": "Leiothlypis celata",
+   "name": "orange-crowned warbler",
+   "count": 43558,
+   "group": "Aves",
+   "rank": 126
+  },
+  {
+   "sci": "Polioptila caerulea",
+   "name": "blue-gray gnatcatcher",
+   "count": 43457,
+   "group": "Aves",
+   "rank": 127
+  },
+  {
+   "sci": "Mergus serrator",
+   "name": "red-breasted merganser",
+   "count": 42873,
+   "group": "Aves",
+   "rank": 128
+  },
+  {
+   "sci": "Callipepla californica",
+   "name": "california quail",
+   "count": 42759,
+   "group": "Aves",
+   "rank": 129
+  },
+  {
+   "sci": "Cygnus olor",
+   "name": "mute swan",
+   "count": 42590,
+   "group": "Aves",
+   "rank": 130
+  },
+  {
+   "sci": "Sayornis saya",
+   "name": "say's phoebe",
+   "count": 41974,
+   "group": "Aves",
+   "rank": 131
+  },
+  {
+   "sci": "Pipilo erythrophthalmus",
+   "name": "eastern towhee",
+   "count": 41881,
+   "group": "Aves",
+   "rank": 132
+  },
+  {
+   "sci": "Pica hudsonia",
+   "name": "black-billed magpie",
+   "count": 41745,
+   "group": "Aves",
+   "rank": 133
+  },
+  {
+   "sci": "Anas acuta",
+   "name": "northern pintail",
+   "count": 41305,
+   "group": "Aves",
+   "rank": 134
+  },
+  {
+   "sci": "Psaltriparus minimus",
+   "name": "bushtit",
+   "count": 41122,
+   "group": "Aves",
+   "rank": 135
+  },
+  {
+   "sci": "Zonotrichia atricapilla",
+   "name": "golden-crowned sparrow",
+   "count": 40748,
+   "group": "Aves",
+   "rank": 136
+  },
+  {
+   "sci": "Spinus pinus",
+   "name": "pine siskin",
+   "count": 39175,
+   "group": "Aves",
+   "rank": 137
+  },
+  {
+   "sci": "Mniotilta varia",
+   "name": "black-and-white warbler",
+   "count": 38878,
+   "group": "Aves",
+   "rank": 138
+  },
+  {
+   "sci": "Thryomanes bewickii",
+   "name": "bewick's wren",
+   "count": 38523,
+   "group": "Aves",
+   "rank": 139
+  },
+  {
+   "sci": "Geococcyx californianus",
+   "name": "greater roadrunner",
+   "count": 37195,
+   "group": "Aves",
+   "rank": 140
+  },
+  {
+   "sci": "Dendrocygna autumnalis",
+   "name": "black-bellied whistling-duck",
+   "count": 37108,
+   "group": "Aves",
+   "rank": 141
+  },
+  {
+   "sci": "Quiscalus major",
+   "name": "boat-tailed grackle",
+   "count": 37062,
+   "group": "Aves",
+   "rank": 142
+  },
+  {
+   "sci": "Recurvirostra americana",
+   "name": "american avocet",
+   "count": 36609,
+   "group": "Aves",
+   "rank": 143
+  },
+  {
+   "sci": "Haemorhous purpureus",
+   "name": "purple finch",
+   "count": 36405,
+   "group": "Aves",
+   "rank": 144
+  },
+  {
+   "sci": "Lanius ludovicianus",
+   "name": "loggerhead shrike",
+   "count": 35782,
+   "group": "Aves",
+   "rank": 145
+  },
+  {
+   "sci": "Certhia americana",
+   "name": "brown creeper",
+   "count": 35777,
+   "group": "Aves",
+   "rank": 146
+  },
+  {
+   "sci": "Anser caerulescens",
+   "name": "snow goose",
+   "count": 33861,
+   "group": "Aves",
+   "rank": 147
+  },
+  {
+   "sci": "Melanerpes erythrocephalus",
+   "name": "red-headed woodpecker",
+   "count": 33660,
+   "group": "Aves",
+   "rank": 148
+  },
+  {
+   "sci": "Tyrannus verticalis",
+   "name": "western kingbird",
+   "count": 33656,
+   "group": "Aves",
+   "rank": 149
+  },
+  {
+   "sci": "Pluvialis squatarola",
+   "name": "black-bellied plover",
+   "count": 33143,
+   "group": "Aves",
+   "rank": 150
+  },
+  {
+   "sci": "Ardea ibis",
+   "name": "western cattle-egret",
+   "count": 32935,
+   "group": "Aves",
+   "rank": 151
+  },
+  {
+   "sci": "Setophaga pinus",
+   "name": "pine warbler",
+   "count": 32672,
+   "group": "Aves",
+   "rank": 152
+  },
+  {
+   "sci": "Vireo olivaceus",
+   "name": "red-eyed vireo",
+   "count": 32547,
+   "group": "Aves",
+   "rank": 153
+  },
+  {
+   "sci": "Charadrius semipalmatus",
+   "name": "semipalmated plover",
+   "count": 32512,
+   "group": "Aves",
+   "rank": 154
+  },
+  {
+   "sci": "Melospiza lincolnii",
+   "name": "lincoln's sparrow",
+   "count": 32036,
+   "group": "Aves",
+   "rank": 155
+  },
+  {
+   "sci": "Petrochelidon pyrrhonota",
+   "name": "cliff swallow",
+   "count": 31781,
+   "group": "Aves",
+   "rank": 156
+  },
+  {
+   "sci": "Regulus satrapa",
+   "name": "golden-crowned kinglet",
+   "count": 31387,
+   "group": "Aves",
+   "rank": 157
+  },
+  {
+   "sci": "Falco columbarius",
+   "name": "merlin",
+   "count": 31103,
+   "group": "Aves",
+   "rank": 158
+  },
+  {
+   "sci": "Piranga rubra",
+   "name": "summer tanager",
+   "count": 30456,
+   "group": "Aves",
+   "rank": 159
+  },
+  {
+   "sci": "Sturnella neglecta",
+   "name": "western meadowlark",
+   "count": 30238,
+   "group": "Aves",
+   "rank": 160
+  },
+  {
+   "sci": "Larus californicus",
+   "name": "california gull",
+   "count": 30111,
+   "group": "Aves",
+   "rank": 161
+  },
+  {
+   "sci": "Sterna forsteri",
+   "name": "forster's tern",
+   "count": 30040,
+   "group": "Aves",
+   "rank": 162
+  },
+  {
+   "sci": "Thalasseus maximus",
+   "name": "royal tern",
+   "count": 30020,
+   "group": "Aves",
+   "rank": 163
+  },
+  {
+   "sci": "Arenaria interpres",
+   "name": "ruddy turnstone",
+   "count": 29773,
+   "group": "Aves",
+   "rank": 164
+  },
+  {
+   "sci": "Progne subis",
+   "name": "purple martin",
+   "count": 29757,
+   "group": "Aves",
+   "rank": 165
+  },
+  {
+   "sci": "Passerina ciris",
+   "name": "painted bunting",
+   "count": 29589,
+   "group": "Aves",
+   "rank": 166
+  },
+  {
+   "sci": "Myiarchus crinitus",
+   "name": "great crested flycatcher",
+   "count": 28929,
+   "group": "Aves",
+   "rank": 167
+  },
+  {
+   "sci": "Setophaga americana",
+   "name": "northern parula",
+   "count": 28909,
+   "group": "Aves",
+   "rank": 168
+  },
+  {
+   "sci": "Spizelloides arborea",
+   "name": "american tree sparrow",
+   "count": 28675,
+   "group": "Aves",
+   "rank": 169
+  },
+  {
+   "sci": "Melanitta perspicillata",
+   "name": "surf scoter",
+   "count": 28518,
+   "group": "Aves",
+   "rank": 170
+  },
+  {
+   "sci": "Hydroprogne caspia",
+   "name": "caspian tern",
+   "count": 28459,
+   "group": "Aves",
+   "rank": 171
+  },
+  {
+   "sci": "Piranga ludoviciana",
+   "name": "western tanager",
+   "count": 28255,
+   "group": "Aves",
+   "rank": 172
+  },
+  {
+   "sci": "Passerella iliaca",
+   "name": "fox sparrow",
+   "count": 28067,
+   "group": "Aves",
+   "rank": 173
+  },
+  {
+   "sci": "Melospiza georgiana",
+   "name": "swamp sparrow",
+   "count": 27801,
+   "group": "Aves",
+   "rank": 174
+  },
+  {
+   "sci": "Pheucticus melanocephalus",
+   "name": "black-headed grosbeak",
+   "count": 27749,
+   "group": "Aves",
+   "rank": 175
+  },
+  {
+   "sci": "Falco peregrinus",
+   "name": "peregrine falcon",
+   "count": 27340,
+   "group": "Aves",
+   "rank": 176
+  },
+  {
+   "sci": "Aythya americana",
+   "name": "redhead",
+   "count": 27278,
+   "group": "Aves",
+   "rank": 177
+  },
+  {
+   "sci": "Buteo swainsoni",
+   "name": "swainson's hawk",
+   "count": 26884,
+   "group": "Aves",
+   "rank": 178
+  },
+  {
+   "sci": "Catharus ustulatus",
+   "name": "swainson's thrush",
+   "count": 26527,
+   "group": "Aves",
+   "rank": 179
+  },
+  {
+   "sci": "Tyrannus forficatus",
+   "name": "scissor-tailed flycatcher",
+   "count": 26502,
+   "group": "Aves",
+   "rank": 180
+  },
+  {
+   "sci": "Platalea ajaja",
+   "name": "roseate spoonbill",
+   "count": 26491,
+   "group": "Aves",
+   "rank": 181
+  },
+  {
+   "sci": "Chondestes grammacus",
+   "name": "lark sparrow",
+   "count": 26294,
+   "group": "Aves",
+   "rank": 182
+  },
+  {
+   "sci": "Tringa solitaria",
+   "name": "solitary sandpiper",
+   "count": 26236,
+   "group": "Aves",
+   "rank": 183
+  },
+  {
+   "sci": "Stelgidopteryx serripennis",
+   "name": "northern rough-winged swallow",
+   "count": 26225,
+   "group": "Aves",
+   "rank": 184
+  },
+  {
+   "sci": "Contopus virens",
+   "name": "eastern wood-pewee",
+   "count": 26107,
+   "group": "Aves",
+   "rank": 185
+  },
+  {
+   "sci": "Poecile rufescens",
+   "name": "chestnut-backed chickadee",
+   "count": 26016,
+   "group": "Aves",
+   "rank": 186
+  },
+  {
+   "sci": "Pyrocephalus rubinus",
+   "name": "vermilion flycatcher",
+   "count": 25719,
+   "group": "Aves",
+   "rank": 187
+  },
+  {
+   "sci": "Limosa fedoa",
+   "name": "marbled godwit",
+   "count": 25347,
+   "group": "Aves",
+   "rank": 188
+  },
+  {
+   "sci": "Seiurus aurocapilla",
+   "name": "ovenbird",
+   "count": 25262,
+   "group": "Aves",
+   "rank": 189
+  },
+  {
+   "sci": "Podiceps auritus",
+   "name": "horned grebe",
+   "count": 24998,
+   "group": "Aves",
+   "rank": 190
+  },
+  {
+   "sci": "Spatula cyanoptera",
+   "name": "cinnamon teal",
+   "count": 24988,
+   "group": "Aves",
+   "rank": 191
+  },
+  {
+   "sci": "Cardellina pusilla",
+   "name": "wilson's warbler",
+   "count": 24910,
+   "group": "Aves",
+   "rank": 192
+  },
+  {
+   "sci": "Piranga olivacea",
+   "name": "scarlet tanager",
+   "count": 24871,
+   "group": "Aves",
+   "rank": 193
+  },
+  {
+   "sci": "Spizella pusilla",
+   "name": "field sparrow",
+   "count": 24644,
+   "group": "Aves",
+   "rank": 194
+  },
+  {
+   "sci": "Bonasa umbellus",
+   "name": "ruffed grouse",
+   "count": 24620,
+   "group": "Aves",
+   "rank": 195
+  },
+  {
+   "sci": "Calidris alpina",
+   "name": "dunlin",
+   "count": 24504,
+   "group": "Aves",
+   "rank": 196
+  },
+  {
+   "sci": "Anas rubripes",
+   "name": "american black duck",
+   "count": 24402,
+   "group": "Aves",
+   "rank": 197
+  },
+  {
+   "sci": "Chroicocephalus philadelphia",
+   "name": "bonaparte's gull",
+   "count": 24376,
+   "group": "Aves",
+   "rank": 198
+  },
+  {
+   "sci": "Tringa flavipes",
+   "name": "lesser yellowlegs",
+   "count": 24109,
+   "group": "Aves",
+   "rank": 199
+  },
+  {
+   "sci": "Larus marinus",
+   "name": "great black-backed gull",
+   "count": 23963,
+   "group": "Aves",
+   "rank": 200
+  },
+  {
+   "sci": "Mycteria americana",
+   "name": "wood stork",
+   "count": 23883,
+   "group": "Aves",
+   "rank": 201
+  },
+  {
+   "sci": "Megascops asio",
+   "name": "eastern screech-owl",
+   "count": 23307,
+   "group": "Aves",
+   "rank": 202
+  },
+  {
+   "sci": "Numenius americanus",
+   "name": "long-billed curlew",
+   "count": 23263,
+   "group": "Aves",
+   "rank": 203
+  },
+  {
+   "sci": "Plegadis chihi",
+   "name": "white-faced ibis",
+   "count": 23184,
+   "group": "Aves",
+   "rank": 204
+  },
+  {
+   "sci": "Buteo platypterus",
+   "name": "broad-winged hawk",
+   "count": 23114,
+   "group": "Aves",
+   "rank": 205
+  },
+  {
+   "sci": "Setophaga magnolia",
+   "name": "magnolia warbler",
+   "count": 22975,
+   "group": "Aves",
+   "rank": 206
+  },
+  {
+   "sci": "Xanthocephalus xanthocephalus",
+   "name": "yellow-headed blackbird",
+   "count": 22833,
+   "group": "Aves",
+   "rank": 207
+  },
+  {
+   "sci": "Ictinia mississippiensis",
+   "name": "mississippi kite",
+   "count": 22605,
+   "group": "Aves",
+   "rank": 208
+  },
+  {
+   "sci": "Icterus cucullatus",
+   "name": "hooded oriole",
+   "count": 22601,
+   "group": "Aves",
+   "rank": 209
+  },
+  {
+   "sci": "Eremophila alpestris",
+   "name": "horned lark",
+   "count": 22566,
+   "group": "Aves",
+   "rank": 210
+  },
+  {
+   "sci": "Archilochus alexandri",
+   "name": "black-chinned hummingbird",
+   "count": 22492,
+   "group": "Aves",
+   "rank": 211
+  },
+  {
+   "sci": "Numenius hudsonicus",
+   "name": "hudsonian whimbrel",
+   "count": 22394,
+   "group": "Aves",
+   "rank": 212
+  },
+  {
+   "sci": "Gallinago delicata",
+   "name": "wilson's snipe",
+   "count": 22319,
+   "group": "Aves",
+   "rank": 213
+  },
+  {
+   "sci": "Setophaga virens",
+   "name": "black-throated green warbler",
+   "count": 22045,
+   "group": "Aves",
+   "rank": 214
+  },
+  {
+   "sci": "Aythya marila",
+   "name": "greater scaup",
+   "count": 22044,
+   "group": "Aves",
+   "rank": 215
+  },
+  {
+   "sci": "Perisoreus canadensis",
+   "name": "canada jay",
+   "count": 21955,
+   "group": "Aves",
+   "rank": 216
+  },
+  {
+   "sci": "Haematopus bachmani",
+   "name": "black oystercatcher",
+   "count": 21593,
+   "group": "Aves",
+   "rank": 217
+  },
+  {
+   "sci": "Alopochen aegyptiaca",
+   "name": "egyptian goose",
+   "count": 21475,
+   "group": "Aves",
+   "rank": 218
+  },
+  {
+   "sci": "Accipiter striatus",
+   "name": "sharp-shinned hawk",
+   "count": 21399,
+   "group": "Aves",
+   "rank": 219
+  },
+  {
+   "sci": "Selasphorus sasin",
+   "name": "allen's hummingbird",
+   "count": 21273,
+   "group": "Aves",
+   "rank": 220
+  },
+  {
+   "sci": "Aechmophorus occidentalis",
+   "name": "western grebe",
+   "count": 21219,
+   "group": "Aves",
+   "rank": 221
+  },
+  {
+   "sci": "Sialia currucoides",
+   "name": "mountain bluebird",
+   "count": 20900,
+   "group": "Aves",
+   "rank": 222
+  },
+  {
+   "sci": "Larus heermanni",
+   "name": "heermann's gull",
+   "count": 20593,
+   "group": "Aves",
+   "rank": 223
+  },
+  {
+   "sci": "Vireo griseus",
+   "name": "white-eyed vireo",
+   "count": 20562,
+   "group": "Aves",
+   "rank": 224
+  },
+  {
+   "sci": "Anthus rubescens",
+   "name": "american pipit",
+   "count": 20442,
+   "group": "Aves",
+   "rank": 225
+  },
+  {
+   "sci": "Leiothlypis ruficapilla",
+   "name": "nashville warbler",
+   "count": 20368,
+   "group": "Aves",
+   "rank": 226
+  },
+  {
+   "sci": "Podiceps nigricollis",
+   "name": "eared grebe",
+   "count": 20311,
+   "group": "Aves",
+   "rank": 227
+  },
+  {
+   "sci": "Dryobates nuttallii",
+   "name": "nuttall's woodpecker",
+   "count": 20292,
+   "group": "Aves",
+   "rank": 228
+  },
+  {
+   "sci": "Aythya valisineria",
+   "name": "canvasback",
+   "count": 19985,
+   "group": "Aves",
+   "rank": 229
+  },
+  {
+   "sci": "Setophaga pensylvanica",
+   "name": "chestnut-sided warbler",
+   "count": 19887,
+   "group": "Aves",
+   "rank": 230
+  },
+  {
+   "sci": "Clangula hyemalis",
+   "name": "long-tailed duck",
+   "count": 19838,
+   "group": "Aves",
+   "rank": 231
+  },
+  {
+   "sci": "Nannopterum brasilianum",
+   "name": "neotropic cormorant",
+   "count": 19726,
+   "group": "Aves",
+   "rank": 232
+  },
+  {
+   "sci": "Passerina caerulea",
+   "name": "blue grosbeak",
+   "count": 19720,
+   "group": "Aves",
+   "rank": 233
+  },
+  {
+   "sci": "Urile penicillatus",
+   "name": "brandt's cormorant",
+   "count": 19629,
+   "group": "Aves",
+   "rank": 234
+  },
+  {
+   "sci": "Anser albifrons",
+   "name": "greater white-fronted goose",
+   "count": 19281,
+   "group": "Aves",
+   "rank": 235
+  },
+  {
+   "sci": "Setophaga townsendi",
+   "name": "townsend's warbler",
+   "count": 19265,
+   "group": "Aves",
+   "rank": 236
+  },
+  {
+   "sci": "Icterus spurius",
+   "name": "orchard oriole",
+   "count": 19182,
+   "group": "Aves",
+   "rank": 237
+  },
+  {
+   "sci": "Leiothlypis peregrina",
+   "name": "tennessee warbler",
+   "count": 18599,
+   "group": "Aves",
+   "rank": 238
+  },
+  {
+   "sci": "Athene cunicularia",
+   "name": "burrowing owl",
+   "count": 18571,
+   "group": "Aves",
+   "rank": 239
+  },
+  {
+   "sci": "Rynchops niger",
+   "name": "black skimmer",
+   "count": 18426,
+   "group": "Aves",
+   "rank": 240
+  },
+  {
+   "sci": "Tyrannus vociferans",
+   "name": "cassin's kingbird",
+   "count": 18341,
+   "group": "Aves",
+   "rank": 241
+  },
+  {
+   "sci": "Selasphorus rufus",
+   "name": "rufous hummingbird",
+   "count": 18316,
+   "group": "Aves",
+   "rank": 242
+  },
+  {
+   "sci": "Aramus guarauna",
+   "name": "limpkin",
+   "count": 18161,
+   "group": "Aves",
+   "rank": 243
+  },
+  {
+   "sci": "Tachycineta thalassina",
+   "name": "violet-green swallow",
+   "count": 18124,
+   "group": "Aves",
+   "rank": 244
+  },
+  {
+   "sci": "Icterus bullockii",
+   "name": "bullock's oriole",
+   "count": 17838,
+   "group": "Aves",
+   "rank": 245
+  },
+  {
+   "sci": "Poecile gambeli",
+   "name": "mountain chickadee",
+   "count": 17779,
+   "group": "Aves",
+   "rank": 246
+  },
+  {
+   "sci": "Somateria mollissima",
+   "name": "common eider",
+   "count": 17753,
+   "group": "Aves",
+   "rank": 247
+  },
+  {
+   "sci": "Callipepla gambelii",
+   "name": "gambel's quail",
+   "count": 17739,
+   "group": "Aves",
+   "rank": 248
+  },
+  {
+   "sci": "Dryobates scalaris",
+   "name": "ladder-backed woodpecker",
+   "count": 17616,
+   "group": "Aves",
+   "rank": 249
+  },
+  {
+   "sci": "Myiarchus cinerascens",
+   "name": "ash-throated flycatcher",
+   "count": 17373,
+   "group": "Aves",
+   "rank": 250
+  },
+  {
+   "sci": "Odocoileus virginianus",
+   "name": "white-tailed deer",
+   "count": 370908,
+   "group": "Mammalia",
+   "rank": 1
+  },
+  {
+   "sci": "Sciurus carolinensis",
+   "name": "eastern gray squirrel",
+   "count": 345931,
+   "group": "Mammalia",
+   "rank": 2
+  },
+  {
+   "sci": "Odocoileus hemionus",
+   "name": "mule deer",
+   "count": 185460,
+   "group": "Mammalia",
+   "rank": 3
+  },
+  {
+   "sci": "Sylvilagus floridanus",
+   "name": "eastern cottontail",
+   "count": 175744,
+   "group": "Mammalia",
+   "rank": 4
+  },
+  {
+   "sci": "Sciurus niger",
+   "name": "eastern fox squirrel",
+   "count": 160360,
+   "group": "Mammalia",
+   "rank": 5
+  },
+  {
+   "sci": "Procyon lotor",
+   "name": "common raccoon",
+   "count": 158354,
+   "group": "Mammalia",
+   "rank": 6
+  },
+  {
+   "sci": "Canis latrans",
+   "name": "coyote",
+   "count": 117348,
+   "group": "Mammalia",
+   "rank": 7
+  },
+  {
+   "sci": "Tamias striatus",
+   "name": "eastern chipmunk",
+   "count": 102027,
+   "group": "Mammalia",
+   "rank": 8
+  },
+  {
+   "sci": "Tamiasciurus hudsonicus",
+   "name": "american red squirrel",
+   "count": 92976,
+   "group": "Mammalia",
+   "rank": 9
+  },
+  {
+   "sci": "Castor canadensis",
+   "name": "american beaver",
+   "count": 75217,
+   "group": "Mammalia",
+   "rank": 10
+  },
+  {
+   "sci": "Ursus americanus",
+   "name": "american black bear",
+   "count": 70515,
+   "group": "Mammalia",
+   "rank": 11,
+   "danger": "medium",
+   "danger_note": "usually flees; never store food in shelter, fight back if attacked in a predatory encounter"
+  },
+  {
+   "sci": "Vulpes vulpes",
+   "name": "red fox",
+   "count": 64846,
+   "group": "Mammalia",
+   "rank": 12
+  },
+  {
+   "sci": "Didelphis virginiana",
+   "name": "virginia opossum",
+   "count": 64536,
+   "group": "Mammalia",
+   "rank": 13
+  },
+  {
+   "sci": "Marmota monax",
+   "name": "groundhog",
+   "count": 60207,
+   "group": "Mammalia",
+   "rank": 14
+  },
+  {
+   "sci": "Otospermophilus beecheyi",
+   "name": "california ground squirrel",
+   "count": 59809,
+   "group": "Mammalia",
+   "rank": 15
+  },
+  {
+   "sci": "Cervus canadensis",
+   "name": "wapiti",
+   "count": 54802,
+   "group": "Mammalia",
+   "rank": 16,
+   "danger": "medium",
+   "danger_note": "dangerous in rut (Sep-Oct) and calving season (May-Jun)"
+  },
+  {
+   "sci": "Phoca vitulina",
+   "name": "harbor seal",
+   "count": 47610,
+   "group": "Mammalia",
+   "rank": 17
+  },
+  {
+   "sci": "Alces alces",
+   "name": "moose",
+   "count": 45572,
+   "group": "Mammalia",
+   "rank": 18,
+   "danger": "medium",
+   "danger_note": "rutting bulls and cows with calves charge; more injuries than bears in Alaska"
+  },
+  {
+   "sci": "Sylvilagus audubonii",
+   "name": "desert cottontail",
+   "count": 44604,
+   "group": "Mammalia",
+   "rank": 19
+  },
+  {
+   "sci": "Ondatra zibethicus",
+   "name": "muskrat",
+   "count": 43617,
+   "group": "Mammalia",
+   "rank": 20
+  },
+  {
+   "sci": "Mephitis mephitis",
+   "name": "striped skunk",
+   "count": 42964,
+   "group": "Mammalia",
+   "rank": 21
+  },
+  {
+   "sci": "Lynx rufus",
+   "name": "bobcat",
+   "count": 41661,
+   "group": "Mammalia",
+   "rank": 22
+  },
+  {
+   "sci": "Felis catus",
+   "name": "domestic cat",
+   "count": 37872,
+   "group": "Mammalia",
+   "rank": 23
+  },
+  {
+   "sci": "Zalophus californianus",
+   "name": "california sea lion",
+   "count": 35450,
+   "group": "Mammalia",
+   "rank": 24
+  },
+  {
+   "sci": "Dasypus mexicanus",
+   "name": "mexican long-nosed armadillo",
+   "count": 33323,
+   "group": "Mammalia",
+   "rank": 25
+  },
+  {
+   "sci": "Lontra canadensis",
+   "name": "north american river otter",
+   "count": 31755,
+   "group": "Mammalia",
+   "rank": 26
+  },
+  {
+   "sci": "Urocyon cinereoargenteus",
+   "name": "gray fox",
+   "count": 31498,
+   "group": "Mammalia",
+   "rank": 27
+  },
+  {
+   "sci": "Ovis canadensis",
+   "name": "bighorn sheep",
+   "count": 30595,
+   "group": "Mammalia",
+   "rank": 28
+  },
+  {
+   "sci": "Erethizon dorsatum",
+   "name": "north american porcupine",
+   "count": 30374,
+   "group": "Mammalia",
+   "rank": 29
+  },
+  {
+   "sci": "Bos bison",
+   "name": "american bison",
+   "count": 26259,
+   "group": "Mammalia",
+   "rank": 30
+  },
+  {
+   "sci": "Callospermophilus lateralis",
+   "name": "common golden-mantled ground squirrel",
+   "count": 26057,
+   "group": "Mammalia",
+   "rank": 31
+  },
+  {
+   "sci": "Antilocapra americana",
+   "name": "pronghorn",
+   "count": 24873,
+   "group": "Mammalia",
+   "rank": 32
+  },
+  {
+   "sci": "Marmota flaviventris",
+   "name": "yellow-bellied marmot",
+   "count": 22187,
+   "group": "Mammalia",
+   "rank": 33
+  },
+  {
+   "sci": "Lepus californicus",
+   "name": "black-tailed jackrabbit",
+   "count": 20267,
+   "group": "Mammalia",
+   "rank": 34
+  },
+  {
+   "sci": "Lepus americanus",
+   "name": "snowshoe hare",
+   "count": 19729,
+   "group": "Mammalia",
+   "rank": 35
+  },
+  {
+   "sci": "Sciurus griseus",
+   "name": "western gray squirrel",
+   "count": 19367,
+   "group": "Mammalia",
+   "rank": 36
+  },
+  {
+   "sci": "Neogale vison",
+   "name": "american mink",
+   "count": 19158,
+   "group": "Mammalia",
+   "rank": 37
+  },
+  {
+   "sci": "Otospermophilus variegatus",
+   "name": "rock squirrel",
+   "count": 18752,
+   "group": "Mammalia",
+   "rank": 38
+  },
+  {
+   "sci": "Tamiasciurus douglasii",
+   "name": "douglas's squirrel",
+   "count": 17388,
+   "group": "Mammalia",
+   "rank": 39
+  },
+  {
+   "sci": "Enhydra lutris",
+   "name": "sea otter",
+   "count": 16930,
+   "group": "Mammalia",
+   "rank": 40
+  },
+  {
+   "sci": "Cynomys ludovicianus",
+   "name": "black-tailed prairie dog",
+   "count": 16776,
+   "group": "Mammalia",
+   "rank": 41
+  },
+  {
+   "sci": "Megaptera novaeangliae",
+   "name": "humpback whale",
+   "count": 15968,
+   "group": "Mammalia",
+   "rank": 42
+  },
+  {
+   "sci": "Blarina brevicauda",
+   "name": "northern short-tailed shrew",
+   "count": 15343,
+   "group": "Mammalia",
+   "rank": 43
+  },
+  {
+   "sci": "Sus scrofa",
+   "name": "wild boar",
+   "count": 14346,
+   "group": "Mammalia",
+   "rank": 44
+  },
+  {
+   "sci": "Ochotona princeps",
+   "name": "american pika",
+   "count": 12531,
+   "group": "Mammalia",
+   "rank": 45
+  },
+  {
+   "sci": "Mirounga angustirostris",
+   "name": "northern elephant seal",
+   "count": 11923,
+   "group": "Mammalia",
+   "rank": 46
+  },
+  {
+   "sci": "Sylvilagus palustris",
+   "name": "marsh rabbit",
+   "count": 10978,
+   "group": "Mammalia",
+   "rank": 47
+  },
+  {
+   "sci": "Ursus arctos",
+   "name": "brown bear",
+   "count": 10640,
+   "group": "Mammalia",
+   "rank": 48,
+   "danger": "high",
+   "danger_note": "grizzly; carry bear spray, do not run, play dead only in defensive encounters"
+  },
+  {
+   "sci": "Pecari tajacu",
+   "name": "collared peccary",
+   "count": 10562,
+   "group": "Mammalia",
+   "rank": 49
+  },
+  {
+   "sci": "Sylvilagus bachmani",
+   "name": "brush rabbit",
+   "count": 10404,
+   "group": "Mammalia",
+   "rank": 50
+  },
+  {
+   "sci": "Myocastor coypus",
+   "name": "coypu",
+   "count": 10127,
+   "group": "Mammalia",
+   "rank": 51
+  },
+  {
+   "sci": "Trichechus manatus",
+   "name": "west indian manatee",
+   "count": 10011,
+   "group": "Mammalia",
+   "rank": 52
+  },
+  {
+   "sci": "Puma concolor",
+   "name": "mountain lion",
+   "count": 9583,
+   "group": "Mammalia",
+   "rank": 53,
+   "danger": "high",
+   "danger_note": "appear large, never run, fight back if attacked"
+  },
+  {
+   "sci": "Urocitellus columbianus",
+   "name": "columbian ground squirrel",
+   "count": 9449,
+   "group": "Mammalia",
+   "rank": 54
+  },
+  {
+   "sci": "Oreamnos americanus",
+   "name": "mountain goat",
+   "count": 9305,
+   "group": "Mammalia",
+   "rank": 55
+  },
+  {
+   "sci": "Tursiops truncatus",
+   "name": "common bottlenose dolphin",
+   "count": 9114,
+   "group": "Mammalia",
+   "rank": 56
+  },
+  {
+   "sci": "Rattus norvegicus",
+   "name": "brown rat",
+   "count": 8494,
+   "group": "Mammalia",
+   "rank": 57
+  },
+  {
+   "sci": "Equus caballus",
+   "name": "domestic horse",
+   "count": 8459,
+   "group": "Mammalia",
+   "rank": 58
+  },
+  {
+   "sci": "Eumetopias jubatus",
+   "name": "steller sea lion",
+   "count": 7780,
+   "group": "Mammalia",
+   "rank": 59
+  },
+  {
+   "sci": "Eptesicus fuscus",
+   "name": "big brown bat",
+   "count": 7690,
+   "group": "Mammalia",
+   "rank": 60
+  },
+  {
+   "sci": "Marmota caligata",
+   "name": "hoary marmot",
+   "count": 7667,
+   "group": "Mammalia",
+   "rank": 61
+  },
+  {
+   "sci": "Lepus townsendii",
+   "name": "white-tailed jackrabbit",
+   "count": 7199,
+   "group": "Mammalia",
+   "rank": 62
+  },
+  {
+   "sci": "Otospermophilus douglasii",
+   "name": "douglas's ground squirrel",
+   "count": 6989,
+   "group": "Mammalia",
+   "rank": 63
+  },
+  {
+   "sci": "Ammospermophilus leucurus",
+   "name": "white-tailed antelope squirrel",
+   "count": 6778,
+   "group": "Mammalia",
+   "rank": 64
+  },
+  {
+   "sci": "Orcinus orca",
+   "name": "orca",
+   "count": 6547,
+   "group": "Mammalia",
+   "rank": 65
+  },
+  {
+   "sci": "Ictidomys tridecemlineatus",
+   "name": "thirteen-lined ground squirrel",
+   "count": 6407,
+   "group": "Mammalia",
+   "rank": 66
+  },
+  {
+   "sci": "Neotamias minimus",
+   "name": "least chipmunk",
+   "count": 6081,
+   "group": "Mammalia",
+   "rank": 67
+  },
+  {
+   "sci": "Halichoerus grypus",
+   "name": "grey seal",
+   "count": 5796,
+   "group": "Mammalia",
+   "rank": 68
+  },
+  {
+   "sci": "Sigmodon hispidus",
+   "name": "hispid cotton rat",
+   "count": 5653,
+   "group": "Mammalia",
+   "rank": 69
+  },
+  {
+   "sci": "Taxidea taxus",
+   "name": "american badger",
+   "count": 5469,
+   "group": "Mammalia",
+   "rank": 70
+  },
+  {
+   "sci": "Rangifer tarandus",
+   "name": "caribou",
+   "count": 5423,
+   "group": "Mammalia",
+   "rank": 71
+  },
+  {
+   "sci": "Sylvilagus nuttallii",
+   "name": "mountain cottontail",
+   "count": 5307,
+   "group": "Mammalia",
+   "rank": 72
+  },
+  {
+   "sci": "Urocitellus richardsonii",
+   "name": "richardson's ground squirrel",
+   "count": 5226,
+   "group": "Mammalia",
+   "rank": 73
+  },
+  {
+   "sci": "Oryctolagus cuniculus",
+   "name": "european rabbit",
+   "count": 5153,
+   "group": "Mammalia",
+   "rank": 74
+  },
+  {
+   "sci": "Neogale frenata",
+   "name": "long-tailed weasel",
+   "count": 5148,
+   "group": "Mammalia",
+   "rank": 75
+  },
+  {
+   "sci": "Canis lupus",
+   "name": "gray wolf",
+   "count": 4917,
+   "group": "Mammalia",
+   "rank": 76,
+   "danger": "medium",
+   "danger_note": "avoid, do not feed; healthy wolves avoid humans"
+  },
+  {
+   "sci": "Pekania pennanti",
+   "name": "fisher",
+   "count": 4554,
+   "group": "Mammalia",
+   "rank": 77
+  },
+  {
+   "sci": "Glaucomys volans",
+   "name": "southern flying squirrel",
+   "count": 4458,
+   "group": "Mammalia",
+   "rank": 78
+  },
+  {
+   "sci": "Neotamias townsendii",
+   "name": "townsend's chipmunk",
+   "count": 4426,
+   "group": "Mammalia",
+   "rank": 79
+  },
+  {
+   "sci": "Urocitellus armatus",
+   "name": "uinta ground squirrel",
+   "count": 4416,
+   "group": "Mammalia",
+   "rank": 80
+  },
+  {
+   "sci": "Scalopus aquaticus",
+   "name": "eastern mole",
+   "count": 4413,
+   "group": "Mammalia",
+   "rank": 81
+  },
+  {
+   "sci": "Sylvilagus aquaticus",
+   "name": "swamp rabbit",
+   "count": 4343,
+   "group": "Mammalia",
+   "rank": 82
+  },
+  {
+   "sci": "Mus musculus",
+   "name": "house mouse",
+   "count": 4316,
+   "group": "Mammalia",
+   "rank": 83
+  },
+  {
+   "sci": "Lasiurus borealis",
+   "name": "eastern red bat",
+   "count": 4315,
+   "group": "Mammalia",
+   "rank": 84
+  },
+  {
+   "sci": "Tadarida brasiliensis",
+   "name": "mexican free-tailed bat",
+   "count": 4290,
+   "group": "Mammalia",
+   "rank": 85
+  },
+  {
+   "sci": "Equus asinus",
+   "name": "donkey",
+   "count": 4237,
+   "group": "Mammalia",
+   "rank": 86
+  },
+  {
+   "sci": "Rattus rattus",
+   "name": "black rat",
+   "count": 4195,
+   "group": "Mammalia",
+   "rank": 87
+  },
+  {
+   "sci": "Sciurus aberti",
+   "name": "abert's squirrel",
+   "count": 4055,
+   "group": "Mammalia",
+   "rank": 88
+  },
+  {
+   "sci": "Tursiops erebennus",
+   "name": "tamanend's bottlenose dolphin",
+   "count": 4033,
+   "group": "Mammalia",
+   "rank": 89
+  },
+  {
+   "sci": "Peromyscus leucopus",
+   "name": "white-footed mouse",
+   "count": 3980,
+   "group": "Mammalia",
+   "rank": 90
+  },
+  {
+   "sci": "Neotamias amoenus",
+   "name": "yellow-pine chipmunk",
+   "count": 3839,
+   "group": "Mammalia",
+   "rank": 91
+  },
+  {
+   "sci": "Urocyon littoralis",
+   "name": "island fox",
+   "count": 3800,
+   "group": "Mammalia",
+   "rank": 92
+  },
+  {
+   "sci": "Microtus pennsylvanicus",
+   "name": "eastern meadow vole",
+   "count": 3694,
+   "group": "Mammalia",
+   "rank": 93
+  },
+  {
+   "sci": "Xerospermophilus tereticaudus",
+   "name": "round-tailed ground squirrel",
+   "count": 3600,
+   "group": "Mammalia",
+   "rank": 94
+  },
+  {
+   "sci": "Eschrichtius robustus",
+   "name": "grey whale",
+   "count": 3431,
+   "group": "Mammalia",
+   "rank": 95
+  },
+  {
+   "sci": "Neomonachus schauinslandi",
+   "name": "hawaiian monk seal",
+   "count": 3345,
+   "group": "Mammalia",
+   "rank": 96
+  },
+  {
+   "sci": "Callospermophilus saturatus",
+   "name": "cascade golden-mantled ground squirrel",
+   "count": 3177,
+   "group": "Mammalia",
+   "rank": 97
+  },
+  {
+   "sci": "Neotamias merriami",
+   "name": "merriam's chipmunk",
+   "count": 3153,
+   "group": "Mammalia",
+   "rank": 98
+  },
+  {
+   "sci": "Bassariscus astutus",
+   "name": "ringtail",
+   "count": 3097,
+   "group": "Mammalia",
+   "rank": 99
+  },
+  {
+   "sci": "Mustela richardsonii",
+   "name": "american ermine",
+   "count": 3079,
+   "group": "Mammalia",
+   "rank": 100
+  },
+  {
+   "sci": "Neotamias dorsalis",
+   "name": "cliff chipmunk",
+   "count": 2999,
+   "group": "Mammalia",
+   "rank": 101
+  },
+  {
+   "sci": "Megascapheus bottae",
+   "name": "botta's pocket gopher",
+   "count": 2999,
+   "group": "Mammalia",
+   "rank": 102
+  },
+  {
+   "sci": "Urocitellus parryii",
+   "name": "arctic ground squirrel",
+   "count": 2933,
+   "group": "Mammalia",
+   "rank": 103
+  },
+  {
+   "sci": "Perimyotis subflavus",
+   "name": "tri-coloured bat",
+   "count": 2901,
+   "group": "Mammalia",
+   "rank": 104
+  },
+  {
+   "sci": "Ammospermophilus harrisii",
+   "name": "harris' antelope squirrel",
+   "count": 2900,
+   "group": "Mammalia",
+   "rank": 105
+  },
+  {
+   "sci": "Urva auropunctata",
+   "name": "small indian mongoose",
+   "count": 2890,
+   "group": "Mammalia",
+   "rank": 106
+  },
+  {
+   "sci": "Cynomys gunnisoni",
+   "name": "gunnison's prairie dog",
+   "count": 2775,
+   "group": "Mammalia",
+   "rank": 107
+  },
+  {
+   "sci": "Peromyscus sonoriensis",
+   "name": "western deer mouse",
+   "count": 2730,
+   "group": "Mammalia",
+   "rank": 108
+  },
+  {
+   "sci": "Urocitellus beldingi",
+   "name": "belding's ground squirrel",
+   "count": 2629,
+   "group": "Mammalia",
+   "rank": 109
+  },
+  {
+   "sci": "Sciurus arizonensis",
+   "name": "arizona gray squirrel",
+   "count": 2626,
+   "group": "Mammalia",
+   "rank": 110
+  },
+  {
+   "sci": "Martes americana",
+   "name": "american marten",
+   "count": 2476,
+   "group": "Mammalia",
+   "rank": 111
+  },
+  {
+   "sci": "Phocoena phocoena",
+   "name": "harbour porpoise",
+   "count": 2469,
+   "group": "Mammalia",
+   "rank": 112
+  },
+  {
+   "sci": "Tamiasciurus fremonti",
+   "name": "fremont's squirrel",
+   "count": 2339,
+   "group": "Mammalia",
+   "rank": 113
+  },
+  {
+   "sci": "Nasua narica",
+   "name": "white-nosed coati",
+   "count": 2305,
+   "group": "Mammalia",
+   "rank": 114
+  },
+  {
+   "sci": "Condylura cristata",
+   "name": "star-nosed mole",
+   "count": 2240,
+   "group": "Mammalia",
+   "rank": 115
+  },
+  {
+   "sci": "Lasionycteris noctivagans",
+   "name": "silver-haired bat",
+   "count": 2235,
+   "group": "Mammalia",
+   "rank": 116
+  },
+  {
+   "sci": "Neotamias umbrinus",
+   "name": "uinta chipmunk",
+   "count": 2193,
+   "group": "Mammalia",
+   "rank": 117
+  },
+  {
+   "sci": "Ovis dalli",
+   "name": "thinhorn sheep",
+   "count": 2144,
+   "group": "Mammalia",
+   "rank": 118
+  },
+  {
+   "sci": "Delphinus delphis",
+   "name": "common dolphin",
+   "count": 2105,
+   "group": "Mammalia",
+   "rank": 119
+  },
+  {
+   "sci": "Neotoma fuscipes",
+   "name": "dusky-footed woodrat",
+   "count": 2005,
+   "group": "Mammalia",
+   "rank": 120
+  },
+  {
+   "sci": "Thamnophis sirtalis",
+   "name": "common garter snake",
+   "count": 197893,
+   "group": "Reptilia",
+   "rank": 1
+  },
+  {
+   "sci": "Sceloporus occidentalis",
+   "name": "western fence lizard",
+   "count": 193765,
+   "group": "Reptilia",
+   "rank": 2
+  },
+  {
+   "sci": "Trachemys scripta",
+   "name": "pond slider",
+   "count": 183705,
+   "group": "Reptilia",
+   "rank": 3
+  },
+  {
+   "sci": "Chrysemys picta",
+   "name": "painted turtle",
+   "count": 173624,
+   "group": "Reptilia",
+   "rank": 4
+  },
+  {
+   "sci": "Anolis carolinensis",
+   "name": "green anole",
+   "count": 146805,
+   "group": "Reptilia",
+   "rank": 5
+  },
+  {
+   "sci": "Anolis sagrei",
+   "name": "brown anole",
+   "count": 136832,
+   "group": "Reptilia",
+   "rank": 6
+  },
+  {
+   "sci": "Chelydra serpentina",
+   "name": "common snapping turtle",
+   "count": 118906,
+   "group": "Reptilia",
+   "rank": 7
+  },
+  {
+   "sci": "Terrapene carolina",
+   "name": "common box turtle",
+   "count": 104917,
+   "group": "Reptilia",
+   "rank": 8
+  },
+  {
+   "sci": "Alligator mississippiensis",
+   "name": "american alligator",
+   "count": 99616,
+   "group": "Reptilia",
+   "rank": 9,
+   "danger": "high",
+   "danger_note": "never swim in gator water; stay 10 m+ from bank edges"
+  },
+  {
+   "sci": "Nerodia sipedon",
+   "name": "common watersnake",
+   "count": 92708,
+   "group": "Reptilia",
+   "rank": 10
+  },
+  {
+   "sci": "Uta stansburiana",
+   "name": "common side-blotched lizard",
+   "count": 81559,
+   "group": "Reptilia",
+   "rank": 11
+  },
+  {
+   "sci": "Pituophis catenifer",
+   "name": "gopher snake",
+   "count": 77340,
+   "group": "Reptilia",
+   "rank": 12
+  },
+  {
+   "sci": "Storeria dekayi",
+   "name": "dekay's brownsnake",
+   "count": 65820,
+   "group": "Reptilia",
+   "rank": 13
+  },
+  {
+   "sci": "Pantherophis alleghaniensis",
+   "name": "central ratsnake",
+   "count": 58611,
+   "group": "Reptilia",
+   "rank": 14
+  },
+  {
+   "sci": "Coluber constrictor",
+   "name": "north american racer",
+   "count": 55338,
+   "group": "Reptilia",
+   "rank": 15
+  },
+  {
+   "sci": "Diadophis punctatus",
+   "name": "ring-necked snake",
+   "count": 45092,
+   "group": "Reptilia",
+   "rank": 16
+  },
+  {
+   "sci": "Hemidactylus turcicus",
+   "name": "mediterranean house gecko",
+   "count": 41361,
+   "group": "Reptilia",
+   "rank": 17
+  },
+  {
+   "sci": "Plestiodon fasciatus",
+   "name": "common five-lined skink",
+   "count": 40225,
+   "group": "Reptilia",
+   "rank": 18
+  },
+  {
+   "sci": "Elgaria multicarinata",
+   "name": "southern alligator lizard",
+   "count": 39849,
+   "group": "Reptilia",
+   "rank": 19
+  },
+  {
+   "sci": "Sceloporus olivaceus",
+   "name": "texas spiny lizard",
+   "count": 38011,
+   "group": "Reptilia",
+   "rank": 20
+  },
+  {
+   "sci": "Crotalus oreganus",
+   "name": "western rattlesnake",
+   "count": 36134,
+   "group": "Reptilia",
+   "rank": 21,
+   "danger": "high",
+   "danger_note": "venomous complex (northern/pacific/great basin)"
+  },
+  {
+   "sci": "Thamnophis elegans",
+   "name": "western terrestrial garter snake",
+   "count": 33621,
+   "group": "Reptilia",
+   "rank": 22
+  },
+  {
+   "sci": "Gopherus polyphemus",
+   "name": "gopher tortoise",
+   "count": 31435,
+   "group": "Reptilia",
+   "rank": 23
+  },
+  {
+   "sci": "Sceloporus undulatus",
+   "name": "eastern fence lizard",
+   "count": 30041,
+   "group": "Reptilia",
+   "rank": 24
+  },
+  {
+   "sci": "Pantherophis obsoletus",
+   "name": "western ratsnake",
+   "count": 28032,
+   "group": "Reptilia",
+   "rank": 25
+  },
+  {
+   "sci": "Crotalus atrox",
+   "name": "western diamond-backed rattlesnake",
+   "count": 27446,
+   "group": "Reptilia",
+   "rank": 26,
+   "danger": "high",
+   "danger_note": "venomous; give wide berth, do not handle dead snakes"
+  },
+  {
+   "sci": "Agkistrodon contortrix",
+   "name": "eastern copperhead",
+   "count": 26309,
+   "group": "Reptilia",
+   "rank": 27,
+   "danger": "high",
+   "danger_note": "venomous; most-bitten snake in eastern US; freeze, locate, back away"
+  },
+  {
+   "sci": "Nerodia erythrogaster",
+   "name": "plain-bellied watersnake",
+   "count": 25357,
+   "group": "Reptilia",
+   "rank": 28
+  },
+  {
+   "sci": "Lampropeltis triangulum",
+   "name": "eastern milksnake",
+   "count": 25044,
+   "group": "Reptilia",
+   "rank": 29
+  },
+  {
+   "sci": "Aspidoscelis tigris",
+   "name": "western whiptail",
+   "count": 25010,
+   "group": "Reptilia",
+   "rank": 30
+  },
+  {
+   "sci": "Nerodia fasciata",
+   "name": "banded watersnake",
+   "count": 23904,
+   "group": "Reptilia",
+   "rank": 31
+  },
+  {
+   "sci": "Terrapene triunguis",
+   "name": "three-toed box turtle",
+   "count": 23689,
+   "group": "Reptilia",
+   "rank": 32
+  },
+  {
+   "sci": "Agkistrodon piscivorus",
+   "name": "northern cottonmouth",
+   "count": 23319,
+   "group": "Reptilia",
+   "rank": 33,
+   "danger": "high",
+   "danger_note": "venomous semi-aquatic; gapes white mouth as warning"
+  },
+  {
+   "sci": "Storeria occipitomaculata",
+   "name": "red-bellied snake",
+   "count": 23049,
+   "group": "Reptilia",
+   "rank": 34
+  },
+  {
+   "sci": "Iguana iguana",
+   "name": "green iguana",
+   "count": 22780,
+   "group": "Reptilia",
+   "rank": 35
+  },
+  {
+   "sci": "Opheodrys aestivus",
+   "name": "rough greensnake",
+   "count": 21735,
+   "group": "Reptilia",
+   "rank": 36
+  },
+  {
+   "sci": "Scincella lateralis",
+   "name": "little brown skink",
+   "count": 21711,
+   "group": "Reptilia",
+   "rank": 37
+  },
+  {
+   "sci": "Apalone spinifera",
+   "name": "spiny softshell",
+   "count": 21208,
+   "group": "Reptilia",
+   "rank": 38
+  },
+  {
+   "sci": "Thamnophis proximus",
+   "name": "western ribbon snake",
+   "count": 20399,
+   "group": "Reptilia",
+   "rank": 39
+  },
+  {
+   "sci": "Sceloporus magister",
+   "name": "desert spiny lizard",
+   "count": 19781,
+   "group": "Reptilia",
+   "rank": 40
+  },
+  {
+   "sci": "Urosaurus ornatus",
+   "name": "ornate tree lizard",
+   "count": 18494,
+   "group": "Reptilia",
+   "rank": 41
+  },
+  {
+   "sci": "Graptemys geographica",
+   "name": "northern map turtle",
+   "count": 17964,
+   "group": "Reptilia",
+   "rank": 42
+  },
+  {
+   "sci": "Aspidoscelis gularis",
+   "name": "common spotted whiptail",
+   "count": 17468,
+   "group": "Reptilia",
+   "rank": 43
+  },
+  {
+   "sci": "Leiocephalus carinatus",
+   "name": "northern curly-tailed lizard",
+   "count": 17295,
+   "group": "Reptilia",
+   "rank": 44
+  },
+  {
+   "sci": "Masticophis flagellum",
+   "name": "common coachwhip",
+   "count": 16474,
+   "group": "Reptilia",
+   "rank": 45
+  },
+  {
+   "sci": "Apalone ferox",
+   "name": "florida softshell turtle",
+   "count": 15958,
+   "group": "Reptilia",
+   "rank": 46
+  },
+  {
+   "sci": "Sceloporus consobrinus",
+   "name": "prairie lizard",
+   "count": 15549,
+   "group": "Reptilia",
+   "rank": 47
+  },
+  {
+   "sci": "Thamnophis ordinoides",
+   "name": "northwestern garter snake",
+   "count": 15330,
+   "group": "Reptilia",
+   "rank": 48
+  },
+  {
+   "sci": "Pseudemys concinna",
+   "name": "river cooter",
+   "count": 15191,
+   "group": "Reptilia",
+   "rank": 49
+  },
+  {
+   "sci": "Chelonia mydas",
+   "name": "green sea turtle",
+   "count": 15047,
+   "group": "Reptilia",
+   "rank": 50
+  },
+  {
+   "sci": "Agama picticauda",
+   "name": "peters's rock agama",
+   "count": 14732,
+   "group": "Reptilia",
+   "rank": 51
+  },
+  {
+   "sci": "Malaclemys terrapin",
+   "name": "diamondback terrapin",
+   "count": 14585,
+   "group": "Reptilia",
+   "rank": 52
+  },
+  {
+   "sci": "Aspidoscelis sexlineatus",
+   "name": "six-lined racerunner",
+   "count": 14402,
+   "group": "Reptilia",
+   "rank": 53
+  },
+  {
+   "sci": "Lampropeltis californiae",
+   "name": "california king snake",
+   "count": 14330,
+   "group": "Reptilia",
+   "rank": 54
+  },
+  {
+   "sci": "Emydoidea blandingii",
+   "name": "blanding's turtle",
+   "count": 14288,
+   "group": "Reptilia",
+   "rank": 55
+  },
+  {
+   "sci": "Sternotherus odoratus",
+   "name": "eastern musk turtle",
+   "count": 14247,
+   "group": "Reptilia",
+   "rank": 56
+  },
+  {
+   "sci": "Nerodia rhombifer",
+   "name": "diamondback watersnake",
+   "count": 14198,
+   "group": "Reptilia",
+   "rank": 57
+  },
+  {
+   "sci": "Crotalus horridus",
+   "name": "timber rattlesnake",
+   "count": 13943,
+   "group": "Reptilia",
+   "rank": 58,
+   "danger": "high",
+   "danger_note": "venomous; basks on trail rocks and ledges"
+  },
+  {
+   "sci": "Virginia striatula",
+   "name": "rough earthsnake",
+   "count": 13861,
+   "group": "Reptilia",
+   "rank": 59
+  },
+  {
+   "sci": "Elgaria coerulea",
+   "name": "northern alligator lizard",
+   "count": 13462,
+   "group": "Reptilia",
+   "rank": 60
+  },
+  {
+   "sci": "Heterodon platirhinos",
+   "name": "eastern hognose snake",
+   "count": 12423,
+   "group": "Reptilia",
+   "rank": 61
+  },
+  {
+   "sci": "Pantherophis quadrivittatus",
+   "name": "eastern ratsnake",
+   "count": 12152,
+   "group": "Reptilia",
+   "rank": 62
+  },
+  {
+   "sci": "Plestiodon laticeps",
+   "name": "broad-headed skink",
+   "count": 12017,
+   "group": "Reptilia",
+   "rank": 63
+  },
+  {
+   "sci": "Phrynosoma hernandesi",
+   "name": "greater short-horned lizard",
+   "count": 11793,
+   "group": "Reptilia",
+   "rank": 64
+  },
+  {
+   "sci": "Hemidactylus mabouia",
+   "name": "tropical house gecko",
+   "count": 11672,
+   "group": "Reptilia",
+   "rank": 65
+  },
+  {
+   "sci": "Thamnophis saurita",
+   "name": "common ribbon snake",
+   "count": 11594,
+   "group": "Reptilia",
+   "rank": 66
+  },
+  {
+   "sci": "Phrynosoma cornutum",
+   "name": "texas horned lizard",
+   "count": 11545,
+   "group": "Reptilia",
+   "rank": 67
+  },
+  {
+   "sci": "Phelsuma laticauda",
+   "name": "gold dust day gecko",
+   "count": 11375,
+   "group": "Reptilia",
+   "rank": 68
+  },
+  {
+   "sci": "Carphophis amoenus",
+   "name": "common wormsnake",
+   "count": 11344,
+   "group": "Reptilia",
+   "rank": 69
+  },
+  {
+   "sci": "Sceloporus tristichus",
+   "name": "plateau fence lizard",
+   "count": 11206,
+   "group": "Reptilia",
+   "rank": 70
+  },
+  {
+   "sci": "Ursus maritimus",
+   "name": "polar bear",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "actively predatory toward humans; any encounter is an emergency"
+  },
+  {
+   "sci": "Bison bison",
+   "name": "american bison",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "unpredictable, goring risk; stay 25 m+ away"
+  },
+  {
+   "sci": "Crocodylus acutus",
+   "name": "american crocodile",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "shy but large; same water discipline as alligator"
+  },
+  {
+   "sci": "Agkistrodon laticinctus",
+   "name": "broad-banded cottonmouth",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; western cottonmouth populations"
+  },
+  {
+   "sci": "Crotalus scutulatus",
+   "name": "mohave rattlesnake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous, neurotoxic populations; most dangerous NA rattlesnake"
+  },
+  {
+   "sci": "Crotalus adamanteus",
+   "name": "eastern diamond-backed rattlesnake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; largest NA rattlesnake"
+  },
+  {
+   "sci": "Crotalus viridis",
+   "name": "prairie rattlesnake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; plains and foothills"
+  },
+  {
+   "sci": "Crotalus cerastes",
+   "name": "sidewinder",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; nocturnal desert sands"
+  },
+  {
+   "sci": "Sistrurus catenatus",
+   "name": "massasauga",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous pygmy rattlesnake relative; wet prairies"
+  },
+  {
+   "sci": "Sistrurus miliarius",
+   "name": "pygmy rattlesnake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; small, quiet, southeastern"
+  },
+  {
+   "sci": "Micrurus fulvius",
+   "name": "eastern coral snake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous neurotoxic; red-yellow bands touch; do NOT cut or suck bites"
+  },
+  {
+   "sci": "Micruroides euryxanthus",
+   "name": "sonoran coral snake",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous neurotoxic; small burrowing coral"
+  },
+  {
+   "sci": "Heloderma suspectum",
+   "name": "gila monster",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous lizard; painful chew bite; do not handle"
+  },
+  {
+   "sci": "Rhinella marina",
+   "name": "cane toad",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "bufotoxin; keep pets away, wash hands after contact"
+  },
+  {
+   "sci": "Latrodectus geometricus",
+   "name": "brown widow",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "venomous; check gloves, boots, woodpiles"
+  },
+  {
+   "sci": "Latrodectus hesperus",
+   "name": "western black widow",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; infrequent but serious envenomation"
+  },
+  {
+   "sci": "Latrodectus variolus",
+   "name": "northern black widow",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; woodpiles and outhouses"
+  },
+  {
+   "sci": "Latrodectus mactans",
+   "name": "southern black widow",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "venomous; glossy black, red hourglass"
+  },
+  {
+   "sci": "Loxosceles reclusa",
+   "name": "brown recluse",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "necrotic venom; shake out stored clothing and bedding"
+  },
+  {
+   "sci": "Centruroides vittatus",
+   "name": "striped bark scorpion",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "painful sting; check shoes in the south-central US"
+  },
+  {
+   "sci": "Centruroides sculpturatus",
+   "name": "arizona bark scorpion",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "high",
+   "danger_note": "medically significant sting; only lethal scorpion in the US"
+  },
+  {
+   "sci": "Vespula squamosa",
+   "name": "southern yellowjacket",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "aggressive ground nests; carry antihistamines if allergic"
+  },
+  {
+   "sci": "Amblyomma americanum",
+   "name": "lone star tick",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "aggressive biter; alpha-gal and ehrlichiosis vector; daily tick checks"
+  },
+  {
+   "sci": "Ixodes scapularis",
+   "name": "black-legged tick",
+   "count": 0,
+   "group": "safety",
+   "rank": 0,
+   "danger": "medium",
+   "danger_note": "Lyme vector; permethrin trousers, 24h removal window"
+  }
+ ]
+}

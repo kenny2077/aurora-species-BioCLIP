@@ -1,0 +1,81 @@
+{
+ "package": "branch-b-clip-ios",
+ "generated": "2026-09-05T11:18:14",
+ "file_count": 18,
+ "total_bytes": 609178901,
+ "llama_cpp_binaries": "llama.cpp b10819 win-cuda-12.4-x64 (pinned upstream release)",
+ "files": {
+  "build/Dockerfile": {
+   "bytes": 858,
+   "sha256": "e546efc89b57ede5ca9ce78c82a7a2d0c61cca78afd535aeaf4127c32f43d850"
+  },
+  "build_embeddings.py": {
+   "bytes": 3503,
+   "sha256": "71c08e2e9dd65c158f63245884285439f697d77d7ee3ff771556300e1fe17fab"
+  },
+  "convert_coreml.py": {
+   "bytes": 4311,
+   "sha256": "0ede58bdc6fd245b86dd463ada2db470573ce9d305bff10ec96be99cae000e42"
+  },
+  "coreml/BioCLIP2-ImageEncoder.mlpackage/Data/com.apple.CoreML/model.mlmodel": {
+   "bytes": 327360,
+   "sha256": "eb22dd85145a93ec479f41d66077d1ec844c0374ff4be3bd90913602dbbfdc40"
+  },
+  "coreml/BioCLIP2-ImageEncoder.mlpackage/Data/com.apple.CoreML/weights/weight.bin": {
+   "bytes": 607953024,
+   "sha256": "ca1658ec95d05347165a3f602b4cc465a41da5dde88f4ecec04497a81333829a"
+  },
+  "coreml/BioCLIP2-ImageEncoder.mlpackage/Manifest.json": {
+   "bytes": 617,
+   "sha256": "281c85642c8d7321c79e0ab817790ce5b440ba0c9e10c65fa543f3e06887909c"
+  },
+  "coreml/coreml_meta.json": {
+   "bytes": 220,
+   "sha256": "a60b4693df071cc6b1967db00bd72d805e24e69951b0e42a21e384cf2f160d66"
+  },
+  "coreml/validation_report.json": {
+   "bytes": 1272,
+   "sha256": "fbde8c1b7a5f806aefd5532191fe9d55f36ce967c432713c029ee4baca36a1e0"
+  },
+  "HANDOFF.md": {
+   "bytes": 15991,
+   "sha256": "b0dd7982bf9321dac89b184952422bbf9e3740bfcd2bd12f8dc2db61c8bd6900"
+  },
+  "ios/AuroraSpeciesKit/Package.swift": {
+   "bytes": 1229,
+   "sha256": "f119f50087f104305759078b4738df9c7e23fbb49b91bdd8e47571d198118446"
+  },
+  "ios/AuroraSpeciesKit/Sources/AuroraSpeciesKit/AuroraExamRunner.swift": {
+   "bytes": 4433,
+   "sha256": "b3250eafe3d4ea8ef655ff2ac97ee0c89d6a1c6ba164c8181dd046224282aa89"
+  },
+  "ios/AuroraSpeciesKit/Sources/AuroraSpeciesKit/EmbeddingTable.swift": {
+   "bytes": 2704,
+   "sha256": "69b5fd85f9be738e8d027f491ff32bfd7d33c67e6cf78733bcf0144512199e09"
+  },
+  "ios/AuroraSpeciesKit/Sources/AuroraSpeciesKit/SpeciesClassifier.swift": {
+   "bytes": 6640,
+   "sha256": "c2b9fbcbbdf8938f9d2cae2253680747ef89a839e13772dc88093fca871f6373"
+  },
+  "ios/AuroraSpeciesKit/Tests/AuroraSpeciesKitTests/ExamTests.swift": {
+   "bytes": 2395,
+   "sha256": "1cbf99136be504e716e033a0886bf2cc03f673b85776a8974c851d9d0ab71f1f"
+  },
+  "README.md": {
+   "bytes": 3419,
+   "sha256": "13e841660809f34e8a5abfec87dc08ce8498a4e340892cecc5a86d03ccd99814"
+  },
+  "species_embeddings.f16.bin": {
+   "bytes": 774144,
+   "sha256": "685dffd104c63107f20c6644a2ca0ea2d1d25ab9caeed3dd92f39720d4d0ad0a"
+  },
+  "species_table.json": {
+   "bytes": 71946,
+   "sha256": "49102fd915b68019f2f04215360a9722817c6d18b799db9dfa547285a0f215d4"
+  },
+  "validate_coreml.py": {
+   "bytes": 4835,
+   "sha256": "5d90ee14a012052f1b008b2a60d45948f32c10a8b982d6338baa717ed7620f74"
+  }
+ }
+}

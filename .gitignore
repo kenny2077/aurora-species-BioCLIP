@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[oc]
+.venv/
+
+# Heavy model artifacts (pinned upstream via manifest.json hashes)
+*.gguf.tmp
+base/
+bin/
+*.mlpackage/
+*.mlmodelc/
+out/ckpt/
+unsloth_compiled_cache/
+
+# OS noise
+.DS_Store
+Thumbs.db

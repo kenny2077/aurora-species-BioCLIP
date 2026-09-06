@@ -1,0 +1,17 @@
+[
+ {
+  "species": "eastern chipmunk",
+  "photo": "551778055.jpg",
+  "reason": "photo is a barred owl holding a chipmunk \u2014 primary subject mismatch (iNat obs 551778055)"
+ },
+ {
+  "species": "coyote",
+  "photo": "2916298.jpg",
+  "reason": "coyote is a tiny subject in front of a northern elephant seal colony \u2014 scene mismatch (iNat obs 2916298)"
+ },
+ {
+  "species": "moose",
+  "photo": "64561076.jpg",
+  "reason": "iNat content-warning placeholder image, not the actual observation photo"
+ }
+]

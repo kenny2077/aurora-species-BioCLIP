@@ -1,0 +1,676 @@
+{
+  "model": "hf-hub:imageomics/bioclip-2",
+  "mode": "zero-shot",
+  "total": 39,
+  "correct": 38,
+  "accuracy": 97.4,
+  "per_animal": {
+    "american bison": [
+      2,
+      2
+    ],
+    "american crow": [
+      2,
+      2
+    ],
+    "bald eagle": [
+      2,
+      2
+    ],
+    "black bear": [
+      2,
+      2
+    ],
+    "canada goose": [
+      2,
+      2
+    ],
+    "coyote": [
+      2,
+      2
+    ],
+    "eastern chipmunk": [
+      2,
+      2
+    ],
+    "eastern cottontail rabbit": [
+      2,
+      2
+    ],
+    "eastern gray squirrel": [
+      2,
+      2
+    ],
+    "great blue heron": [
+      2,
+      2
+    ],
+    "grizzly bear": [
+      2,
+      2
+    ],
+    "mallard": [
+      2,
+      2
+    ],
+    "mule deer": [
+      2,
+      2
+    ],
+    "pronghorn": [
+      2,
+      2
+    ],
+    "raccoon": [
+      2,
+      2
+    ],
+    "red fox": [
+      1,
+      2
+    ],
+    "striped skunk": [
+      2,
+      2
+    ],
+    "virginia opossum": [
+      2,
+      2
+    ],
+    "white-tailed deer": [
+      2,
+      2
+    ],
+    "wild turkey": [
+      1,
+      1
+    ]
+  },
+  "rows": [
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\american bison\\320558876.jpg",
+      "true": "american bison",
+      "pred": "american bison",
+      "top3": [
+        "american bison",
+        "pronghorn",
+        "grizzly bear"
+      ],
+      "probs": [
+        0.9995,
+        0.0003,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\american bison\\91354425.jpg",
+      "true": "american bison",
+      "pred": "american bison",
+      "top3": [
+        "american bison",
+        "grizzly bear",
+        "black bear"
+      ],
+      "probs": [
+        0.9999,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\american crow\\243862059.jpg",
+      "true": "american crow",
+      "pred": "american crow",
+      "top3": [
+        "american crow",
+        "bald eagle",
+        "canada goose"
+      ],
+      "probs": [
+        0.9999,
+        0.0001,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\american crow\\53516042.jpg",
+      "true": "american crow",
+      "pred": "american crow",
+      "top3": [
+        "american crow",
+        "bald eagle",
+        "eastern gray squirrel"
+      ],
+      "probs": [
+        0.9998,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\bald eagle\\384490244.jpg",
+      "true": "bald eagle",
+      "pred": "bald eagle",
+      "top3": [
+        "bald eagle",
+        "great blue heron",
+        "american crow"
+      ],
+      "probs": [
+        0.9997,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\bald eagle\\449407593.jpg",
+      "true": "bald eagle",
+      "pred": "bald eagle",
+      "top3": [
+        "bald eagle",
+        "great blue heron",
+        "wild turkey"
+      ],
+      "probs": [
+        0.7255,
+        0.2508,
+        0.0076
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\black bear\\184578489.jpg",
+      "true": "black bear",
+      "pred": "black bear",
+      "top3": [
+        "black bear",
+        "grizzly bear",
+        "red fox"
+      ],
+      "probs": [
+        0.6023,
+        0.3915,
+        0.0031
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\black bear\\392878479.jpg",
+      "true": "black bear",
+      "pred": "black bear",
+      "top3": [
+        "black bear",
+        "grizzly bear",
+        "striped skunk"
+      ],
+      "probs": [
+        0.9829,
+        0.0139,
+        0.0013
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\canada goose\\123908815.jpg",
+      "true": "canada goose",
+      "pred": "canada goose",
+      "top3": [
+        "canada goose",
+        "mallard",
+        "american crow"
+      ],
+      "probs": [
+        0.9992,
+        0.0005,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\canada goose\\546325643.jpg",
+      "true": "canada goose",
+      "pred": "canada goose",
+      "top3": [
+        "canada goose",
+        "mallard",
+        "wild turkey"
+      ],
+      "probs": [
+        0.9998,
+        0.0001,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\coyote\\2916298.jpg",
+      "true": "coyote",
+      "pred": "coyote",
+      "top3": [
+        "coyote",
+        "mule deer",
+        "great blue heron"
+      ],
+      "probs": [
+        0.9911,
+        0.0032,
+        0.0014
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\coyote\\603527016.jpg",
+      "true": "coyote",
+      "pred": "coyote",
+      "top3": [
+        "coyote",
+        "red fox",
+        "mule deer"
+      ],
+      "probs": [
+        0.9985,
+        0.0005,
+        0.0004
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern chipmunk\\551778055.jpg",
+      "true": "eastern chipmunk",
+      "pred": "eastern chipmunk",
+      "top3": [
+        "eastern chipmunk",
+        "virginia opossum",
+        "bald eagle"
+      ],
+      "probs": [
+        0.7257,
+        0.1033,
+        0.0571
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern chipmunk\\579218740.jpg",
+      "true": "eastern chipmunk",
+      "pred": "eastern chipmunk",
+      "top3": [
+        "eastern chipmunk",
+        "eastern gray squirrel",
+        "eastern cottontail rabbit"
+      ],
+      "probs": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern cottontail rabbit\\529528111.jpg",
+      "true": "eastern cottontail rabbit",
+      "pred": "eastern cottontail rabbit",
+      "top3": [
+        "eastern cottontail rabbit",
+        "virginia opossum",
+        "white-tailed deer"
+      ],
+      "probs": [
+        0.9974,
+        0.0016,
+        0.0003
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern cottontail rabbit\\91229197.jpg",
+      "true": "eastern cottontail rabbit",
+      "pred": "eastern cottontail rabbit",
+      "top3": [
+        "eastern cottontail rabbit",
+        "eastern chipmunk",
+        "red fox"
+      ],
+      "probs": [
+        0.9997,
+        0.0002,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern gray squirrel\\176023576.jpg",
+      "true": "eastern gray squirrel",
+      "pred": "eastern gray squirrel",
+      "top3": [
+        "eastern gray squirrel",
+        "eastern chipmunk",
+        "virginia opossum"
+      ],
+      "probs": [
+        0.9985,
+        0.0013,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\eastern gray squirrel\\659345221.jpg",
+      "true": "eastern gray squirrel",
+      "pred": "eastern gray squirrel",
+      "top3": [
+        "eastern gray squirrel",
+        "eastern chipmunk",
+        "virginia opossum"
+      ],
+      "probs": [
+        0.9966,
+        0.0031,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\great blue heron\\134213334.jpg",
+      "true": "great blue heron",
+      "pred": "great blue heron",
+      "top3": [
+        "great blue heron",
+        "virginia opossum",
+        "eastern gray squirrel"
+      ],
+      "probs": [
+        0.9825,
+        0.0059,
+        0.0056
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\great blue heron\\671997918.jpg",
+      "true": "great blue heron",
+      "pred": "great blue heron",
+      "top3": [
+        "great blue heron",
+        "bald eagle",
+        "canada goose"
+      ],
+      "probs": [
+        0.9998,
+        0.0001,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\grizzly bear\\283137646.jpg",
+      "true": "grizzly bear",
+      "pred": "grizzly bear",
+      "top3": [
+        "grizzly bear",
+        "black bear",
+        "american bison"
+      ],
+      "probs": [
+        0.7163,
+        0.2815,
+        0.0012
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\grizzly bear\\94110788.jpg",
+      "true": "grizzly bear",
+      "pred": "grizzly bear",
+      "top3": [
+        "grizzly bear",
+        "american bison",
+        "bald eagle"
+      ],
+      "probs": [
+        0.7438,
+        0.2025,
+        0.0414
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\mallard\\519465071.jpg",
+      "true": "mallard",
+      "pred": "mallard",
+      "top3": [
+        "mallard",
+        "canada goose",
+        "great blue heron"
+      ],
+      "probs": [
+        0.9998,
+        0.0001,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\mallard\\671099129.jpg",
+      "true": "mallard",
+      "pred": "mallard",
+      "top3": [
+        "mallard",
+        "canada goose",
+        "great blue heron"
+      ],
+      "probs": [
+        0.9994,
+        0.0003,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\mule deer\\450403763.jpg",
+      "true": "mule deer",
+      "pred": "mule deer",
+      "top3": [
+        "mule deer",
+        "pronghorn",
+        "white-tailed deer"
+      ],
+      "probs": [
+        0.9959,
+        0.0021,
+        0.0018
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\mule deer\\616385073.jpg",
+      "true": "mule deer",
+      "pred": "mule deer",
+      "top3": [
+        "mule deer",
+        "pronghorn",
+        "white-tailed deer"
+      ],
+      "probs": [
+        0.9917,
+        0.007,
+        0.0013
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\pronghorn\\268596217.jpg",
+      "true": "pronghorn",
+      "pred": "pronghorn",
+      "top3": [
+        "pronghorn",
+        "mule deer",
+        "white-tailed deer"
+      ],
+      "probs": [
+        0.9993,
+        0.0005,
+        0.0001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\pronghorn\\393488307.jpg",
+      "true": "pronghorn",
+      "pred": "pronghorn",
+      "top3": [
+        "pronghorn",
+        "mule deer",
+        "white-tailed deer"
+      ],
+      "probs": [
+        0.9996,
+        0.0002,
+        0.0002
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\raccoon\\240042638.jpg",
+      "true": "raccoon",
+      "pred": "raccoon",
+      "top3": [
+        "raccoon",
+        "virginia opossum",
+        "canada goose"
+      ],
+      "probs": [
+        0.9961,
+        0.0025,
+        0.0004
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\raccoon\\38408348.jpg",
+      "true": "raccoon",
+      "pred": "raccoon",
+      "top3": [
+        "raccoon",
+        "virginia opossum",
+        "striped skunk"
+      ],
+      "probs": [
+        0.9839,
+        0.0143,
+        0.0006
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\red fox\\289085807.jpg",
+      "true": "red fox",
+      "pred": "red fox",
+      "top3": [
+        "red fox",
+        "coyote",
+        "canada goose"
+      ],
+      "probs": [
+        0.9929,
+        0.0058,
+        0.0004
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\red fox\\438495465.jpg",
+      "true": "red fox",
+      "pred": "pronghorn",
+      "top3": [
+        "pronghorn",
+        "red fox",
+        "coyote"
+      ],
+      "probs": [
+        0.7733,
+        0.1765,
+        0.0383
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\striped skunk\\304633285.jpg",
+      "true": "striped skunk",
+      "pred": "striped skunk",
+      "top3": [
+        "striped skunk",
+        "raccoon",
+        "eastern chipmunk"
+      ],
+      "probs": [
+        0.9909,
+        0.0047,
+        0.0016
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\striped skunk\\354681011.jpg",
+      "true": "striped skunk",
+      "pred": "striped skunk",
+      "top3": [
+        "striped skunk",
+        "virginia opossum",
+        "raccoon"
+      ],
+      "probs": [
+        0.9993,
+        0.0007,
+        0.0
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\virginia opossum\\173131417.jpg",
+      "true": "virginia opossum",
+      "pred": "virginia opossum",
+      "top3": [
+        "virginia opossum",
+        "striped skunk",
+        "raccoon"
+      ],
+      "probs": [
+        0.9946,
+        0.0036,
+        0.0011
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\virginia opossum\\310995394.jpg",
+      "true": "virginia opossum",
+      "pred": "virginia opossum",
+      "top3": [
+        "virginia opossum",
+        "raccoon",
+        "striped skunk"
+      ],
+      "probs": [
+        0.9956,
+        0.003,
+        0.0012
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\white-tailed deer\\248110169.jpg",
+      "true": "white-tailed deer",
+      "pred": "white-tailed deer",
+      "top3": [
+        "white-tailed deer",
+        "mule deer",
+        "wild turkey"
+      ],
+      "probs": [
+        0.9849,
+        0.0115,
+        0.001
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\white-tailed deer\\58166047.jpg",
+      "true": "white-tailed deer",
+      "pred": "white-tailed deer",
+      "top3": [
+        "white-tailed deer",
+        "mule deer",
+        "canada goose"
+      ],
+      "probs": [
+        0.9067,
+        0.086,
+        0.0023
+      ]
+    },
+    {
+      "image": "C:\\Users\\heath\\OneDrive\\Desktop\\aurora-lora\\data\\test\\wild turkey\\19232661.jpg",
+      "true": "wild turkey",
+      "pred": "wild turkey",
+      "top3": [
+        "wild turkey",
+        "bald eagle",
+        "black bear"
+      ],
+      "probs": [
+        0.999,
+        0.0007,
+        0.0001
+      ]
+    }
+  ]
+}
