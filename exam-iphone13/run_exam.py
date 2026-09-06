@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """run_exam.py — PC-side reference exam of the species-ID pipeline (iPhone-faithful).
 
-Branch B over the Aurora-500 embedding table. The iPhone 13 Core ML package
+The classification branch over the Aurora-500 embedding table. The iPhone 13 Core ML package
 must reproduce THIS scorecard on-device (gate: top-1 agreement = 100%, cosine
 delta < ~1e-3). Optional --fusion adds Branch A: the CLIP top-5 shortlist goes
 into a list-constrained prompt for the LoRA-served VLM, which answers with the
@@ -24,9 +24,9 @@ IMG_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 
 
 def load_table():
-    tbl = json.loads((ROOT.parent / "branch-b-clip-ios" / "species_table.json").read_text(encoding="utf-8"))
+    tbl = json.loads((ROOT.parent / "species-classifier" / "species_table.json").read_text(encoding="utf-8"))
     import numpy as np  # noqa: PLC0415
-    mat = np.fromfile(ROOT.parent / "branch-b-clip-ios" / "species_embeddings.f16.bin",
+    mat = np.fromfile(ROOT.parent / "species-classifier" / "species_embeddings.f16.bin",
                       dtype=np.float16).reshape(tbl["count"], tbl["dim"]).astype("float32")
     return tbl, mat
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """make_manifest.py — sha256 manifest for each species-id package.
 
-Writes manifest.json inside branch-a-survival/ and branch-b-clip-ios/ covering
+Writes manifest.json inside branch-a-survival/ and species-classifier/ covering
 every file (streamed hashing; the multi-GB weights included). Aurora's
 Ed25519 + SHA-256 activation flow signs this manifest as the trust root —
 here it is generated unsigned; the signing step plugs in at catalog time.
@@ -16,7 +16,7 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-PACKAGES = ["branch-a-survival", "branch-b-clip-ios"]
+PACKAGES = ["branch-a-survival", "species-classifier"]
 
 
 def sha256(path: Path) -> str:

@@ -54,7 +54,7 @@ are precomputed once on a PC and loaded as a plain binary table on device.
 ## Repository layout
 
 ```
-├── branch-b-clip-ios/     Core ML encoder + table + native Swift runtime
+├── species-classifier/     Core ML encoder + table + native Swift runtime
 │   ├── convert_coreml.py     trace BioCLIP-2 → Core ML fp16 (WSL2/macOS)
 │   ├── build_embeddings.py   build the 504-species embedding table
 │   ├── validate_coreml.py    fp32↔fp16 parity gate (Gate 1) + Core ML gate (Gate 2, Mac)
@@ -73,18 +73,18 @@ pinned by sha256 in each package's `manifest.json`.
 **Rebuild the species table (PC, Python 3.11+, CUDA optional):**
 
 ```bash
-python branch-b-clip-ios/build_embeddings.py
+python species-classifier/build_embeddings.py
 ```
 
 **Convert the encoder to Core ML** (WSL2 with `torch==2.7.0` +
 `coremltools==9.0`, pinned in the Dockerfile; see
-`branch-b-clip-ios/HANDOFF.md`), then run the parity gate:
+`species-classifier/HANDOFF.md`), then run the parity gate:
 
 ```bash
-python branch-b-clip-ios/validate_coreml.py
+python species-classifier/validate_coreml.py
 ```
 
-**iOS:** open `branch-b-clip-ios/ios/AuroraSpeciesKit/` in Xcode, drop in the
+**iOS:** open `species-classifier/ios/AuroraSpeciesKit/` in Xcode, drop in the
 compiled `.mlmodelc` and `species_embeddings.f16.bin`, and run the exam XCTest
 on device.
 

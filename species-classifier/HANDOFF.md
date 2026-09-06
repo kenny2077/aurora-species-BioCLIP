@@ -1,4 +1,4 @@
-# HANDOFF — branch-b-clip-ios (the iOS BioCLIP package)
+# HANDOFF — species-classifier (the iOS BioCLIP package)
 
 **Audience:** the agent/engineer on the MacBook who will finish the iPhone 13
 exam. Written 2026-09-05 by the Windows-side agent after the full PC-side
@@ -181,7 +181,7 @@ Softmax temperature 100·cos matches `clip.py` and all PC scoring — keep it.
 ## 7. Mac runbook (detailed)
 
 ```bash
-cd <repo>/species-id/branch-b-clip-ios
+cd <repo>/species-id/species-classifier
 
 # 1. compile (SPM cannot compile .mlpackage; Xcode-coremlcompiler can)
 xcrun coremlcompiler compile coreml/BioCLIP2-ImageEncoder.mlpackage coreml/

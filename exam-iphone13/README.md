@@ -32,8 +32,8 @@ label at fetch time catches all three).
 
 ## PC reference scorecards (results/)
 
-Branch B, BioCLIP-2 zero-shot over the **504-class Aurora table**, iPhone-faithful
-inputs (224 center-crop), RTX 4050, ~190 ms/photo:
+BioCLIP-2 zero-shot over the **504-class Aurora table**, iPhone-faithful
+inputs (224 center-crop), single consumer GPU, ~190 ms/photo:
 
 | Cut | Top-1 | Top-3 | Top-5 |
 |---|---|---|---|
@@ -49,7 +49,7 @@ known pale desert-morph red fox→pronghorn, skunk→ringtail.
 
 **Fusion finding (important):** letting the VLM re-pick from the CLIP top-5
 *lowers* accuracy to 74.1% (broke 18 correct CLIP answers, fixed 2). Margin
-gating never beats CLIP-alone either (best 92.9%). **Ship policy: Branch B
+gating never beats CLIP-alone either (best 92.9%). **Ship policy: the classifier
 decides the species; Branch A never re-classifies — it explains the decided
 species and applies survival doctrine.** (Quantified in
 `results/exam_pc_fusion.json` + the policy table in the session log.)
@@ -57,14 +57,14 @@ species and applies survival doctrine.** (Quantified in
 ## Running the exam
 
 ```bash
-python run_exam.py                                  # Branch B -> results/exam_pc_branchB.json
+python run_exam.py                                  # classifier branch -> results/exam_pc_branchB.json
 python run_exam.py --fusion http://127.0.0.1:8123   # + VLM stage (llama-server from branch-a-survival)
 ```
 
 ## On-device protocol (iPhone 13, iOS 17+)
 
 1. On the Mac: compile the encoder, copy resources into AuroraSpeciesKit
-   (commands in `../branch-b-clip-ios/README.md`), copy `photos/` +
+   (commands in `../species-classifier/README.md`), copy `photos/` +
    `photo_labels.json` into `Tests/AuroraSpeciesKitTests/Resources/Photos/`.
 2. `xcodebuild test -destination 'platform=iOS,id=<iphone13-udid>'` — the
    `ExamTests` suite runs the full pool on-device and prints the scorecard +

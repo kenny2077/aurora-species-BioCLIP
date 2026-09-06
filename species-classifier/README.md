@@ -1,4 +1,4 @@
-# branch-b-clip-ios/ — PART 2: the iOS BioCLIP package
+# species-classifier/ — PART 2: the iOS BioCLIP package
 
 > **Mac-side agent? Start with [HANDOFF.md](HANDOFF.md)** — architecture,
 > invariants, measured state, every build gotcha with its fix, and the
