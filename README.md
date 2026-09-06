@@ -112,4 +112,4 @@ Third-party models below.
 - [BioCLIP-2](https://huggingface.co/imageomics/BioCLIP-2) (Imageomics Institute) — the vision backbone
 - [iNaturalist](https://www.inaturalist.org) contributors — every exam and training photo is CC-licensed and attributed in `exam-iphone13/provenance.csv`
 - [Apple coremltools](https://github.com/apple/coremltools) and [llama.cpp](https://github.com/ggml-org/llama.cpp) — conversion and on-device runtime
-- Part of the [Aurora Survival](https://github.com/kenny2077/aurora-survival-lora) offline survival assistant
+- Part of the [Aurora Survival LoRA](https://github.com/kenny2077/aurora-survival-lora) offline survival assistant
