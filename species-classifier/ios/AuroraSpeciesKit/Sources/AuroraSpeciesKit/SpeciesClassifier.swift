@@ -116,15 +116,22 @@ public actor SpeciesClassifier {
 
     public var speciesCount: Int { table.species.count }
 
-    public func classify(_ imageData: Data, topK: Int = 3) throws -> [SpeciesResult] {
+    public func classify(_ imageData: Data, topK: Int = 3) async throws -> [SpeciesResult] {
         guard let source = CGImageSourceCreateWithData(imageData as CFData, nil),
               let image = CGImageSourceCreateImageAtIndex(source, 0, nil) else {
             throw SpeciesClassifierError.imageDecodeFailed
         }
-        return try classify(image, topK: topK)
+        return try classifySynchronously(image, topK: topK)
     }
 
-    public func classify(_ image: CGImage, topK: Int = 3) throws -> [SpeciesResult] {
+    public func classify(_ image: CGImage, topK: Int = 3) async throws -> [SpeciesResult] {
+        try classifySynchronously(image, topK: topK)
+    }
+
+    private func classifySynchronously(
+        _ image: CGImage,
+        topK: Int
+    ) throws -> [SpeciesResult] {
         guard topK > 0 else { return [] }
         let input = try preprocess(image)
         let features: MLFeatureProvider
@@ -156,7 +163,9 @@ public actor SpeciesClassifier {
             exponentials[index] = exp(100 * (cosine[index] - maximum))
             denominator += exponentials[index]
         }
-        let order = (0..<count).sorted { cosine[$0] > cosine[$1] }
+        let order = (0..<count).sorted {
+            cosine[$0] == cosine[$1] ? $0 < $1 : cosine[$0] > cosine[$1]
+        }
         return order.prefix(min(topK, count)).enumerated().map { rank, index in
             let species = table.species[index]
             return SpeciesResult(
