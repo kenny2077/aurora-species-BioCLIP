@@ -237,25 +237,44 @@ public actor SpeciesClassifier {
         ), let source = try? vImage_Buffer(cgImage: image, format: format) else {
             throw SpeciesClassifierError.imagePreprocessingFailed
         }
-        var sourceBuffer = source
+        let sourceBuffer = source
         defer { free(sourceBuffer.data) }
         let scale = CGFloat(inputSide) / CGFloat(min(image.width, image.height))
         // torchvision's integer Resize truncates the scaled long edge.
-        let width = max(UInt(inputSide), UInt(CGFloat(image.width) * scale))
-        let height = max(UInt(inputSide), UInt(CGFloat(image.height) * scale))
-        guard var destination = try? vImage_Buffer(
-            width: Int(width), height: Int(height), bitsPerPixel: 32
-        ) else { throw SpeciesClassifierError.imagePreprocessingFailed }
-        defer { free(destination.data) }
-        guard vImageScale_ARGB8888(
-            &sourceBuffer, &destination, nil, vImage_Flags(kvImageHighQualityResampling)
-        ) == kvImageNoError else { throw SpeciesClassifierError.imagePreprocessingFailed }
-
-        let offsetX = (Int(width) - inputSide) / 2
-        let offsetY = (Int(height) - inputSide) / 2
-        let pixels = destination.data
-            .advanced(by: offsetY * Int(destination.rowBytes) + offsetX * 4)
-            .assumingMemoryBound(to: UInt8.self)
+        let width = max(inputSide, Int(CGFloat(image.width) * scale))
+        let height = max(inputSide, Int(CGFloat(image.height) * scale))
+        let offsetX = (width - inputSide) / 2
+        let offsetY = (height - inputSide) / 2
+        let horizontal = Self.bicubicCoefficients(
+            inputSize: image.width,
+            outputSize: width,
+            outputRange: offsetX..<(offsetX + inputSide)
+        )
+        let vertical = Self.bicubicCoefficients(
+            inputSize: image.height,
+            outputSize: height,
+            outputRange: offsetY..<(offsetY + inputSide)
+        )
+        let sourcePixels = sourceBuffer.data.assumingMemoryBound(to: UInt8.self)
+        var intermediate = [UInt8](
+            repeating: 0,
+            count: image.height * inputSide * 3
+        )
+        for y in 0..<image.height {
+            let sourceRow = sourcePixels.advanced(by: y * sourceBuffer.rowBytes)
+            for x in 0..<inputSide {
+                let coefficients = horizontal[x]
+                for channel in 0..<3 {
+                    var sum = 1 << 21
+                    for index in coefficients.weights.indices {
+                        sum += Int(sourceRow[(coefficients.start + index) * 4 + channel + 1])
+                            * coefficients.weights[index]
+                    }
+                    intermediate[(y * inputSide + x) * 3 + channel] =
+                        UInt8(clamping: sum >> 22)
+                }
+            }
+        }
         let output = try MLMultiArray(
             shape: [1, 3, NSNumber(value: inputSide), NSNumber(value: inputSide)],
             dataType: .float32
@@ -263,11 +282,16 @@ public actor SpeciesClassifier {
         output.withUnsafeMutableBytes { raw, _ in
             let floats = raw.bindMemory(to: Float.self)
             for y in 0..<inputSide {
-                let row = pixels.advanced(by: y * destination.rowBytes)
+                let coefficients = vertical[y]
                 for x in 0..<inputSide {
-                    let pixel = row.advanced(by: x * 4)
                     for channel in 0..<3 {
-                        let value = Float(pixel[channel + 1]) / 255
+                        var sum = 1 << 21
+                        for index in coefficients.weights.indices {
+                            sum += Int(intermediate[
+                                ((coefficients.start + index) * inputSide + x) * 3 + channel
+                            ]) * coefficients.weights[index]
+                        }
+                        let value = Float(UInt8(clamping: sum >> 22)) / 255
                         floats[channel * inputSide * inputSide + y * inputSide + x] =
                             (value - mean[channel]) / std[channel]
                     }
@@ -275,5 +299,49 @@ public actor SpeciesClassifier {
             }
         }
         return output
+    }
+
+    private struct ResampleCoefficients {
+        let start: Int
+        let weights: [Int]
+    }
+
+    private static func bicubicCoefficients(
+        inputSize: Int,
+        outputSize: Int,
+        outputRange: Range<Int>
+    ) -> [ResampleCoefficients] {
+        let scale = Double(inputSize) / Double(outputSize)
+        let filterScale = max(1, scale)
+        let support = 2 * filterScale
+        return outputRange.map { outputIndex in
+            let center = (Double(outputIndex) + 0.5) * scale
+            let start = max(0, Int(center - support + 0.5))
+            let end = min(inputSize, Int(center + support + 0.5))
+            var values = (start..<end).map { inputIndex in
+                bicubic((Double(inputIndex) - center + 0.5) / filterScale)
+            }
+            let total = values.reduce(0, +)
+            if total != 0 {
+                values = values.map { $0 / total }
+            }
+            return ResampleCoefficients(
+                start: start,
+                weights: values.map {
+                    Int($0 < 0 ? -0.5 + $0 * Double(1 << 22) : 0.5 + $0 * Double(1 << 22))
+                }
+            )
+        }
+    }
+
+    private static func bicubic(_ value: Double) -> Double {
+        let x = abs(value)
+        if x < 1 {
+            return (1.5 * x - 2.5) * x * x + 1
+        }
+        if x < 2 {
+            return (((x - 5) * x + 8) * x - 4) * -0.5
+        }
+        return 0
     }
 }
