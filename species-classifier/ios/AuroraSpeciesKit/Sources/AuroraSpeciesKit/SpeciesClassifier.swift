@@ -70,12 +70,22 @@ public struct SpeciesResult: Equatable, Sendable {
     public let dangerNote: String?
 }
 
+public struct SpeciesInferenceMetrics: Equatable, Sendable {
+    public let decodeMilliseconds: Double
+    public let preprocessingMilliseconds: Double
+    public let predictionMilliseconds: Double
+    public let rankingMilliseconds: Double
+    public let totalMilliseconds: Double
+}
+
+public struct SpeciesClassificationOutput: Equatable, Sendable {
+    public let results: [SpeciesResult]
+    public let metrics: SpeciesInferenceMetrics
+}
+
 public actor SpeciesClassifier {
     private let model: MLModel
     private let table: EmbeddingTable
-    private let inputSide = 224
-    private let mean: [Float] = [0.48145466, 0.4578275, 0.40821073]
-    private let std: [Float] = [0.26862954, 0.26130258, 0.27577711]
 
     private init(model: MLModel, table: EmbeddingTable) {
         self.model = model
@@ -117,23 +127,46 @@ public actor SpeciesClassifier {
     public var speciesCount: Int { table.species.count }
 
     public func classify(_ imageData: Data, topK: Int = 3) async throws -> [SpeciesResult] {
+        try classifyMeasured(imageData, topK: topK).results
+    }
+
+    public func classifyMeasured(
+        _ imageData: Data,
+        topK: Int = 3
+    ) throws -> SpeciesClassificationOutput {
+        let totalStarted = CFAbsoluteTimeGetCurrent()
+        let decodeStarted = CFAbsoluteTimeGetCurrent()
         guard let source = CGImageSourceCreateWithData(imageData as CFData, nil),
               let image = CGImageSourceCreateImageAtIndex(source, 0, nil) else {
             throw SpeciesClassifierError.imageDecodeFailed
         }
-        return try classifySynchronously(image, topK: topK)
+        return try classifySynchronously(
+            image,
+            topK: topK,
+            decodeMilliseconds: Self.elapsedMilliseconds(since: decodeStarted),
+            totalStarted: totalStarted
+        )
     }
 
     public func classify(_ image: CGImage, topK: Int = 3) async throws -> [SpeciesResult] {
-        try classifySynchronously(image, topK: topK)
+        try classifySynchronously(
+            image,
+            topK: topK,
+            decodeMilliseconds: 0,
+            totalStarted: CFAbsoluteTimeGetCurrent()
+        ).results
     }
 
     private func classifySynchronously(
         _ image: CGImage,
-        topK: Int
-    ) throws -> [SpeciesResult] {
-        guard topK > 0 else { return [] }
-        let input = try preprocess(image)
+        topK: Int,
+        decodeMilliseconds: Double,
+        totalStarted: CFAbsoluteTime
+    ) throws -> SpeciesClassificationOutput {
+        let preprocessingStarted = CFAbsoluteTimeGetCurrent()
+        let input = try Self.preprocessProduction(image)
+        let preprocessingMilliseconds = Self.elapsedMilliseconds(since: preprocessingStarted)
+        let predictionStarted = CFAbsoluteTimeGetCurrent()
         let features: MLFeatureProvider
         do {
             features = try model.prediction(from: MLDictionaryFeatureProvider(
@@ -146,9 +179,21 @@ public actor SpeciesClassifier {
               multi.count == table.dim else {
             throw SpeciesClassifierError.invalidModelOutput
         }
+        let predictionMilliseconds = Self.elapsedMilliseconds(since: predictionStarted)
         var embedding = [Float](repeating: 0, count: table.dim)
         for index in embedding.indices { embedding[index] = multi[index].floatValue }
-        return rank(embedding, topK: topK)
+        let rankingStarted = CFAbsoluteTimeGetCurrent()
+        let results = rank(embedding, topK: topK)
+        return SpeciesClassificationOutput(
+            results: results,
+            metrics: SpeciesInferenceMetrics(
+                decodeMilliseconds: decodeMilliseconds,
+                preprocessingMilliseconds: preprocessingMilliseconds,
+                predictionMilliseconds: predictionMilliseconds,
+                rankingMilliseconds: Self.elapsedMilliseconds(since: rankingStarted),
+                totalMilliseconds: Self.elapsedMilliseconds(since: totalStarted)
+            )
+        )
     }
 
     public func rank(_ embedding: [Float], topK: Int = 3) -> [SpeciesResult] {
@@ -228,7 +273,67 @@ public actor SpeciesClassifier {
         else { throw SpeciesClassifierError.invalidModelOutput }
     }
 
-    private func preprocess(_ image: CGImage) throws -> MLMultiArray {
+    static func resizedDimensions(width: Int, height: Int) -> (width: Int, height: Int) {
+        let scale = CGFloat(224) / CGFloat(min(width, height))
+        return (
+            max(224, Int(CGFloat(width) * scale)),
+            max(224, Int(CGFloat(height) * scale))
+        )
+    }
+
+    static func preprocessProduction(_ image: CGImage) throws -> MLMultiArray {
+        guard let format = vImage_CGImageFormat(
+            bitsPerComponent: 8,
+            bitsPerPixel: 32,
+            colorSpace: CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: CGBitmapInfo(rawValue: CGImageAlphaInfo.noneSkipFirst.rawValue)
+        ), let source = try? vImage_Buffer(cgImage: image, format: format) else {
+            throw SpeciesClassifierError.imagePreprocessingFailed
+        }
+        var sourceBuffer = source
+        defer { free(sourceBuffer.data) }
+        let dimensions = resizedDimensions(width: image.width, height: image.height)
+        guard var destination = try? vImage_Buffer(
+            width: dimensions.width,
+            height: dimensions.height,
+            bitsPerPixel: 32
+        ) else { throw SpeciesClassifierError.imagePreprocessingFailed }
+        defer { free(destination.data) }
+        guard vImageScale_ARGB8888(
+            &sourceBuffer,
+            &destination,
+            nil,
+            vImage_Flags(kvImageHighQualityResampling)
+        ) == kvImageNoError else {
+            throw SpeciesClassifierError.imagePreprocessingFailed
+        }
+        let offsetX = (dimensions.width - 224) / 2
+        let offsetY = (dimensions.height - 224) / 2
+        let pixels = destination.data
+            .advanced(by: offsetY * destination.rowBytes + offsetX * 4)
+            .assumingMemoryBound(to: UInt8.self)
+        let output = try MLMultiArray(
+            shape: [1, 3, 224, 224],
+            dataType: .float32
+        )
+        output.withUnsafeMutableBytes { raw, _ in
+            let floats = raw.bindMemory(to: Float.self)
+            for y in 0..<224 {
+                let row = pixels.advanced(by: y * destination.rowBytes)
+                for x in 0..<224 {
+                    let pixel = row.advanced(by: x * 4)
+                    for channel in 0..<3 {
+                        let value = Float(pixel[channel + 1]) / 255
+                        floats[channel * 224 * 224 + y * 224 + x] =
+                            (value - mean[channel]) / std[channel]
+                    }
+                }
+            }
+        }
+        return output
+    }
+
+    static func preprocessReferenceExact(_ image: CGImage) throws -> MLMultiArray {
         guard let format = vImage_CGImageFormat(
             bitsPerComponent: 8,
             bitsPerPixel: 32,
@@ -239,30 +344,29 @@ public actor SpeciesClassifier {
         }
         let sourceBuffer = source
         defer { free(sourceBuffer.data) }
-        let scale = CGFloat(inputSide) / CGFloat(min(image.width, image.height))
-        // torchvision's integer Resize truncates the scaled long edge.
-        let width = max(inputSide, Int(CGFloat(image.width) * scale))
-        let height = max(inputSide, Int(CGFloat(image.height) * scale))
-        let offsetX = (width - inputSide) / 2
-        let offsetY = (height - inputSide) / 2
+        let dimensions = resizedDimensions(width: image.width, height: image.height)
+        let width = dimensions.width
+        let height = dimensions.height
+        let offsetX = (width - 224) / 2
+        let offsetY = (height - 224) / 2
         let horizontal = Self.bicubicCoefficients(
             inputSize: image.width,
             outputSize: width,
-            outputRange: offsetX..<(offsetX + inputSide)
+            outputRange: offsetX..<(offsetX + 224)
         )
         let vertical = Self.bicubicCoefficients(
             inputSize: image.height,
             outputSize: height,
-            outputRange: offsetY..<(offsetY + inputSide)
+            outputRange: offsetY..<(offsetY + 224)
         )
         let sourcePixels = sourceBuffer.data.assumingMemoryBound(to: UInt8.self)
         var intermediate = [UInt8](
             repeating: 0,
-            count: image.height * inputSide * 3
+            count: image.height * 224 * 3
         )
         for y in 0..<image.height {
             let sourceRow = sourcePixels.advanced(by: y * sourceBuffer.rowBytes)
-            for x in 0..<inputSide {
+            for x in 0..<224 {
                 let coefficients = horizontal[x]
                 for channel in 0..<3 {
                     var sum = 1 << 21
@@ -270,29 +374,29 @@ public actor SpeciesClassifier {
                         sum += Int(sourceRow[(coefficients.start + index) * 4 + channel + 1])
                             * coefficients.weights[index]
                     }
-                    intermediate[(y * inputSide + x) * 3 + channel] =
+                    intermediate[(y * 224 + x) * 3 + channel] =
                         UInt8(clamping: sum >> 22)
                 }
             }
         }
         let output = try MLMultiArray(
-            shape: [1, 3, NSNumber(value: inputSide), NSNumber(value: inputSide)],
+            shape: [1, 3, 224, 224],
             dataType: .float32
         )
         output.withUnsafeMutableBytes { raw, _ in
             let floats = raw.bindMemory(to: Float.self)
-            for y in 0..<inputSide {
+            for y in 0..<224 {
                 let coefficients = vertical[y]
-                for x in 0..<inputSide {
+                for x in 0..<224 {
                     for channel in 0..<3 {
                         var sum = 1 << 21
                         for index in coefficients.weights.indices {
                             sum += Int(intermediate[
-                                ((coefficients.start + index) * inputSide + x) * 3 + channel
+                                ((coefficients.start + index) * 224 + x) * 3 + channel
                             ]) * coefficients.weights[index]
                         }
                         let value = Float(UInt8(clamping: sum >> 22)) / 255
-                        floats[channel * inputSide * inputSide + y * inputSide + x] =
+                        floats[channel * 224 * 224 + y * 224 + x] =
                             (value - mean[channel]) / std[channel]
                     }
                 }
@@ -343,5 +447,12 @@ public actor SpeciesClassifier {
             return (((x - 5) * x + 8) * x - 4) * -0.5
         }
         return 0
+    }
+
+    private static let mean: [Float] = [0.48145466, 0.4578275, 0.40821073]
+    private static let std: [Float] = [0.26862954, 0.26130258, 0.27577711]
+
+    private static func elapsedMilliseconds(since start: CFAbsoluteTime) -> Double {
+        (CFAbsoluteTimeGetCurrent() - start) * 1_000
     }
 }

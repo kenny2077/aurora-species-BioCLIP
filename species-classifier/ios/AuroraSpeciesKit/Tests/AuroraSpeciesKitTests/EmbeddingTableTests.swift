@@ -38,6 +38,16 @@ final class EmbeddingTableTests: XCTestCase {
         }
     }
 
+    func testProductionResizeMatchesTorchvisionIntegerGeometry() {
+        let landscape = SpeciesClassifier.resizedDimensions(width: 500, height: 375)
+        XCTAssertEqual(landscape.width, 298)
+        XCTAssertEqual(landscape.height, 224)
+
+        let portrait = SpeciesClassifier.resizedDimensions(width: 3_024, height: 4_032)
+        XCTAssertEqual(portrait.width, 224)
+        XCTAssertEqual(portrait.height, 298)
+    }
+
     private func fixture(
         dim: Int,
         speciesCount: Int,
