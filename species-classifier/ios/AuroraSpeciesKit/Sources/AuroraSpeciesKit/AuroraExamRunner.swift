@@ -1,4 +1,5 @@
 import Foundation
+import ImageIO
 
 /// The iPhone-13 species-recognition exam, runnable on-device.
 ///
@@ -30,22 +31,15 @@ public struct AuroraExamRunner {
 
     let labels: [String: String]
 
-    public init(bundle: Bundle) throws {
-        guard let url = bundle.url(forResource: "photo_labels", withExtension: "json",
-                                   subdirectory: nil) ?? bundle.url(forResource: "photo_labels", withExtension: "json")
-        else {
-            throw NSError(domain: "AuroraExam", code: 1,
-                          userInfo: [NSLocalizedDescriptionKey: "photo_labels.json not in bundle"])
-        }
-        labels = try JSONDecoder().decode([String: String].self, from: Data(contentsOf: url))
+    public init(labelsURL: URL) throws {
+        labels = try JSONDecoder().decode(
+            [String: String].self,
+            from: Data(contentsOf: labelsURL)
+        )
     }
 
     /// Collect photo cases from a bundle directory named "Photos".
-    public static func collectCases(bundle: Bundle) throws -> [PhotoCase] {
-        guard let root = bundle.url(forResource: "Photos", withExtension: nil) else {
-            throw NSError(domain: "AuroraExam", code: 2,
-                          userInfo: [NSLocalizedDescriptionKey: "Photos/ resource dir not in bundle"])
-        }
+    public static func collectCases(root: URL) throws -> [PhotoCase] {
         let labels = try JSONDecoder().decode([String: String].self,
                                               from: Data(contentsOf: root.appendingPathComponent("photo_labels.json")))
         let exts = ["jpg", "jpeg", "png"]
@@ -61,7 +55,10 @@ public struct AuroraExamRunner {
         return cases
     }
 
-    public func run(classifier: SpeciesClassifier, cases: [PhotoCase]) throws -> (Scorecard, [Row]) {
+    public func run(
+        classifier: SpeciesClassifier,
+        cases: [PhotoCase]
+    ) async throws -> (Scorecard, [Row]) {
         var top1 = 0, top3 = 0, top5 = 0
         var totalMs: Double = 0
         var rows: [Row] = []
@@ -70,16 +67,16 @@ public struct AuroraExamRunner {
                   let img = CGImageSourceCreateImageAtIndex(src, 0, nil)
             else { continue }
             let t0 = Date()
-            let results = try classifier.classify(img, topK: 5)
+            let results = try await classifier.classify(img, topK: 5)
             totalMs += -t0.timeIntervalSinceNow * 1000
-            let rank = results.firstIndex { $0.sci == c.trueSci }
+            let rank = results.firstIndex { $0.scientificName == c.trueSci }
             if let r = rank {
                 if r < 1 { top1 += 1 }
                 if r < 3 { top3 += 1 }
                 if r < 5 { top5 += 1 }
             }
             rows.append(Row(folder: c.folder, image: c.url.lastPathComponent, trueSci: c.trueSci,
-                            predicted: results.first?.sci ?? "?", rank: rank.map { Int64($0) }))
+                            predicted: results.first?.scientificName ?? "?", rank: rank.map { Int64($0) }))
         }
         let n = max(rows.count, 1)
         let card = Scorecard(photos: rows.count, top1: top1, top3: top3, top5: top5,

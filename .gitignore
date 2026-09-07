@@ -2,6 +2,7 @@
 __pycache__/
 *.py[oc]
 .venv/
+.build/
 
 # Heavy model artifacts (pinned upstream via manifest.json hashes)
 *.gguf.tmp

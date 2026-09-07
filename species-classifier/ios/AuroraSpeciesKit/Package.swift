@@ -10,21 +10,13 @@ import PackageDescription
 //   species_table.json               (names/sci/group/danger + format metadata)
 let package = Package(
     name: "AuroraSpeciesKit",
-    platforms: [.iOS(.v16), .macOS(.v13)],
+    platforms: [.iOS(.v17), .macOS(.v14)],
     products: [.library(name: "AuroraSpeciesKit", targets: ["AuroraSpeciesKit"])],
     targets: [
-        .target(
-            name: "AuroraSpeciesKit",
-            resources: [
-                .copy("Resources/species_table.json"),
-                .copy("Resources/species_embeddings.f16.bin"),
-                .copy("Resources/BioCLIP2-ImageEncoder.mlmodelc"),
-            ]
-        ),
+        .target(name: "AuroraSpeciesKit"),
         .testTarget(
             name: "AuroraSpeciesKitTests",
-            dependencies: ["AuroraSpeciesKit"],
-            resources: [.copy("Photos")]  // drop the exam photos/ folder + photo_labels.json here
+            dependencies: ["AuroraSpeciesKit"]
         ),
     ]
 )

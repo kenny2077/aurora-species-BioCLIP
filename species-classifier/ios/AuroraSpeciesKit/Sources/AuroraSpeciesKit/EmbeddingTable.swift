@@ -1,6 +1,6 @@
 import Foundation
 
-public struct SpeciesEntry: Decodable, Sendable {
+public struct SpeciesEntry: Decodable, Equatable, Sendable {
     public let name: String
     public let sci: String
     public let group: String
@@ -34,21 +34,32 @@ public final class EmbeddingTable {
     /// row-major [count x dim], fp32, L2-normalized rows (~1.5 MB in RAM)
     public let rows: [Float]
 
-    public init(bundle: Bundle = .main) throws {
-        guard let jsonURL = bundle.url(forResource: "species_table", withExtension: "json"),
-              let binURL = bundle.url(forResource: "species_embeddings.f16", withExtension: "bin")
-        else {
-            throw NSError(domain: "AuroraSpeciesKit", code: 1,
-                          userInfo: [NSLocalizedDescriptionKey: "species_table.json / embeddings .bin not found in bundle"])
+    public init(speciesTableURL: URL, embeddingsURL: URL) throws {
+        guard FileManager.default.fileExists(atPath: speciesTableURL.path),
+              FileManager.default.fileExists(atPath: embeddingsURL.path) else {
+            throw SpeciesClassifierError.missingArtifact
         }
-        let meta = try JSONDecoder().decode(TableMeta.self, from: Data(contentsOf: jsonURL))
+        let meta: TableMeta
+        do {
+            meta = try JSONDecoder().decode(
+                TableMeta.self,
+                from: Data(contentsOf: speciesTableURL)
+            )
+        } catch {
+            throw SpeciesClassifierError.invalidSpeciesTable
+        }
         guard meta.dtype == "float16" else {
-            throw NSError(domain: "AuroraSpeciesKit", code: 2,
-                          userInfo: [NSLocalizedDescriptionKey: "unexpected dtype \(meta.dtype)"])
+            throw SpeciesClassifierError.unsupportedEmbeddingType(meta.dtype)
         }
-        let raw = try Data(contentsOf: binURL, options: .mappedIfSafe)
+        guard meta.dim > 0, meta.count > 0, meta.species.count == meta.count else {
+            throw SpeciesClassifierError.invalidSpeciesTable
+        }
+        let raw = try Data(contentsOf: embeddingsURL, options: .mappedIfSafe)
+        guard raw.count == meta.count * meta.dim * MemoryLayout<UInt16>.size else {
+            throw SpeciesClassifierError.invalidEmbeddingTableLength
+        }
         var rows = [Float](repeating: 0, count: meta.count * meta.dim)
-        raw.withUnsafeBytes { (buf: UnsafeRawBuffer) in
+        raw.withUnsafeBytes { (buf: UnsafeRawBufferPointer) in
             let half = buf.bindMemory(to: UInt16.self)
             for i in 0..<rows.count {
                 rows[i] = Float(Float16(bitPattern: half[i]))

@@ -12,7 +12,7 @@ image encoder + the 504-species embedding table. No text tower ships.**
 | `coreml/BioCLIP2-ImageEncoder.mlpackage` | ~0.6 GB fp16 | ViT-L/14 image encoder, photo → 768-d embedding |
 | `species_embeddings.f16.bin` | 0.77 MB | 504 × 768 fp16 text-embedding table (precomputed) |
 | `species_table.json` | — | names/sci/group/danger + format metadata (row order = .bin rows) |
-| `ios/AuroraSpeciesKit/` | — | Swift package: classifier + table reader + on-device exam |
+| `ios/AuroraSpeciesKit/` | — | Swift package: URL-loaded classifier + table reader + on-device exam |
 | `build_embeddings.py` | — | rebuild the table for a new species list |
 | `convert_coreml.py` | — | rebuild the mlpackage (Linux/macOS) |
 | `validate_coreml.py` | — | parity gates: fp32↔fp16 (any OS), fp32↔Core ML (macOS) |
@@ -37,12 +37,13 @@ python build_embeddings.py
 # 2. image encoder -> Core ML (WSL2 Ubuntu works; isolated Dockerfile below)
 python convert_coreml.py        # -> coreml/BioCLIP2-ImageEncoder.mlpackage
 
-# 3. on a Mac: compile + validate, then drop into the Swift package
-xcrun coremlcompiler compile coreml/BioCLIP2-ImageEncoder.mlpackage coreml/
+# 3. on a Mac: validate the portable package before publishing it
 python validate_coreml.py --images ../exam-iphone13/photos/ --max 20
-cp coreml/BioCLIP2-ImageEncoder.mlmodelc ios/AuroraSpeciesKit/Sources/AuroraSpeciesKit/Resources/
-cp species_table.json species_embeddings.f16.bin ios/AuroraSpeciesKit/Sources/AuroraSpeciesKit/Resources/
 ```
+
+The Swift package contains no model resources. An app supplies verified file
+URLs in `SpeciesArtifactSet`; `SpeciesClassifier.load` compiles the downloaded
+model package off the main thread and caches the `.mlmodelc` by encoder digest.
 
 ## Isolated conversion image (reproducible builds)
 
