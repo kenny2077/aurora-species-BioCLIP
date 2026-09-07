@@ -240,8 +240,9 @@ public actor SpeciesClassifier {
         var sourceBuffer = source
         defer { free(sourceBuffer.data) }
         let scale = CGFloat(inputSide) / CGFloat(min(image.width, image.height))
-        let width = max(UInt(inputSide), UInt(round(CGFloat(image.width) * scale)))
-        let height = max(UInt(inputSide), UInt(round(CGFloat(image.height) * scale)))
+        // torchvision's integer Resize truncates the scaled long edge.
+        let width = max(UInt(inputSide), UInt(CGFloat(image.width) * scale))
+        let height = max(UInt(inputSide), UInt(CGFloat(image.height) * scale))
         guard var destination = try? vImage_Buffer(
             width: Int(width), height: Int(height), bitsPerPixel: 32
         ) else { throw SpeciesClassifierError.imagePreprocessingFailed }
