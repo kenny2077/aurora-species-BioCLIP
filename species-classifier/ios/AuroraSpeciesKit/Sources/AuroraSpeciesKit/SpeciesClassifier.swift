@@ -185,6 +185,12 @@ public actor SpeciesClassifier {
             .appendingPathComponent(artifacts.encoderSHA256, isDirectory: true)
             .appendingPathExtension("mlmodelc")
         if fileManager.fileExists(atPath: destination.path) { return destination }
+        let partial = artifacts.compileCacheDirectory
+            .appendingPathComponent(
+                "\(artifacts.encoderSHA256).\(UUID().uuidString).partial",
+                isDirectory: true
+            )
+            .appendingPathExtension("mlmodelc")
         do {
             try fileManager.createDirectory(
                 at: artifacts.compileCacheDirectory,
@@ -195,10 +201,18 @@ public actor SpeciesClassifier {
                 try? fileManager.removeItem(at: temporary)
                 return destination
             }
-            try fileManager.moveItem(at: temporary, to: destination)
+            try fileManager.moveItem(at: temporary, to: partial)
+            if fileManager.fileExists(atPath: destination.path) {
+                try? fileManager.removeItem(at: partial)
+                return destination
+            }
+            try fileManager.moveItem(at: partial, to: destination)
             return destination
         } catch {
-            try? fileManager.removeItem(at: destination)
+            try? fileManager.removeItem(at: partial)
+            if fileManager.fileExists(atPath: destination.path) {
+                return destination
+            }
             throw SpeciesClassifierError.modelCompilationFailed
         }
     }
